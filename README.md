@@ -10,7 +10,7 @@ A minimal, eye-friendly light theme for VS Code, inspired by Vim's default style
 
 ## 📸 Screenshots
 ### Code Preview (Go Language)
-![Code Preview](./images/screen-go.png)
+![Code Preview](https://github.com/hajiboom/plain-light/blob/main/images/screen-go.png)
 *Note: Screenshot shows Go code with Plain Light theme, highlighting core keywords and minimal syntax styling.*
 
 ## 🚀 Installation
