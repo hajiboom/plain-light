@@ -1,0 +1,200 @@
+{
+  "$schema": "vscode://schemas/color-theme",
+  "name": "plain-light",
+  "type": "light",
+  // 编辑器UI：保留护眼基础，微调终端区分度
+  "colors": {
+    "editor.background": "#f8f8f8",       // 编辑器米白背景（核心护眼色）
+    "editor.foreground": "#333333",       // 编辑器深灰前景
+    "editorLineNumber.foreground": "#888888", // 行号浅灰
+    "editorLineNumber.activeForeground": "#000000", // 激活行号黑色
+    "editor.lineHighlightBackground": "#f0f0f0", // 选中行浅灰背景
+    "editor.selectionBackground": "#e0e0e0", // 选中文本浅灰
+    "sideBar.background": "#f5f5f5", // 侧边栏背景
+    "sideBar.foreground": "#333333", // 侧边栏前景
+
+      // 顶部：标题栏（窗口最顶部）
+    "titleBar.activeBackground": "#82d2db", // 与侧边栏同色
+    "titleBar.activeForeground": "#333333",
+    "titleBar.inactiveBackground": "#4c6574", // 非激活窗口也保持一致
+    "titleBar.inactiveForeground": "#888888",
+    "titleBar.border": "#e0e0e0", // 标题栏与编辑器的分隔线
+
+    // 顶部：菜单栏（若开启了原生菜单栏）
+    "menu.background": "#588499",
+    "menu.foreground": "#333333",
+    "menu.selectionBackground": "#e0e0e0",
+    "menu.selectionForeground": "#333333",
+    "menu.border": "#9af3ef",
+
+    // 底部：状态栏（原有增强，与侧边栏统一）
+    "statusBar.background": "#a8f3c5", // 改为侧边栏同色（原#e8e8e8）
+    "statusBar.foreground": "#333333",
+    "statusBar.border": "#adadad", // 状态栏与编辑器的分隔线
+    "statusBar.debuggingBackground": "#f3c784", // 调试模式时轻微区分
+
+    // 底部：面板（终端/输出面板）
+    "panel.background": "#f0f0f0", // 终端背景（原有）
+    "panel.border": "#f7abab", // 面板与编辑器的分隔线
+    "panelTitle.activeForeground": "#333333",
+    "panelTitle.inactiveForeground": "#888888",
+
+
+    // 终端配色：与编辑器区分+丰富化（浅灰底+彩色文字）
+    "terminal.background": "#f0f0f0", // 终端背景（比编辑器深一点，区分明显）
+    "terminal.foreground": "#222222", // 终端默认文字（比编辑器深一点）
+    "terminal.ansiBlack": "#000000",
+    "terminal.ansiRed": "#a31515",
+    "terminal.ansiGreen": "#608b4e",
+    "terminal.ansiYellow": "#d7ba7d",
+    "terminal.ansiBlue": "#000080",
+    "terminal.ansiMagenta": "#7A3E9D",
+    "terminal.ansiCyan": "#267f99",
+    "terminal.ansiWhite": "#cccccc",
+    "editor.findMatchBackground": "#ffffe0", // 搜索匹配背景
+    "list.activeSelectionIconForeground": "#fff"
+  },
+  // 语法高亮：轻量增强（新增配色+适度粗体/斜体）
+  "tokenColors": [
+    // 注释：保留斜体+浅绿（Vim原生风格）
+    {
+      "name": "Comments",
+      "scope": [
+        "comment",
+        "punctuation.definition.comment"
+      ],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#608b4e"
+      }
+    },
+    // 关键字1：原生深蓝色（保留）+ 粗体（轻微强调）
+    {
+      "name": "Keywords (Control)",
+      "scope": [
+         "keyword.control", // return/if/else/for/while
+        "keyword.declaration", // import/export/package/func
+        "storage.modifier", // public/private
+        "keyword.other.new", // new
+        "keyword.other.this" // this
+      ],
+      "settings": {
+        "fontStyle": "bold",
+        "foreground": "#07a6bb"
+      }
+    },
+    // 关键字2：新增深紫色（运算符/逻辑关键字）+ 斜体
+    {
+      "name": "Keywords (Operator/Logic)",
+      "scope": [
+        "keyword.operator.logical", // 逻辑运算符：&&/||/!
+        "keyword.operator.comparison" // 比较运算符：>/</===
+      ],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#7A3E9D"
+      }
+    },
+    // 关键字3：新增青蓝色（声明/命名空间）+ 粗体+斜体（少量）
+    {
+      "name": "Keywords (Declaration)",
+      "scope": [
+        "keyword.declaration", // 声明关键字：var/let/const/class
+        "keyword.namespace" // 命名空间：import/export
+      ],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#267f99"
+      }
+    },
+    // 自定义方法名/函数名：无粗体，默认黑色
+    {
+      "name": "Custom Functions/Methods",
+      "scope": ["entity.name.function", "support.function"],
+      "settings": {
+        "fontStyle": "", // 去掉粗体
+        "foreground": "#910c4e"
+      }
+    },
+    // 字符串：保留棕色 + 轻微斜体（增强区分）
+    {
+      "name": "Strings",
+      "scope": "string",
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#b49508"
+      }
+    },
+    // 运算符/标点：默认色（无额外强调）
+    {
+      "name": "Operators & Punctuation",
+      "scope": [
+        "keyword.operator",
+        "punctuation"
+      ],
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#333333"
+      }
+    },
+    // 类/类型名：青蓝色 + 粗体（核心结构，适度强调）
+    {
+      "name": "Classes",
+      "scope": [
+        "entity.name.type",
+        "entity.other.inherited-class"
+      ],
+      "settings": {
+        "fontStyle": "bold",
+        "foreground": "#267f99"
+      }
+    },
+    // 错误：红色 + 粗体（醒目但不刺眼）
+    {
+      "name": "Invalid",
+      "scope": "invalid",
+      "settings": {
+        "fontStyle": "bold",
+        "foreground": "#ff0000"
+      }
+    },
+    // HTML标签：深蓝色 + 斜体（轻微区分）
+    {
+      "name": "HTML Tags",
+      "scope": [
+        "entity.name.tag",
+        "meta.tag",
+        "entity.other.attribute-name"
+      ],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#000080"
+      }
+    },
+    // CSS：深紫色 + 斜体（轻微区分）
+    {
+      "name": "CSS",
+      "scope": [
+        "meta.selector",
+        "meta.property-name",
+        "meta.property-value"
+      ],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#7A3E9D"
+      }
+    },
+    // Diff：默认色（无额外强调）
+    {
+      "name": "Diff",
+      "scope": [
+        "meta.diff.range",
+        "meta.diff.header.from-file",
+        "meta.diff.header.to-file"
+      ],
+      "settings": {
+        "foreground": "#333333"
+      }
+    }
+  ]
+}
