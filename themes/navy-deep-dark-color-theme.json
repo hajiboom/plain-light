@@ -1,0 +1,194 @@
+{
+  "$schema": "vscode://schemas/color-theme",
+  "name": "navy-deep-dark",
+  "type": "dark",
+  "colors": {
+    // --- 编辑器基础 UI ---
+    "editor.background": "#1e2130",       // 核心背景色：深蓝灰
+    "editor.foreground": "#dcdfe4",       // 默认文字：灰白
+    "editorLineNumber.foreground": "#4b526d", // 行号：暗蓝灰
+    "editorLineNumber.activeForeground": "#ffffff", // 激活行号：纯白
+    "editor.lineHighlightBackground": "#2a2e42", // 当前行高亮：稍亮的蓝
+    "editor.selectionBackground": "#383e5c", // 选中背景
+    "editorCursor.foreground": "#ffffff", // 光标颜色
+    
+    // 侧边栏与面板
+    "sideBar.background": "#191b28",      // 侧边栏比编辑器更深一点
+    "sideBar.foreground": "#aab2c0",
+    "sideBarSectionHeader.background": "#25293d",
+    
+    "panel.background": "#191b28",        // 终端/输出面板背景
+    "panel.border": "#2f3652",            // 面板边框
+    "panelTitle.activeForeground": "#ffffff",
+    "panelTitle.inactiveForeground": "#6b7280",
+
+    // 状态栏 (底部)
+    "statusBar.background": "#2f3652",
+    "statusBar.foreground": "#ffffff",
+    "statusBar.debuggingBackground": "#5c3d2e", // 调试模式深红褐
+
+    // 标题栏 (顶部)
+    "titleBar.activeBackground": "#151722",
+    "titleBar.activeForeground": "#cccccc",
+    "titleBar.inactiveBackground": "#1e2130",
+    
+    // 搜索匹配
+    "editor.findMatchBackground": "#5c3d2e", 
+    "editor.findMatchHighlightBackground": "#3a3d4b"
+  },
+  "tokenColors": [
+    // 1. 注释：保留斜体，颜色改为暗青色/灰色，保持低调
+    {
+      "name": "Comments",
+      "scope": [
+        "comment",
+        "punctuation.definition.comment"
+      ],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#6b7280" 
+      }
+    },
+    
+    // 2. 关键字 (Control/Flow)：对应图中的 return, for, switch, case
+    // 颜色：淡蓝色 (#7aa2f7)，加粗
+    {
+      "name": "Keywords (Control)",
+      "scope": [
+        "keyword.control", 
+        "keyword.declaration", 
+        "storage.modifier", 
+        "keyword.other.new", 
+        "keyword.other.this"
+      ],
+      "settings": {
+        "fontStyle": "bold",
+        "foreground": "#7aa2f7" 
+      }
+    },
+
+    // 3. 运算符与逻辑：对应图中的 &&, ||, !, >, <
+    // 颜色：淡紫色 (#bb9af7)，斜体
+    {
+      "name": "Keywords (Operator/Logic)",
+      "scope": [
+        "keyword.operator.logical", 
+        "keyword.operator.comparison",
+        "keyword.operator.assignment"
+      ],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#bb9af7" 
+      }
+    },
+
+    // 4. 声明类关键字：对应图中的 typedef, struct, enum
+    // 颜色：青色 (#7dcfff)，斜体
+    {
+      "name": "Keywords (Declaration)",
+      "scope": [
+        "keyword.declaration.type", 
+        "storage.type" 
+      ],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#7dcfff" 
+      }
+    },
+
+    // 5. 自定义方法名/函数调用：对应图中的 model_prog_compute, mat_relu
+    // 颜色：薄荷绿 (#9ece6a)，无粗体（这是图片的核心特征）
+    {
+      "name": "Custom Functions/Methods",
+      "scope": [
+        "entity.name.function", 
+        "support.function",
+        "variable.function"
+      ],
+      "settings": {
+        "fontStyle": "", 
+        "foreground": "#9ece6a" 
+      }
+    },
+
+    // 6. 字符串：对应图中的 "..." (虽然图中没明显展示，通常配黄色或橙色)
+    // 颜色：暖黄 (#e0af68)，斜体
+    {
+      "name": "Strings",
+      "scope": "string",
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#e0af68" 
+      }
+    },
+
+    // 7. 变量名/普通文本：对应图中的 prog, cur, a, b
+    // 颜色：接近白色的浅灰 (#c0caf5)
+    {
+      "name": "Variables",
+      "scope": [
+        "variable.other.readwrite",
+        "variable.parameter"
+      ],
+      "settings": {
+        "foreground": "#c0caf5"
+      }
+    },
+
+    // 8. 类名/类型名：对应图中的 model_program, model_var
+    // 颜色：青色 (#7dcfff)，加粗
+    {
+      "name": "Classes",
+      "scope": [
+        "entity.name.type",
+        "entity.other.inherited-class",
+        "support.type"
+      ],
+      "settings": {
+        "fontStyle": "bold",
+        "foreground": "#7dcfff" 
+      }
+    },
+
+    // 9. 宏定义/预处理器：对应图中的 #define, #ifdef
+    // 颜色：红色/粉色 (#f7768e)
+    {
+      "name": "Preprocessor",
+      "scope": [
+        "meta.preprocessor",
+        "keyword.control.import"
+      ],
+      "settings": {
+        "fontStyle": "bold",
+        "foreground": "#f7768e"
+      }
+    },
+
+    // 10. 数字/常量：对应图中的 0, 1, MV_OP_NULL
+    // 颜色：橙色 (#ff9e64)
+    {
+      "name": "Constants/Numbers",
+      "scope": [
+        "constant.numeric",
+        "constant.language",
+        "variable.other.enummember"
+      ],
+      "settings": {
+        "foreground": "#ff9e64"
+      }
+    },
+
+    // 11. 标点符号：括号、分号等
+    // 颜色：深一点的灰白，降低干扰
+    {
+      "name": "Punctuation",
+      "scope": [
+        "punctuation",
+        "punctuation.separator"
+      ],
+      "settings": {
+        "foreground": "#565f89"
+      }
+    }
+  ]
+}

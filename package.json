@@ -16,6 +16,11 @@
         "label": "plain-light",
         "uiTheme": "vs",
         "path": "./themes/plain-light-color-theme.json"
+      },
+      {
+        "label": "Navy Deep Dark", 
+        "uiTheme": "vs-dark",
+        "path": "./themes/navy-deep-dark-color-theme.json"
       }
     ]
   }
