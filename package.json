@@ -13,14 +13,14 @@
   "contributes": {
     "themes": [
       {
-        "label": "plain-light",
+        "label": "simple-light",
         "uiTheme": "vs",
-        "path": "./themes/plain-light-color-theme.json"
+        "path": "./themes/simple-light-color-theme.json"
       },
       {
-        "label": "Navy Deep Dark", 
+        "label": "simple-dark", 
         "uiTheme": "vs-dark",
-        "path": "./themes/navy-deep-dark-color-theme.json"
+        "path": "./themes/simple-dark-color-theme.json"
       }
     ]
   }

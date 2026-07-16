@@ -1,0 +1,145 @@
+{
+  "$schema": "vscode://schemas/color-theme",
+  "name": "simple-light",
+  "type": "light",
+  "colors": {
+    "editor.background": "#f8f8f8",
+    "editor.foreground": "#333333",
+    "editorLineNumber.foreground": "#888888",
+    "editorLineNumber.activeForeground": "#000000",
+    "editor.lineHighlightBackground": "#f0f0f0",
+    "editor.selectionBackground": "#e0e0e0",
+    "sideBar.background": "#f5f5f5",
+    "sideBar.foreground": "#333333",
+
+    // ========== 顶部标题栏 全新柔和配色 ==========
+    "titleBar.activeBackground": "#d6e4e7",
+    "titleBar.activeForeground": "#2c3e40",
+    "titleBar.inactiveBackground": "#b8c8cc",
+    "titleBar.inactiveForeground": "#607275",
+    "titleBar.border": "#c2d2d6",
+
+    "menu.background": "#e1eced",
+    "menu.foreground": "#2c3e40",
+    "menu.selectionBackground": "#c8dadd",
+    "menu.selectionForeground": "#1a282a",
+    "menu.border": "#b0c4c8",
+
+    // ========== 底部状态栏 全新柔和配色 ==========
+    "statusBar.background": "#c9dcdf",
+    "statusBar.foreground": "#2c3e40",
+    "statusBar.border": "#a9bfc3",
+    "statusBar.debuggingBackground": "#e6cdb8",
+
+    "panel.background": "#f0f0f0",
+    "panel.border": "#d1bcbc",
+    "panelTitle.activeForeground": "#333333",
+    "panelTitle.inactiveForeground": "#888888",
+
+    "terminal.background": "#f0f0f0",
+    "terminal.foreground": "#222222",
+    "terminal.ansiBlack": "#000000",
+    "terminal.ansiRed": "#a31515",
+    "terminal.ansiGreen": "#608b4e",
+    "terminal.ansiYellow": "#d7ba7d",
+    "terminal.ansiBlue": "#000080",
+    "terminal.ansiMagenta": "#7A3E9D",
+    "terminal.ansiCyan": "#267f99",
+    "terminal.ansiWhite": "#cccccc",
+    "editor.findMatchBackground": "#ffffe0",
+    "list.activeSelectionIconForeground": "#fff"
+  },
+
+  "tokenColors": [
+    // ---- 注释：灰绿色，斜体 ----
+    {
+      "name": "Comment",
+      "scope": ["comment", "punctuation.definition.comment"],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#6a9955"
+      }
+    },
+
+    // ---- 关键字（控制流、声明、存储类型）：深蓝 ----
+    {
+      "name": "Keywords",
+      "scope": [
+        "keyword",
+        "storage.type",
+        "storage.modifier",
+        "keyword.control",
+        "keyword.declaration",
+        // Go 特定
+        "keyword.package.go",
+        "keyword.import.go",
+        "keyword.function.go",
+        "keyword.type.go",
+        "keyword.struct.go",
+        "keyword.interface.go",
+        "keyword.map.go",
+        "keyword.chan.go"
+      ],
+      "settings": {
+        "foreground": "#0550ae"
+      }
+    },
+
+    // ---- 函数名：柔和红色 ----
+    {
+      "name": "Functions",
+      "scope": [
+        "entity.name.function",
+        "support.function",
+        "variable.function",
+        "entity.name.function.go"
+      ],
+      "settings": {
+        "foreground": "#d73a49"
+      }
+    },
+
+    // ---- 类型名：亮蓝 ----
+    {
+      "name": "Types",
+      "scope": [
+        "entity.name.type",
+        "support.type",
+        "storage.type.primitive",
+        "entity.name.type.alias.go",
+        "entity.name.type.struct.go",
+        "entity.name.type.interface.go"
+      ],
+      "settings": {
+        "foreground": "#0070c1"
+      }
+    },
+
+    // ---- 字符串：鲜绿色 ----
+    {
+      "name": "Strings",
+      "scope": "string",
+      "settings": {
+        "foreground": "#22863a"
+      }
+    },
+
+    // ---- 常量/数字：橙棕色 ----
+    {
+      "name": "Constants",
+      "scope": [
+        "constant.numeric",
+        "constant.language",
+        "constant.boolean",
+        "variable.other.enummember"
+      ],
+      "settings": {
+        "foreground": "#d19a66"
+      }
+    },
+
+    // ---- 变量、参数、成员：不设置，使用默认前景色（黑色） ----
+    // ---- 运算符、标点：不设置，使用默认前景色 ----
+    // ---- 其他所有未覆盖的 scope 都会继承 editor.foreground (#333333) ----
+  ]
+}
