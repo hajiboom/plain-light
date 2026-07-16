@@ -3,128 +3,123 @@
   "name": "Tsoding Emacs Dark (Gruber)",
   "type": "dark",
   "colors": {
-    // ---- 编辑器核心 ----
-    "editor.background": "#181818",
+    // ---- 编辑器核心（背景为 Monokai 原生底色 #272822） ----
+    "editor.background": "#272822",
     "editor.foreground": "#e4e4e4",
-    "editor.lineHighlightBackground": "#2a2a2a",
-    "editor.selectionBackground": "#3a3a3a",
-    "editor.selectionHighlightBackground": "#2d2d2d",
-    "editorCursor.foreground": "#f43753",
-    "editorWhitespace.foreground": "#3a3a3a",
-    "editorIndentGuide.background": "#2a2a2a",
-    "editorIndentGuide.activeBackground": "#4a4a4a",
-    "editorLineNumber.foreground": "#4a4a4a",
+    "editor.lineHighlightBackground": "#2f302b",
+    "editor.selectionBackground": "#3e3d32",
+    "editor.selectionHighlightBackground": "#34352f",
+    "editorCursor.foreground": "#c93c50",
+    "editorWhitespace.foreground": "#3d3e38",
+    "editorIndentGuide.background": "#2f302b",
+    "editorIndentGuide.activeBackground": "#4a4b44",
+    "editorLineNumber.foreground": "#4a4b44",
     "editorLineNumber.activeForeground": "#e4e4e4",
-    "editorRuler.foreground": "#2a2a2a",
-    "editorBracketMatch.background": "#2a2a2a",
-    "editorBracketMatch.border": "#f43753",
+    "editorRuler.foreground": "#2f302b",
+    "editorBracketMatch.background": "#2f302b",
+    "editorBracketMatch.border": "#c93c50",
 
     // ---- 侧边栏 ----
-    "sideBar.background": "#151515",
+    "sideBar.background": "#23241f",
     "sideBar.foreground": "#e4e4e4",
-    "sideBarSectionHeader.background": "#1a1a1a",
+    "sideBarSectionHeader.background": "#272822",
     "sideBarSectionHeader.foreground": "#e4e4e4",
     "sideBarTitle.foreground": "#e4e4e4",
-    "sideBar.border": "#181818",
+    "sideBar.border": "#272822",
 
     // ---- 活动栏 ----
-    "activityBar.background": "#111111",
+    "activityBar.background": "#1e1f1c",
     "activityBar.foreground": "#e4e4e4",
-    "activityBar.inactiveForeground": "#4a4a4a",
-    "activityBar.border": "#181818",
-    "activityBar.activeBorder": "#f43753",
-    "activityBar.activeBackground": "#1a1a1a",
+    "activityBar.inactiveForeground": "#4a4b44",
+    "activityBar.border": "#272822",
+    "activityBar.activeBorder": "#c93c50",
+    "activityBar.activeBackground": "#23241f",
 
     // ---- 状态栏 ----
-    "statusBar.background": "#111111",
+    "statusBar.background": "#1e1f1c",
     "statusBar.foreground": "#e4e4e4",
-    "statusBar.border": "#181818",
-    "statusBar.noFolderBackground": "#111111",
-    "statusBar.debuggingBackground": "#111111",
+    "statusBar.border": "#272822",
+    "statusBar.noFolderBackground": "#1e1f1c",
+    "statusBar.debuggingBackground": "#1e1f1c",
 
     // ---- 标题栏 ----
-    "titleBar.activeBackground": "#181818",
+    "titleBar.activeBackground": "#272822",
     "titleBar.activeForeground": "#e4e4e4",
-    "titleBar.inactiveBackground": "#111111",
-    "titleBar.inactiveForeground": "#4a4a4a",
-    "titleBar.border": "#181818",
+    "titleBar.inactiveBackground": "#1e1f1c",
+    "titleBar.inactiveForeground": "#4a4b44",
+    "titleBar.border": "#272822",
 
     // ---- 面板 (终端 / 输出) ----
-    "panel.background": "#151515",
-    "panel.border": "#181818",
+    "panel.background": "#23241f",
+    "panel.border": "#272822",
     "panelTitle.activeForeground": "#e4e4e4",
-    "panelTitle.inactiveForeground": "#4a4a4a",
+    "panelTitle.inactiveForeground": "#4a4b44",
 
     // ---- 列表 / 树 ----
-    "list.activeSelectionBackground": "#2a2a2a",
+    "list.activeSelectionBackground": "#2f302b",
     "list.activeSelectionForeground": "#e4e4e4",
-    "list.inactiveSelectionBackground": "#222222",
+    "list.inactiveSelectionBackground": "#292a25",
     "list.inactiveSelectionForeground": "#e4e4e4",
-    "list.hoverBackground": "#222222",
+    "list.hoverBackground": "#292a25",
     "list.hoverForeground": "#e4e4e4",
-    "list.focusBackground": "#2a2a2a",
+    "list.focusBackground": "#2f302b",
     "list.focusForeground": "#e4e4e4",
-    "list.highlightForeground": "#f43753",
+    "list.highlightForeground": "#c93c50",
 
     // ---- 输入框 / 下拉 ----
-    "input.background": "#222222",
+    "input.background": "#292a25",
     "input.foreground": "#e4e4e4",
-    "input.border": "#181818",
-    "input.placeholderForeground": "#4a4a4a",
-    "dropdown.background": "#222222",
+    "input.border": "#272822",
+    "input.placeholderForeground": "#4a4b44",
+    "dropdown.background": "#292a25",
     "dropdown.foreground": "#e4e4e4",
-    "dropdown.border": "#181818",
+    "dropdown.border": "#272822",
 
     // ---- 按钮 ----
-    "button.background": "#2a2a2a",
+    "button.background": "#2f302b",
     "button.foreground": "#e4e4e4",
-    "button.hoverBackground": "#3a3a3a",
+    "button.hoverBackground": "#3e3d32",
 
     // ---- 滚动条 ----
-    "scrollbarSlider.background": "#2a2a2a",
-    "scrollbarSlider.hoverBackground": "#3a3a3a",
-    "scrollbarSlider.activeBackground": "#4a4a4a",
+    "scrollbarSlider.background": "#2f302b",
+    "scrollbarSlider.hoverBackground": "#3e3d32",
+    "scrollbarSlider.activeBackground": "#4a4b44",
 
     // ---- 边框/分割线 ----
-    "editorGroup.border": "#181818",
-    "editorGroupHeader.tabsBackground": "#151515",
-    "tab.activeBackground": "#181818",
-    "tab.inactiveBackground": "#151515",
+    "editorGroup.border": "#272822",
+    "editorGroupHeader.tabsBackground": "#23241f",
+    "tab.activeBackground": "#272822",
+    "tab.inactiveBackground": "#23241f",
     "tab.activeForeground": "#e4e4e4",
-    "tab.inactiveForeground": "#4a4a4a",
-    "tab.border": "#181818",
-    "tab.activeBorder": "#f43753",
+    "tab.inactiveForeground": "#4a4b44",
+    "tab.border": "#272822",
+    "tab.activeBorder": "#c93c50",
 
     // ---- 提示/通知 ----
-    "notification.background": "#222222",
+    "notification.background": "#292a25",
     "notification.foreground": "#e4e4e4",
-    "notificationCenter.border": "#181818",
-    "notificationToast.border": "#181818",
+    "notificationCenter.border": "#272822",
+    "notificationToast.border": "#272822",
 
     // ---- 其他 ----
-    "badge.background": "#f43753",
+    "badge.background": "#c93c50",
     "badge.foreground": "#e4e4e4",
-    "progressBar.background": "#f43753",
-    "editorWidget.background": "#222222",
-    "editorWidget.border": "#181818"
+    "progressBar.background": "#c93c50",
+    "editorWidget.background": "#292a25",
+    "editorWidget.border": "#272822"
   },
 
   // ============================================================
-  // 以下 tokenColors 全部从 Emacs gruber-darker 主题中提取
-  // 映射了 font-lock-* 等 faces 到对应的 TextMate scopes
+  // 语法高亮完全保留原版，未做任何修改
   // ============================================================
   "tokenColors": [
-    // 注释 (Comment) —— font-lock-comment-face
     {
       "name": "Comment",
       "scope": ["comment", "punctuation.definition.comment"],
       "settings": {
-        "foreground": "#cc8c3c"   // gruber-darker-brown
-        // 原主题注释无斜体，不设 fontStyle
+        "foreground": "#cc8c3c"
       }
     },
-
-    // 关键字 (Keyword) —— font-lock-keyword-face
     {
       "name": "Keyword",
       "scope": [
@@ -135,13 +130,9 @@
         "keyword.declaration"
       ],
       "settings": {
-        "foreground": "#ffdd33"   // gruber-darker-yellow
-        // 原主题关键字为粗体，可取消注释下面一行启用：
-        // "fontStyle": "bold"
+        "foreground": "#ffdd33"
       }
     },
-
-    // 函数名 (Function) —— font-lock-function-name-face
     {
       "name": "Function",
       "scope": [
@@ -150,11 +141,9 @@
         "variable.function"
       ],
       "settings": {
-        "foreground": "#96a6c8"   // gruber-darker-niagara
+        "foreground": "#96a6c8"
       }
     },
-
-    // 类型名 (Type) —— font-lock-type-face
     {
       "name": "Type",
       "scope": [
@@ -163,20 +152,16 @@
         "storage.type.primitive"
       ],
       "settings": {
-        "foreground": "#95a99f"   // gruber-darker-quartz
+        "foreground": "#95a99f"
       }
     },
-
-    // 字符串 (String) —— font-lock-string-face
     {
       "name": "String",
       "scope": "string",
       "settings": {
-        "foreground": "#73c936"   // gruber-darker-green
+        "foreground": "#73c936"
       }
     },
-
-    // 数字、布尔、常量 —— font-lock-constant-face
     {
       "name": "Constant",
       "scope": [
@@ -185,11 +170,9 @@
         "constant.boolean"
       ],
       "settings": {
-        "foreground": "#95a99f"   // 与类型同色
+        "foreground": "#95a99f"
       }
     },
-
-    // 变量、参数、成员 —— font-lock-variable-name-face
     {
       "name": "Variable",
       "scope": [
@@ -198,11 +181,9 @@
         "variable.other.member"
       ],
       "settings": {
-        "foreground": "#f4f4ff"   // gruber-darker-fg+1
+        "foreground": "#f4f4ff"
       }
     },
-
-    // 内置函数 / 常量 —— font-lock-builtin-face
     {
       "name": "Built-in",
       "scope": [
@@ -210,11 +191,9 @@
         "support.constant"
       ],
       "settings": {
-        "foreground": "#ffdd33"   // 与关键字同色
+        "foreground": "#ffdd33"
       }
     },
-
-    // 预处理器 —— font-lock-preprocessor-face
     {
       "name": "Preprocessor",
       "scope": [
@@ -222,11 +201,9 @@
         "keyword.control.import"
       ],
       "settings": {
-        "foreground": "#95a99f"   // 与类型同色
+        "foreground": "#95a99f"
       }
     },
-
-    // 错误 / 警告 —— font-lock-warning-face
     {
       "name": "Warning",
       "scope": [
@@ -234,20 +211,16 @@
         "invalid.illegal"
       ],
       "settings": {
-        "foreground": "#f43841"   // gruber-darker-red
+        "foreground": "#f43841"
       }
     },
-
-    // 运算符 —— 保持与普通文本一致
     {
       "name": "Operator",
       "scope": "keyword.operator",
       "settings": {
-        "foreground": "#e4e4ef"   // gruber-darker-fg
+        "foreground": "#e4e4ef"
       }
     },
-
-    // 标点符号 —— 保持与普通文本一致
     {
       "name": "Punctuation",
       "scope": [
@@ -256,7 +229,7 @@
         "punctuation.definition"
       ],
       "settings": {
-        "foreground": "#e4e4ef"   // gruber-darker-fg
+        "foreground": "#e4e4ef"
       }
     }
   ]
