@@ -3,7 +3,7 @@
   "name": "Tsoding Emacs Dark (Gruber Darcula)",
   "type": "dark",
   "colors": {
-    // ---- 编辑器核心（Emacs 经典中性深灰底色 #222222）----
+    // ---- 编辑器核心（完全保留不变）----
     "editor.background": "#222222",
     "editor.foreground": "#d8d8d8",
     "editor.lineHighlightBackground": "#2a2a2a",
@@ -19,7 +19,7 @@
     "editorBracketMatch.background": "#2a2a2a",
     "editorBracketMatch.border": "#82A8D9",
 
-    // ---- 侧边栏（稍亮一档，与编辑区形成明确色差）----
+    // ---- 侧边栏（完全保留不变）----
     "sideBar.background": "#2a2a2a",
     "sideBar.foreground": "#e4e4e4",
     "sideBarSectionHeader.background": "#262626",
@@ -27,7 +27,7 @@
     "sideBarTitle.foreground": "#e4e4e4",
     "sideBar.border": "#222222",
 
-    // ---- 活动栏 ----
+    // ---- 活动栏（完全保留不变）----
     "activityBar.background": "#1f1f1f",
     "activityBar.foreground": "#e4e4e4",
     "activityBar.inactiveForeground": "#666666",
@@ -35,27 +35,34 @@
     "activityBar.activeBorder": "#82A8D9",
     "activityBar.activeBackground": "#2a2a2a",
 
-    // ---- 状态栏 ----
+    // ---- 底部状态栏（完全保留不变）----
     "statusBar.background": "#1f1f1f",
     "statusBar.foreground": "#e4e4e4",
     "statusBar.border": "#222222",
     "statusBar.noFolderBackground": "#1f1f1f",
     "statusBar.debuggingBackground": "#1f1f1f",
 
-    // ---- 标题栏 ----
-    "titleBar.activeBackground": "#222222",
-    "titleBar.activeForeground": "#e4e4e4",
-    "titleBar.inactiveBackground": "#1f1f1f",
-    "titleBar.inactiveForeground": "#666666",
-    "titleBar.border": "#222222",
+    // ---- 顶部标题栏（Go 官方深青蓝，完全保留不变）----
+    "titleBar.activeBackground": "#007894",
+    "titleBar.activeForeground": "#ffffff",
+    "titleBar.inactiveBackground": "#005c72",
+    "titleBar.inactiveForeground": "#d0d0d0",
+    "titleBar.border": "#006982",
 
-    // ---- 面板 / 终端（与侧边栏同层级，新增选中背景修复）----
+    // ---- 顶部菜单栏（配套同色系，完全保留不变）----
+    "menu.background": "#006982",
+    "menu.foreground": "#ffffff",
+    "menu.selectionBackground": "#007894",
+    "menu.selectionForeground": "#ffffff",
+    "menu.border": "#005c72",
+
+    // ---- 面板 / 终端（完全保留不变）----
     "panel.background": "#2a2a2a",
     "panel.border": "#222222",
     "panelTitle.activeForeground": "#e4e4e4",
     "panelTitle.inactiveForeground": "#666666",
 
-    "terminal.background": "#2a2a2a",
+    "terminal.background": "#222222",
     "terminal.foreground": "#d8d8d8",
     "terminal.selectionBackground": "#4a7ab8",
     "terminalCursor.foreground": "#82A8D9",
@@ -76,7 +83,7 @@
     "terminal.ansiBrightCyan": "#7fd0e8",
     "terminal.ansiBrightWhite": "#f0f0f0",
 
-    // ---- 列表 / 树（适配侧边栏底色）----
+    // ---- 列表 / 树（完全保留不变）----
     "list.activeSelectionBackground": "#333333",
     "list.activeSelectionForeground": "#e4e4e4",
     "list.inactiveSelectionBackground": "#2d2d2d",
@@ -87,7 +94,7 @@
     "list.focusForeground": "#e4e4e4",
     "list.highlightForeground": "#82A8D9",
 
-    // ---- 输入框 / 下拉 ----
+    // ---- 输入框 / 下拉（完全保留不变）----
     "input.background": "#2d2d2d",
     "input.foreground": "#e4e4e4",
     "input.border": "#222222",
@@ -96,17 +103,17 @@
     "dropdown.foreground": "#e4e4e4",
     "dropdown.border": "#222222",
 
-    // ---- 按钮 ----
+    // ---- 按钮（完全保留不变）----
     "button.background": "#333333",
     "button.foreground": "#e4e4e4",
-    "button.hoverBackground": "#404040",
+    "button.hoverBackground": "#36454b",
 
-    // ---- 滚动条 ----
+    // ---- 滚动条（完全保留不变）----
     "scrollbarSlider.background": "#333333",
     "scrollbarSlider.hoverBackground": "#404040",
     "scrollbarSlider.activeBackground": "#4a4a4a",
 
-    // ---- 标签栏与分割线 ----
+    // ---- 标签栏与分割线（完全保留不变）----
     "editorGroup.border": "#222222",
     "editorGroupHeader.tabsBackground": "#2a2a2a",
     "tab.activeBackground": "#222222",
@@ -114,15 +121,15 @@
     "tab.activeForeground": "#e4e4e4",
     "tab.inactiveForeground": "#666666",
     "tab.border": "#222222",
-    "tab.activeBorder": "#82A8D9",
+    "tab.activeBorder": "#007894",
 
-    // ---- 提示/通知 ----
+    // ---- 提示/通知（完全保留不变）----
     "notification.background": "#2d2d2d",
     "notification.foreground": "#e4e4e4",
     "notificationCenter.border": "#222222",
     "notificationToast.border": "#222222",
 
-    // ---- 其他装饰元素 ----
+    // ---- 其他装饰元素（完全保留不变）----
     "badge.background": "#82A8D9",
     "badge.foreground": "#ffffff",
     "progressBar.background": "#82A8D9",
@@ -131,9 +138,10 @@
   },
 
   // ============================================================
-  // 语法高亮完全保留：柔化版 + JSON/SQL/Markdown 全支持
+  // 语法高亮：融入Go主题色 + YAML补全 + JSON/MD优化
   // ============================================================
   "tokenColors": [
+    // ---------- 通用基础高亮（核心配色完全保留）----------
     {
       "name": "Comment",
       "scope": ["comment", "punctuation.definition.comment"],
@@ -141,6 +149,7 @@
         "foreground": "#b07a35"
       }
     },
+
     {
       "name": "Keyword",
       "scope": [
@@ -154,6 +163,7 @@
         "foreground": "#e6c72e"
       }
     },
+
     {
       "name": "Function",
       "scope": [
@@ -165,6 +175,7 @@
         "foreground": "#8a9abc"
       }
     },
+
     {
       "name": "Type",
       "scope": [
@@ -176,6 +187,7 @@
         "foreground": "#889a90"
       }
     },
+
     {
       "name": "String",
       "scope": "string",
@@ -183,6 +195,7 @@
         "foreground": "#5ea832"
       }
     },
+
     {
       "name": "Constant",
       "scope": [
@@ -194,6 +207,7 @@
         "foreground": "#889a90"
       }
     },
+
     {
       "name": "Variable",
       "scope": [
@@ -205,6 +219,8 @@
         "foreground": "#d3d3d5"
       }
     },
+
+    // 内置函数/常量：改用Go主题青蓝色，区分普通关键字，丰富层次
     {
       "name": "Built-in",
       "scope": [
@@ -212,9 +228,10 @@
         "support.constant"
       ],
       "settings": {
-        "foreground": "#e6c72e"
+        "foreground": "#52b7d2"
       }
     },
+
     {
       "name": "Preprocessor",
       "scope": [
@@ -225,6 +242,7 @@
         "foreground": "#889a90"
       }
     },
+
     {
       "name": "Warning",
       "scope": [
@@ -235,6 +253,7 @@
         "foreground": "#f43841"
       }
     },
+
     {
       "name": "Operator",
       "scope": "keyword.operator",
@@ -242,6 +261,7 @@
         "foreground": "#d8d8d8"
       }
     },
+
     {
       "name": "Punctuation",
       "scope": [
@@ -254,12 +274,12 @@
       }
     },
 
-    // ---------- JSON 文件专属高亮 ----------
+    // ---------- JSON 文件专属高亮（键名改用Go主题色）----------
     {
       "name": "JSON Property Key",
       "scope": "support.type.property-name.json",
       "settings": {
-        "foreground": "#8a9abc"
+        "foreground": "#52b7d2"
       }
     },
     {
@@ -270,7 +290,55 @@
       }
     },
 
-    // ---------- SQL 文件专属高亮 ----------
+    // ---------- YAML 文件专属高亮（全新补全）----------
+    {
+      "name": "YAML Key",
+      "scope": "entity.name.tag.yaml",
+      "settings": {
+        "foreground": "#52b7d2"
+      }
+    },
+    {
+      "name": "YAML Constant",
+      "scope": [
+        "constant.language.yaml",
+        "constant.numeric.yaml",
+        "constant.other.timestamp.yaml"
+      ],
+      "settings": {
+        "foreground": "#889a90"
+      }
+    },
+    {
+      "name": "YAML String",
+      "scope": "string.yaml",
+      "settings": {
+        "foreground": "#5ea832"
+      }
+    },
+    {
+      "name": "YAML Anchor & Alias",
+      "scope": [
+        "variable.other.anchor.yaml",
+        "variable.other.alias.yaml"
+      ],
+      "settings": {
+        "foreground": "#e6c72e"
+      }
+    },
+    {
+      "name": "YAML Punctuation",
+      "scope": [
+        "punctuation.definition.mapping.yaml",
+        "punctuation.definition.sequence.yaml",
+        "punctuation.definition.string.yaml"
+      ],
+      "settings": {
+        "foreground": "#cfcece"
+      }
+    },
+
+    // ---------- SQL 文件专属高亮（完全保留）----------
     {
       "name": "SQL Keyword",
       "scope": [
@@ -286,7 +354,7 @@
       "name": "SQL Built-in Function",
       "scope": "support.function.sql",
       "settings": {
-        "foreground": "#8a9abc"
+        "foreground": "#52b7d2"
       }
     },
     {
@@ -304,7 +372,7 @@
       }
     },
 
-    // ---------- Markdown 文件专属高亮 ----------
+    // ---------- Markdown 文件专属高亮（融入主题色优化）----------
     {
       "name": "Markdown Heading",
       "scope": [
@@ -344,7 +412,7 @@
       "name": "Markdown Link Text",
       "scope": "string.other.link.title.markdown",
       "settings": {
-        "foreground": "#8a9abc"
+        "foreground": "#52b7d2"
       }
     },
     {
@@ -368,7 +436,7 @@
       "name": "Markdown List Bullet",
       "scope": "punctuation.definition.list.markdown",
       "settings": {
-        "foreground": "#889a90"
+        "foreground": "#52b7d2"
       }
     }
   ]

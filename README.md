@@ -1,59 +1,70 @@
 # Plain Light
 
-A minimal, eye-friendly light theme for VS Code, inspired by Vim's default style. No fancy highlights, just clean code reading experience.
+一款极简护眼的 VS Code 浅色主题，支持亮/暗两种主题，暗色主题源自Tsoding Emacs Dark (Gruber Darcula)风格。摒弃冗余的彩虹式高亮，回归干净纯粹的代码阅读体验。
 
-## 🌟 Features
-- **Minimal Highlight**: Only core keywords are bolded, custom identifiers (functions/properties) are unbolded.
-- **Unified UI**: Consistent color for title bar, sidebar, and status bar (soft gray `#f5f5f5`), no visual fragmentation.
-- **Eye-Friendly**: Low-saturation colors, warm off-white background (`#f8f8f8`), reduces eye strain during long coding sessions.
-- **Rich Terminal Colors**: Terminal background is slightly darker (`#f0f0f0`) than editor, with soft ANSI colors for better readability.
+## ✨ 核心特性
+- **克制的语法高亮**：仅对核心关键字做加粗处理，函数、属性等自定义标识符保持原色，大幅降低视觉噪音，让注意力聚焦在代码逻辑本身
+- **一体化界面视觉**：标题栏、侧边栏、状态栏统一使用柔和浅灰 `#f5f5f5`，消除界面色块割裂感，视觉更整体统一
+- **长时间编码护眼**：低饱和配色 + 暖调米白编辑器底色 `#f8f8f8`，弱化强光刺激，显著降低日间长时间编码的视觉疲劳
+- **完整终端配色体系**：终端底色 `#f0f0f0` 略深于编辑器形成自然层级，搭配柔和 ANSI 色系，命令输出清晰不刺眼
 
-## 📸 Screenshots
-### Code Preview (Go Language)
-![Code Preview](https://github.com/hajiboom/plain-light/blob/main/images/screen-go.png)
-*Note: Screenshot shows Go code with Plain Light theme, highlighting core keywords and minimal syntax styling.*
+## 📸 效果预览
+### Go 语言代码效果
 
-## 🚀 Installation
-### Method 1: Install from VS Code Marketplace
-1. Open VS Code → Extensions (Ctrl+Shift+X)
-2. Search for "Plain Light"
-3. Click "Install" and activate the theme (Ctrl+K → Ctrl+T)
+*仅保留核心语法区分，代码结构清晰不杂乱*
 
-### Method 2: Install from VSIX (Offline)
-1. Download the latest VSIX file from [Releases](https://github.com/your-username/plain-light/releases)
-2. Open VS Code → Extensions → Click "..." → "Install from VSIX..."
-3. Select the downloaded VSIX file and restart VS Code
+## 🚀 安装方式
+### 方式一：插件市场安装（推荐）
+1. 打开 VS Code → 扩展面板（快捷键 `Ctrl+Shift+X` / `Cmd+Shift+X`）
+2. 搜索 `Plain Light`
+3. 点击「安装」，完成后通过快捷键 `Ctrl+K Ctrl+T` / `Cmd+K Cmd+T` 切换主题即可
 
-## 🎨 Color Palette
-| Element               | Color Code |
-|-----------------------|------------|
-| Editor Background     | #f8f8f8    |
-| UI Background (Sidebar/Title Bar) | #f5f5f5 |
-| Terminal Background   | #f0f0f0    |
-| Core Keywords         | #000080 (bold) |
-| Strings               | #a31515 (italic) |
-| Comments              | #608b4e (italic) |
-| Numbers               | #098658 (italic) |
+### 方式二：离线 VSIX 安装
+1. 从 [Releases 页面](https://github.com/your-username/plain-light/releases) 下载最新版 `.vsix` 安装包
+2. 打开 VS Code 扩展面板 → 点击右上角「...」→ 选择「从 VSIX 安装...」
+3. 选中下载的文件，重启 VS Code 即可生效
 
-## 🔧 Customization
-If you want to adjust colors or highlights, you can:
-1. Fork this repository
-2. Modify `themes/plain-light.json`
-3. Package into VSIX (using `vsce package`) and install locally
+## 🎨 配色规范
+| 元素 | 色值 | 说明 |
+|---|---|---|
+| 编辑器背景 | `#f8f8f8` | 暖调米白，柔和不刺眼 |
+| 通用界面背景（侧边栏/标题栏/状态栏） | `#f5f5f5` | 统一浅灰，层次自然 |
+| 终端背景 | `#f0f0f0` | 略深于编辑器，区分功能层级 |
+| 核心关键字 | `#000080`（加粗） | 经典深蓝，醒目不张扬 |
+| 字符串 | `#a31515`（斜体） | 低饱和暗红，区分度适中 |
+| 注释 | `#608b4e`（斜体） | 灰绿色，不干扰主代码阅读 |
+| 数字常量 | `#098658`（斜体） | 暗绿色，与字符串自然区分 |
 
-## 🐹 About the Icon
-The icon features a minimal Gopher mascot, matching the theme's simple and clean style. Gopher is the mascot of Go language, representing simplicity and efficiency.
+## 🔧 自定义调整
+如果需要微调配色或高亮规则，可选择两种方式：
 
-## 📝 Changelog
-### v0.0.1 (Initial Release)
-- First stable version with core features:
-  - Minimal syntax highlighting
-  - Unified UI colors
-  - Eye-friendly color scheme
-  - Rich terminal colors
+### 轻量修改（无需重新打包）
+直接在 VS Code 的 `settings.json` 中，通过 `workbench.colorCustomizations` 和 `editor.tokenColorCustomizations` 字段覆盖对应配置即可，适合局部颜色微调。
 
-## 🤝 Contributing
-Contributions are welcome! Feel free to open issues or pull requests to improve the theme.
+### 深度定制
+1. Fork 本仓库
+2. 修改 `themes/plain-light.json` 中的配色规则
+3. 使用 `vsce package` 命令打包为 VSIX 文件，本地安装使用
 
-## 📄 License
+## 💡 设计理念
+多数浅色主题要么过度高亮、色彩杂乱，要么对比度不足、阅读费力。julia: simple-light 遵循「少即是多」的原则：
+- 拒绝彩虹式高亮，只保留最必要的语法区分，减少视觉负担
+- 统一界面灰度层级，避免多色块分散注意力
+- 所有色值均经过长时间阅读测试，兼顾辨识度与舒适度，适配日间办公、靠窗自然光等多种光线环境
+- 暗色主题融合了Go.dev配色
+
+## 🐹 关于图标
+主题图标采用极简风格的 Gopher 形象，与主题简洁高效的调性一致。Gopher 是 Go 语言的吉祥物，也代表着简单、务实的编码理念。
+
+## 📝 更新日志
+### v0.0.1（初始版本）
+- 发布首个稳定版本
+- 支持核心语法高亮规则
+- 统一全界面 UI 配色
+- 补全终端 ANSI 全色值
+
+## 🤝 参与贡献
+欢迎提交 Issue 反馈问题，或提交 PR 优化主题、补充更多语言的高亮适配，共同完善使用体验。
+
+## 📄 开源协议
 MIT License © 2024 [Your Name]

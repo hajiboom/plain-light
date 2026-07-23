@@ -1,6 +1,6 @@
 {
-  "name": "plain-light",
-  "displayName": "Plain Light",
+  "name": "julia",
+  "displayName": "Julia",
   "icon": "images/icon.png",
   "description": "A minimal light theme, no fancy highlights, eye-friendly",
   "version": "0.0.1",
