@@ -16,7 +16,7 @@
 ## 🚀 安装方式
 ### 方式一：插件市场安装（推荐）
 1. 打开 VS Code → 扩展面板（快捷键 `Ctrl+Shift+X` / `Cmd+Shift+X`）
-2. 搜索 `Plain Light`
+2. 搜索 `julia`
 3. 点击「安装」，完成后通过快捷键 `Ctrl+K Ctrl+T` / `Cmd+K Cmd+T` 切换主题即可
 
 ### 方式二：离线 VSIX 安装

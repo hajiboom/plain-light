@@ -42,14 +42,14 @@
     "statusBar.noFolderBackground": "#1f1f1f",
     "statusBar.debuggingBackground": "#1f1f1f",
 
-    // ---- 顶部标题栏（Go 官方深青蓝，完全保留不变）----
+    // ---- 顶部标题栏（完全保留不变）----
     "titleBar.activeBackground": "#007894",
     "titleBar.activeForeground": "#ffffff",
     "titleBar.inactiveBackground": "#005c72",
     "titleBar.inactiveForeground": "#d0d0d0",
     "titleBar.border": "#006982",
 
-    // ---- 顶部菜单栏（配套同色系，完全保留不变）----
+    // ---- 顶部菜单栏（完全保留不变）----
     "menu.background": "#006982",
     "menu.foreground": "#ffffff",
     "menu.selectionBackground": "#007894",
@@ -83,16 +83,16 @@
     "terminal.ansiBrightCyan": "#7fd0e8",
     "terminal.ansiBrightWhite": "#f0f0f0",
 
-    // ---- 列表 / 树（完全保留不变）----
-    "list.activeSelectionBackground": "#333333",
-    "list.activeSelectionForeground": "#e4e4e4",
-    "list.inactiveSelectionBackground": "#2d2d2d",
+    // ---- 列表 / 树（选中背景加大对比度，带青蓝调）----
+    "list.activeSelectionBackground": "#3a454d",
+    "list.activeSelectionForeground": "#ffffff",
+    "list.inactiveSelectionBackground": "#333c42",
     "list.inactiveSelectionForeground": "#e4e4e4",
-    "list.hoverBackground": "#2d2d2d",
+    "list.hoverBackground": "#323232",
     "list.hoverForeground": "#e4e4e4",
-    "list.focusBackground": "#333333",
-    "list.focusForeground": "#e4e4e4",
-    "list.highlightForeground": "#82A8D9",
+    "list.focusBackground": "#3a454d",
+    "list.focusForeground": "#ffffff",
+    "list.highlightForeground": "#52b7d2",
 
     // ---- 输入框 / 下拉（完全保留不变）----
     "input.background": "#2d2d2d",
@@ -138,10 +138,9 @@
   },
 
   // ============================================================
-  // 语法高亮：融入Go主题色 + YAML补全 + JSON/MD优化
+  // 语法高亮完全保留不变
   // ============================================================
   "tokenColors": [
-    // ---------- 通用基础高亮（核心配色完全保留）----------
     {
       "name": "Comment",
       "scope": ["comment", "punctuation.definition.comment"],
@@ -220,7 +219,6 @@
       }
     },
 
-    // 内置函数/常量：改用Go主题青蓝色，区分普通关键字，丰富层次
     {
       "name": "Built-in",
       "scope": [
@@ -274,7 +272,7 @@
       }
     },
 
-    // ---------- JSON 文件专属高亮（键名改用Go主题色）----------
+    // ---------- JSON 文件专属高亮 ----------
     {
       "name": "JSON Property Key",
       "scope": "support.type.property-name.json",
@@ -290,7 +288,7 @@
       }
     },
 
-    // ---------- YAML 文件专属高亮（全新补全）----------
+    // ---------- YAML 文件专属高亮 ----------
     {
       "name": "YAML Key",
       "scope": "entity.name.tag.yaml",
@@ -338,7 +336,7 @@
       }
     },
 
-    // ---------- SQL 文件专属高亮（完全保留）----------
+    // ---------- SQL 文件专属高亮 ----------
     {
       "name": "SQL Keyword",
       "scope": [
@@ -372,7 +370,7 @@
       }
     },
 
-    // ---------- Markdown 文件专属高亮（融入主题色优化）----------
+    // ---------- Markdown 文件专属高亮 ----------
     {
       "name": "Markdown Heading",
       "scope": [
