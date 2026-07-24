@@ -3,68 +3,68 @@
   "name": "Tsoding Emacs Dark (Gruber Darcula)",
   "type": "dark",
   "colors": {
-    // ---- 编辑器核心（完全保留不变）----
-    "editor.background": "#222222",
-    "editor.foreground": "#d8d8d8",
-    "editor.lineHighlightBackground": "#2a2a2a",
-    "editor.selectionBackground": "#383838",
-    "editor.selectionHighlightBackground": "#2f2f2f",
+    // ---- 编辑器整体UI全部采用One Half Dark色系，只更换全部界面背景层级，语法高亮完全不动 ----
+    "editor.background": "#1e222a",
+    "editor.foreground": "#dcdfe4",
+    "editor.lineHighlightBackground": "#282c34",
+    "editor.selectionBackground": "#3e4451",
+    "editor.selectionHighlightBackground": "#343a46",
     "editorCursor.foreground": "#82A8D9",
-    "editorWhitespace.foreground": "#333333",
-    "editorIndentGuide.background": "#2a2a2a",
-    "editorIndentGuide.activeBackground": "#404040",
-    "editorLineNumber.foreground": "#444444",
-    "editorLineNumber.activeForeground": "#e4e4e4",
-    "editorRuler.foreground": "#2a2a2a",
-    "editorBracketMatch.background": "#2a2a2a",
+    "editorWhitespace.foreground": "#3a3f4b",
+    "editorIndentGuide.background": "#282c34",
+    "editorIndentGuide.activeBackground": "#4b5263",
+    "editorLineNumber.foreground": "#5c6374",
+    "editorLineNumber.activeForeground": "#dcdfe4",
+    "editorRuler.foreground": "#282c34",
+    "editorBracketMatch.background": "#282c34",
     "editorBracketMatch.border": "#82A8D9",
 
-    // ---- 侧边栏（完全保留不变）----
-    "sideBar.background": "#2a2a2a",
-    "sideBar.foreground": "#e4e4e4",
-    "sideBarSectionHeader.background": "#262626",
-    "sideBarSectionHeader.foreground": "#e4e4e4",
-    "sideBarTitle.foreground": "#e4e4e4",
-    "sideBar.border": "#222222",
+    // ---- 侧边栏 One Half Dark 层级 ----
+    "sideBar.background": "#272c35",
+    "sideBar.foreground": "#dcdfe4",
+    "sideBarSectionHeader.background": "#22262e",
+    "sideBarSectionHeader.foreground": "#dcdfe4",
+    "sideBarTitle.foreground": "#dcdfe4",
+    "sideBar.border": "#1e222a",
 
-    // ---- 活动栏（完全保留不变）----
-    "activityBar.background": "#1f1f1f",
-    "activityBar.foreground": "#e4e4e4",
-    "activityBar.inactiveForeground": "#666666",
-    "activityBar.border": "#222222",
+    // ---- 活动栏 ----
+    "activityBar.background": "#181b21",
+    "activityBar.foreground": "#dcdfe4",
+    "activityBar.inactiveForeground": "#5c6374",
+    "activityBar.border": "#1e222a",
     "activityBar.activeBorder": "#82A8D9",
-    "activityBar.activeBackground": "#2a2a2a",
+    "activityBar.activeBackground": "#272c35",
 
-    // ---- 底部状态栏（完全保留不变）----
-    "statusBar.background": "#1f1f1f",
-    "statusBar.foreground": "#e4e4e4",
-    "statusBar.border": "#222222",
-    "statusBar.noFolderBackground": "#1f1f1f",
-    "statusBar.debuggingBackground": "#1f1f1f",
+    // ---- 底部状态栏 ----
+    "statusBar.background": "#181b21",
+    "statusBar.foreground": "#dcdfe4",
+    "statusBar.border": "#1e222a",
+    "statusBar.noFolderBackground": "#181b21",
+    "statusBar.debuggingBackground": "#181b21",
 
-    // ---- 顶部标题栏（完全保留不变）----
+    // ---- 顶部标题栏 Go 蓝色完全沿用旧版配置，无改动 ----
     "titleBar.activeBackground": "#007894",
     "titleBar.activeForeground": "#ffffff",
     "titleBar.inactiveBackground": "#005c72",
     "titleBar.inactiveForeground": "#d0d0d0",
     "titleBar.border": "#006982",
 
-    // ---- 顶部菜单栏（完全保留不变）----
+    // ---- 顶部菜单栏 沿用旧版 ----
     "menu.background": "#006982",
     "menu.foreground": "#ffffff",
     "menu.selectionBackground": "#007894",
     "menu.selectionForeground": "#ffffff",
     "menu.border": "#005c72",
 
-    // ---- 面板 / 终端（完全保留不变）----
-    "panel.background": "#2a2a2a",
-    "panel.border": "#222222",
-    "panelTitle.activeForeground": "#e4e4e4",
-    "panelTitle.inactiveForeground": "#666666",
+    // ---- 面板 / 终端 背景同步One Half Dark底色 ----
+    "panel.background": "#272c35",
+    "panel.border": "#1e222a",
+    "panelTitle.activeForeground": "#dcdfe4",
+    "panelTitle.inactiveForeground": "#5c6374",
 
-    "terminal.background": "#222222",
-    "terminal.foreground": "#d8d8d8",
-    "terminal.selectionBackground": "#4a7ab8",
+    "terminal.background": "#1e222a",
+    "terminal.foreground": "#dcdfe4",
+    "terminal.selectionBackground": "#3e4451",
     "terminalCursor.foreground": "#82A8D9",
     "terminal.ansiBlack": "#1a1a1a",
     "terminal.ansiRed": "#b02b3d",
@@ -83,7 +83,7 @@
     "terminal.ansiBrightCyan": "#7fd0e8",
     "terminal.ansiBrightWhite": "#f0f0f0",
 
-    // ---- 列表 / 树（选中背景加大对比度，带青蓝调）----
+    // ---- 列表选中样式保留你最终定稿的高对比青蓝选中样式，不换色 ----
     "list.activeSelectionBackground": "#3a454d",
     "list.activeSelectionForeground": "#ffffff",
     "list.inactiveSelectionBackground": "#333c42",
@@ -94,52 +94,45 @@
     "list.focusForeground": "#ffffff",
     "list.highlightForeground": "#52b7d2",
 
-    // ---- 输入框 / 下拉（完全保留不变）----
-    "input.background": "#2d2d2d",
-    "input.foreground": "#e4e4e4",
-    "input.border": "#222222",
-    "input.placeholderForeground": "#666666",
-    "dropdown.background": "#2d2d2d",
-    "dropdown.foreground": "#e4e4e4",
-    "dropdown.border": "#222222",
+    // ---- 输入框、按钮、滚动条等UI背景适配One Half Dark，交互色保留旧逻辑 ----
+    "input.background": "#2c313a",
+    "input.foreground": "#dcdfe4",
+    "input.border": "#1e222a",
+    "input.placeholderForeground": "#5c6374",
+    "dropdown.background": "#2c313a",
+    "dropdown.foreground": "#dcdfe4",
+    "dropdown.border": "#1e222a",
 
-    // ---- 按钮（完全保留不变）----
     "button.background": "#333333",
     "button.foreground": "#e4e4e4",
     "button.hoverBackground": "#36454b",
 
-    // ---- 滚动条（完全保留不变）----
     "scrollbarSlider.background": "#333333",
     "scrollbarSlider.hoverBackground": "#404040",
     "scrollbarSlider.activeBackground": "#4a4a4a",
 
-    // ---- 标签栏与分割线（完全保留不变）----
-    "editorGroup.border": "#222222",
-    "editorGroupHeader.tabsBackground": "#2a2a2a",
-    "tab.activeBackground": "#222222",
-    "tab.inactiveBackground": "#2a2a2a",
-    "tab.activeForeground": "#e4e4e4",
-    "tab.inactiveForeground": "#666666",
-    "tab.border": "#222222",
+    "editorGroup.border": "#1e222a",
+    "editorGroupHeader.tabsBackground": "#272c35",
+    "tab.activeBackground": "#1e222a",
+    "tab.inactiveBackground": "#272c35",
+    "tab.activeForeground": "#dcdfe4",
+    "tab.inactiveForeground": "#5c6374",
+    "tab.border": "#1e222a",
     "tab.activeBorder": "#007894",
 
-    // ---- 提示/通知（完全保留不变）----
-    "notification.background": "#2d2d2d",
-    "notification.foreground": "#e4e4e4",
-    "notificationCenter.border": "#222222",
-    "notificationToast.border": "#222222",
+    "notification.background": "#2c313a",
+    "notification.foreground": "#dcdfe4",
+    "notificationCenter.border": "#1e222a",
+    "notificationToast.border": "#1e222a",
 
-    // ---- 其他装饰元素（完全保留不变）----
     "badge.background": "#82A8D9",
     "badge.foreground": "#ffffff",
     "progressBar.background": "#82A8D9",
-    "editorWidget.background": "#2d2d2d",
-    "editorWidget.border": "#222222"
+    "editorWidget.background": "#2c313a",
+    "editorWidget.border": "#1e222a"
   },
 
-  // ============================================================
-  // 语法高亮完全保留不变
-  // ============================================================
+  // 【重点完全原样照搬】tokenColors 语法高亮一分一毫未改动，沿用你长期使用的全套配色
   "tokenColors": [
     {
       "name": "Comment",
