@@ -3,7 +3,15 @@
   "name": "simple-light",
   "type": "light",
   "colors": {
-    // ---- 编辑器核心（全部保留，无改动）----
+    // ========== 全局：边框 & 景深系统 ==========
+    // 设计思路：编辑器是离用户最近的"主面板"（最亮白），
+    // 侧边栏/面板/状态栏逐层后退（渐暗），
+    // 面板之间的灰色接缝线模拟阴影缝隙，制造立体感。
+    "contrastBorder": "#d0d0d0",
+    "focusBorder": "#007894",
+    "widget.shadow": "#00000012",
+
+    // ---- 编辑器核心：最亮 = 离用户最近 ----
     "editor.background": "#fafafa",
     "editor.foreground": "#242424",
     "editorLineNumber.foreground": "#9e9e9e",
@@ -13,54 +21,57 @@
     "editor.selectionHighlightBackground": "#e8f0ff",
     "editorCursor.foreground": "#234ebb",
     "editorWhitespace.foreground": "#e0e0e0",
-    "editorIndentGuide.background": "#e8e8e8",
-    "editorIndentGuide.activeBackground": "#c8c8c8",
-    "editorRuler.foreground": "#e8e8e8",
+    "editorIndentGuide.background1": "#e8e8e8",
+    "editorIndentGuide.activeBackground1": "#c8c8c8",
+    "editorRuler.foreground": "#e8e8e880",
     "editorBracketMatch.background": "#e8f0ff",
     "editorBracketMatch.border": "#1546c1",
+    "editor.findMatchBackground": "#fff3cd",
+    "editor.findMatchHighlightBackground": "#fff3cd80",
 
-    // ---- 侧边栏（完全保留不变）----
-    "sideBar.background": "#f5f5f5",
+    // ---- 侧边栏：第二层，灰色接缝制造内凹感 ----
+    "sideBar.background": "#f2f2f2",
     "sideBar.foreground": "#242424",
-    "sideBarSectionHeader.background": "#eeeeee",
+    "sideBarSectionHeader.background": "#e8e8e8",
     "sideBarSectionHeader.foreground": "#242424",
     "sideBarTitle.foreground": "#242424",
-    "sideBar.border": "#e8e8e8",
+    "sideBar.border": "#d0d0d0",
 
-    // ---- 活动栏（完全保留不变）----
-    "activityBar.background": "#f0f0f0",
+    // ---- 活动栏：最深层 = 最远，顶部用细浅灰线分隔 ----
+    "activityBar.background": "#e8e8e8",
     "activityBar.foreground": "#242424",
     "activityBar.inactiveForeground": "#9e9e9e",
-    "activityBar.border": "#e8e8e8",
+    "activityBar.border": "#d0d0d0",
     "activityBar.activeBorder": "#0e69b3",
-    "activityBar.activeBackground": "#f5f5f5",
+    "activityBar.activeBackground": "#f2f2f2",
 
-    // ========== 顶部标题栏 Go 青蓝不变，优化菜单栏文字对比度，杜绝浅字融于蓝底 ==========
+    // ========== 顶部标题栏 Go 青蓝 —— 完全保留，不做任何修改 ==========
     "titleBar.activeBackground": "#007894",
     "titleBar.activeForeground": "#ffffff",
     "titleBar.inactiveBackground": "#005c72",
     "titleBar.inactiveForeground": "#f2f2f2",
     "titleBar.border": "#006982",
 
-    // "menu.background": "#006982",
-    // "menu.foreground": "#ffffff",
-    // "menu.selectionBackground": "#007894",
-    // "menu.selectionForeground": "#ffffff",
-    // "menu.border": "#005c72",
+    // ---- 菜单栏独立于标题栏，清晰边框 ----
+    "menu.background": "#ffffff",
+    "menu.foreground": "#242424",
+    "menu.selectionBackground": "#d6e4ff",
+    "menu.selectionForeground": "#242424",
+    "menu.border": "#d0d0d0",
 
-    // ========== 底部状态栏（完全保留不变）==========
-    "statusBar.background": "#f0f0f0",
+    // ---- 底部状态栏：深层，顶部接缝分隔 ----
+    "statusBar.background": "#e8e8e8",
     "statusBar.foreground": "#242424",
-    "statusBar.border": "#e8e8e8",
+    "statusBar.border": "#d0d0d0",
     "statusBar.debuggingBackground": "#f5e0d0",
 
-    // ---- 面板 / 终端（完全保留不变）----
-    "panel.background": "#f5f5f5",
-    "panel.border": "#e8e8e8",
+    // ---- 面板 / 终端：第二层，顶部灰色接缝分隔 ----
+    "panel.background": "#f2f2f2",
+    "panel.border": "#d0d0d0",
     "panelTitle.activeForeground": "#242424",
     "panelTitle.inactiveForeground": "#9e9e9e",
 
-    "terminal.background": "#f5f5f5",
+    "terminal.background": "#f2f2f2",
     "terminal.foreground": "#242424",
     "terminal.ansiBlack": "#1a1a1a",
     "terminal.ansiRed": "#b02b3d",
@@ -79,7 +90,7 @@
     "terminal.ansiBrightCyan": "#0090b8",
     "terminal.ansiBrightWhite": "#f0f0f0",
 
-    // ---- 列表 / 树（完全保留不变）----
+    // ---- 列表 / 树：清晰选中边框 ----
     "list.activeSelectionBackground": "#d6e4ff",
     "list.activeSelectionForeground": "#242424",
     "list.inactiveSelectionBackground": "#e8e8e8",
@@ -90,59 +101,68 @@
     "list.focusForeground": "#242424",
     "list.highlightForeground": "#007894",
 
-    // ---- 输入框 / 下拉（完全保留不变）----
+    // ---- 输入框 / 下拉：凸起控件的边框 ----
     "input.background": "#ffffff",
     "input.foreground": "#242424",
-    "input.border": "#e0e0e0",
+    "input.border": "#c8c8c8",
     "input.placeholderForeground": "#9e9e9e",
+    "inputOption.activeBorder": "#007894",
     "dropdown.background": "#ffffff",
     "dropdown.foreground": "#242424",
-    "dropdown.border": "#e0e0e0",
+    "dropdown.border": "#c8c8c8",
 
-    // ---- 按钮（完全保留不变）----
+    // ---- 按钮：微凸起 ----
     "button.background": "#e0e0e0",
     "button.foreground": "#242424",
     "button.hoverBackground": "#d0d0d0",
+    "button.border": "#c8c8c8",
 
-    // ---- 滚动条（完全保留不变）----
+    // ---- 滚动条：立体滑块 ----
     "scrollbarSlider.background": "#d0d0d0",
     "scrollbarSlider.hoverBackground": "#c0c0c0",
     "scrollbarSlider.activeBackground": "#b0b0b0",
 
-    // ---- 标签栏重点适配：区分激活标签蓝边框，保证标签文字清晰度，浅灰文字全部加深 ----
-    "editorGroup.border": "#e8e8e8",
-    "editorGroupHeader.tabsBackground": "#f5f5f5",
+    // ---- 标签栏：接缝线 + 激活标签的蓝色顶部边框 ----
+    "editorGroup.border": "#d0d0d0",
+    "editorGroupHeader.tabsBackground": "#f2f2f2",
+    "editorGroupHeader.border": "#d0d0d0",
     "tab.activeBackground": "#fafafa",
-    "tab.inactiveBackground": "#f5f5f5",
+    "tab.inactiveBackground": "#f2f2f2",
     "tab.activeForeground": "#000000",
-    "tab.inactiveForeground": "#444444",
-    "tab.border": "#e8e8e8",
+    "tab.inactiveForeground": "#555555",
+    "tab.border": "#d0d0d0",
     "tab.activeBorder": "#007894",
+    "tab.activeBorderTop": "#007894",
+    "tab.unfocusedActiveBorderTop": "#d0d0d0",
 
-    // ---- 提示/通知（完全保留不变）----
-    "notification.background": "#ffffff",
-    "notification.foreground": "#242424",
-    "notificationCenter.border": "#e8e8e8",
-    "notificationToast.border": "#e8e8e8",
+    // ---- 提示/通知：浮层立体感 ----
+    "notifications.background": "#ffffff",
+    "notifications.foreground": "#242424",
 
-    // ---- 其他（完全保留不变）----
+    // ---- 其他：编辑器浮层阴影 ----
     "badge.background": "#007894",
     "badge.foreground": "#ffffff",
     "progressBar.background": "#007894",
     "editorWidget.background": "#ffffff",
-    "editorWidget.border": "#e8e8e8",
-    "editor.findMatchBackground": "#fff3cd",
+    "editorWidget.border": "#c8c8c8",
+    "editorSuggestWidget.background": "#ffffff",
+    "editorSuggestWidget.border": "#c8c8c8",
+    "editorSuggestWidget.selectedBackground": "#e8f0ff",
+    "editorHoverWidget.background": "#ffffff",
+    "editorHoverWidget.border": "#c8c8c8",
     "list.activeSelectionIconForeground": "#ffffff"
   },
 
+  // ========== 代码高亮：针对浅色背景全面优化 ==========
+  // 灵感来自 GitHub Light / IntelliJ Light，强调色彩对比度和可读性
   "tokenColors": [
-    // ---------- 通用基础高亮（完全保留不变）----------
+    // ---------- 通用基础高亮 ----------
     {
       "name": "Comment",
       "scope": ["comment", "punctuation.definition.comment"],
       "settings": {
         "fontStyle": "italic",
-        "foreground": "#5c8e4e"
+        "foreground": "#6a737d"
       }
     },
 
@@ -177,7 +197,7 @@
         "entity.name.function.go"
       ],
       "settings": {
-        "foreground": "#b02b3d"
+        "foreground": "#6f42c1"
       }
     },
 
@@ -192,7 +212,7 @@
         "entity.name.type.interface.go"
       ],
       "settings": {
-        "foreground": "#0066cc"
+        "foreground": "#0550ae"
       }
     },
 
@@ -200,7 +220,7 @@
       "name": "Strings",
       "scope": "string",
       "settings": {
-        "foreground": "#216e39"
+        "foreground": "#1a7f37"
       }
     },
 
@@ -213,7 +233,7 @@
         "variable.other.enummember"
       ],
       "settings": {
-        "foreground": "#b87333"
+        "foreground": "#953800"
       }
     },
 
@@ -225,7 +245,7 @@
         "variable.other.member"
       ],
       "settings": {
-        "foreground": "#242424"
+        "foreground": "#383838"
       }
     },
 
@@ -236,7 +256,7 @@
         "support.constant"
       ],
       "settings": {
-        "foreground": "#007095"
+        "foreground": "#0969da"
       }
     },
 
@@ -247,7 +267,7 @@
         "keyword.control.import"
       ],
       "settings": {
-        "foreground": "#0066cc"
+        "foreground": "#6f42c1"
       }
     },
 
@@ -258,7 +278,7 @@
         "invalid.illegal"
       ],
       "settings": {
-        "foreground": "#b02b3d"
+        "foreground": "#cf222e"
       }
     },
 
@@ -278,32 +298,32 @@
         "punctuation.definition"
       ],
       "settings": {
-        "foreground": "#333333"
+        "foreground": "#444444"
       }
     },
 
-    // ---------- JSON 文件专属高亮（完全保留不变）----------
+    // ---------- JSON 文件专属高亮 ----------
     {
       "name": "JSON Property Key",
       "scope": "support.type.property-name.json",
       "settings": {
-        "foreground": "#007095"
+        "foreground": "#0550ae"
       }
     },
     {
       "name": "JSON Constant",
       "scope": "constant.language.json",
       "settings": {
-        "foreground": "#b02b3d"
+        "foreground": "#cf222e"
       }
     },
 
-    // ---------- YAML 文件专属高亮（完全保留不变）----------
+    // ---------- YAML 文件专属高亮 ----------
     {
       "name": "YAML Key",
       "scope": "entity.name.tag.yaml",
       "settings": {
-        "foreground": "#007095"
+        "foreground": "#0550ae"
       }
     },
     {
@@ -314,14 +334,14 @@
         "constant.other.timestamp.yaml"
       ],
       "settings": {
-        "foreground": "#b87333"
+        "foreground": "#953800"
       }
     },
     {
       "name": "YAML String",
       "scope": "string.yaml",
       "settings": {
-        "foreground": "#216e39"
+        "foreground": "#1a7f37"
       }
     },
     {
@@ -342,11 +362,11 @@
         "punctuation.definition.string.yaml"
       ],
       "settings": {
-        "foreground": "#333333"
+        "foreground": "#444444"
       }
     },
 
-    // ---------- SQL 文件专属高亮（完全保留不变）----------
+    // ---------- SQL 文件专属高亮 ----------
     {
       "name": "SQL Keyword",
       "scope": [
@@ -362,25 +382,25 @@
       "name": "SQL Built-in Function",
       "scope": "support.function.sql",
       "settings": {
-        "foreground": "#007095"
+        "foreground": "#0969da"
       }
     },
     {
       "name": "SQL Table Name",
       "scope": "entity.name.table.sql",
       "settings": {
-        "foreground": "#0066cc"
+        "foreground": "#0550ae"
       }
     },
     {
       "name": "SQL Column Name",
       "scope": "entity.name.column.sql",
       "settings": {
-        "foreground": "#242424"
+        "foreground": "#383838"
       }
     },
 
-    // ---------- Markdown 文件专属高亮（完全保留不变）----------
+    // ---------- Markdown 文件专属高亮 ----------
     {
       "name": "Markdown Heading",
       "scope": [
@@ -388,7 +408,7 @@
         "entity.name.section.markdown"
       ],
       "settings": {
-        "foreground": "#0033b3",
+        "foreground": "#0550ae",
         "fontStyle": "bold"
       }
     },
@@ -396,7 +416,7 @@
       "name": "Markdown Bold",
       "scope": "markup.bold",
       "settings": {
-        "foreground": "#b02b3d",
+        "foreground": "#1f2328",
         "fontStyle": "bold"
       }
     },
@@ -404,7 +424,7 @@
       "name": "Markdown Italic",
       "scope": "markup.italic",
       "settings": {
-        "foreground": "#b87333",
+        "foreground": "#1f2328",
         "fontStyle": "italic"
       }
     },
@@ -412,7 +432,7 @@
       "name": "Markdown Link URL",
       "scope": "markup.link.url",
       "settings": {
-        "foreground": "#216e39",
+        "foreground": "#1a7f37",
         "fontStyle": "underline"
       }
     },
@@ -420,14 +440,14 @@
       "name": "Markdown Link Text",
       "scope": "string.other.link.title.markdown",
       "settings": {
-        "foreground": "#007095"
+        "foreground": "#0969da"
       }
     },
     {
       "name": "Markdown Quote",
       "scope": "markup.quote",
       "settings": {
-        "foreground": "#5c8e4e"
+        "foreground": "#6a737d"
       }
     },
     {
@@ -437,14 +457,14 @@
         "markup.fenced_code.block"
       ],
       "settings": {
-        "foreground": "#b02b3d"
+        "foreground": "#953800"
       }
     },
     {
       "name": "Markdown List Bullet",
       "scope": "punctuation.definition.list.markdown",
       "settings": {
-        "foreground": "#007095"
+        "foreground": "#cf222e"
       }
     }
   ]
