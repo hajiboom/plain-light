@@ -1,0 +1,13 @@
+{
+  // ===== 光标移动动画（Neovide 风格）=====
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorBlinking": "phase",
+  "editor.cursorStyle": "line",
+  "editor.smoothScrolling": true,
+
+  // 让光标宽度稍微加粗，移动时更显眼
+  "editor.cursorWidth": 3,
+
+  // 光标所在的当前行稍亮，辅助定位
+  "editor.renderLineHighlight": "all"
+}
