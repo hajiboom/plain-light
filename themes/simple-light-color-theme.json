@@ -4,20 +4,22 @@
   "type": "light",
   "colors": {
     // ============================================================
-    // 全局基调：macOS 风格暖白质感 (完美保留你满意的部分)
+    // 全局基调：macOS 风格暖白质感
+    // Go 青蓝 (#007894) 从旧版标题栏移至底部状态栏
+    // 终端采用 macOS mi Style 纯黑底
     // ============================================================
     "contrastBorder": "#d2cfcb",
     "focusBorder": "#007894",
     "widget.shadow": "#0000000e",
 
-    // ---- 编辑器核心：暖白底，最亮 = 离用户最近 ----
+    // ---- 编辑器核心：暖白底 ----
     "editor.background": "#fafaf8",
     "editor.foreground": "#212121",
     "editorLineNumber.foreground": "#9e9c98",
     "editorLineNumber.activeForeground": "#0054A6",
-    "editor.lineHighlightBackground": "#E5FADD", 
-    "editor.selectionBackground": "#CCE4FF", 
-    "editor.selectionHighlightBackground": "#D0F9F4", 
+    "editor.lineHighlightBackground": "#E5FADD",
+    "editor.selectionBackground": "#CCE4FF",
+    "editor.selectionHighlightBackground": "#D0F9F4",
     "editorCursor.foreground": "#0054A6",
     "editorWhitespace.foreground": "#e0ded9",
     "editorIndentGuide.background1": "#e8e5e0",
@@ -28,7 +30,7 @@
     "editor.findMatchBackground": "#FDE3A7",
     "editor.findMatchHighlightBackground": "#FDE3A780",
 
-    // ---- ✨ Git 变更提示 (MATLAB 风格增强，侧边栏色带更清晰) ----
+    // ---- Git 变更提示 ----
     "editorGutter.addedBackground": "#388E3C",
     "editorGutter.modifiedBackground": "#1976D2",
     "editorGutter.deletedBackground": "#E11B14",
@@ -44,16 +46,15 @@
     "gitDecoration.untrackedResourceForeground": "#8B6606",
     "gitDecoration.ignoredResourceForeground": "#9e9c98",
 
-    // ---- 侧边栏：第二层暖灰，模拟 Finder 侧栏的内凹感 ----
+    // ---- 侧边栏 ----
     "sideBar.background": "#f2f1ef",
     "sideBar.foreground": "#212121",
     "sideBarSectionHeader.background": "#ecebe8",
     "sideBarSectionHeader.foreground": "#212121",
     "sideBarTitle.foreground": "#212121",
     "sideBar.border": "#d9d6d2",
-    "sideBar.dropBackground": "#e0ddd833",
 
-    // ---- 活动栏：最深 = 最远 ----
+    // ---- 活动栏 ----
     "activityBar.background": "#ecebe8",
     "activityBar.foreground": "#212121",
     "activityBar.inactiveForeground": "#9e9c98",
@@ -61,12 +62,23 @@
     "activityBar.activeBorder": "#007894",
     "activityBar.activeBackground": "#f2f1ef",
 
-    // ========== 顶部标题栏 Go 青蓝 —— 完全保留 ==========
+    // ========== 新版 VSCode 无独立标题栏，Go 青蓝移至底部状态栏 ==========
+    // 保留 titleBar 配置供启用原生标题栏的用户使用
     "titleBar.activeBackground": "#007894",
     "titleBar.activeForeground": "#ffffff",
     "titleBar.inactiveBackground": "#005c72",
     "titleBar.inactiveForeground": "#f2f2f2",
     "titleBar.border": "#006982",
+
+    // ---- 命令中心（新版 VSCode 编辑器顶部） ----
+    "commandCenter.foreground": "#212121",
+    "commandCenter.activeForeground": "#0054A6",
+    "commandCenter.inactiveForeground": "#9e9c98",
+    "commandCenter.background": "#f2f1ef",
+    "commandCenter.activeBackground": "#e8e5e0",
+    "commandCenter.border": "#d9d6d2",
+    "commandCenter.inactiveBorder": "#d9d6d280",
+    "commandCenter.debuggingBackground": "#B36205",
 
     // ---- 菜单栏 ----
     "menu.background": "#ffffff",
@@ -75,34 +87,44 @@
     "menu.selectionForeground": "#212121",
     "menu.border": "#d2cfcb",
 
-    // ---- 底部状态栏 ----
-    "statusBar.background": "#ecebe8",
-    "statusBar.foreground": "#212121",
-    "statusBar.border": "#d9d6d2",
-    "statusBar.debuggingBackground": "#B36205", 
+    // ========== 底部状态栏：Go 青蓝主题色 ==========
+    "statusBar.background": "#007894",
+    "statusBar.foreground": "#ffffff",
+    "statusBar.border": "#006982",
+    "statusBar.debuggingBackground": "#B36205",
     "statusBar.debuggingForeground": "#ffffff",
+    "statusBar.noFolderBackground": "#007894",
+    "statusBar.focusBorder": "#40b8d8",
+    "statusBarItem.remoteBackground": "#006680",
+    "statusBarItem.remoteForeground": "#ffffff",
+    "statusBarItem.warningBackground": "#B36205",
+    "statusBarItem.warningForeground": "#ffffff",
+    "statusBarItem.errorBackground": "#C72824",
+    "statusBarItem.errorForeground": "#ffffff",
 
-    // ---- 面板 / 终端 ----
+    // ---- 面板 / 终端：macOS mi Style 纯黑底 ----
     "panel.background": "#f2f1ef",
     "panel.border": "#d9d6d2",
     "panelTitle.activeForeground": "#0054A6",
     "panelTitle.inactiveForeground": "#9e9c98",
 
-    "terminal.background": "#f2f1ef",
-    "terminal.foreground": "#212121",
-    "terminal.ansiBlack": "#1a1a1a",
+    "terminal.background": "#000000",
+    "terminal.foreground": "#e8e8e8",
+    "terminal.selectionBackground": "#ffffff30",
+    "terminalCursor.foreground": "#40b8d8",
+    "terminal.ansiBlack": "#0a0a0a",
     "terminal.ansiRed": "#E11B14",
     "terminal.ansiGreen": "#008013",
     "terminal.ansiYellow": "#8B6606",
-    "terminal.ansiBlue": "#0033CC",
+    "terminal.ansiBlue": "#4d7fdb",
     "terminal.ansiMagenta": "#A709F5",
     "terminal.ansiCyan": "#027880",
-    "terminal.ansiWhite": "#c8c8c8",
-    "terminal.ansiBrightBlack": "#777777",
-    "terminal.ansiBrightRed": "#B7312C",
+    "terminal.ansiWhite": "#d4d4d4",
+    "terminal.ansiBrightBlack": "#666666",
+    "terminal.ansiBrightRed": "#ff5252",
     "terminal.ansiBrightGreen": "#2E8B57",
     "terminal.ansiBrightYellow": "#C04C0B",
-    "terminal.ansiBrightBlue": "#0054A6",
+    "terminal.ansiBrightBlue": "#6a9cf0",
     "terminal.ansiBrightMagenta": "#9C27B0",
     "terminal.ansiBrightCyan": "#007095",
     "terminal.ansiBrightWhite": "#f0f0f0",
@@ -167,17 +189,32 @@
     "editorWidget.border": "#c9c5c0",
     "editorSuggestWidget.background": "#ffffff",
     "editorSuggestWidget.border": "#c9c5c0",
-    "editorSuggestWidget.selectedBackground": "#D0F9F4", 
+    "editorSuggestWidget.selectedBackground": "#D0F9F4",
     "editorHoverWidget.background": "#ffffff",
     "editorHoverWidget.border": "#c9c5c0",
-    "list.activeSelectionIconForeground": "#0054A6"
+    "list.activeSelectionIconForeground": "#0054A6",
+
+    // ---- 内联聊天 / Chat（新版 VSCode） ----
+    "inlineChat.background": "#f8f8f6",
+    "inlineChat.foreground": "#212121",
+    "inlineChat.border": "#d9d6d2",
+    "inlineChatInput.background": "#ffffff",
+    "inlineChatInput.border": "#c9c5c0",
+    "inlineChatInput.focusBorder": "#007894",
+    "chat.requestBackground": "#f2f1ef",
+    "chat.requestBorder": "#d9d6d2",
+    "chat.slashCommandBackground": "#D0F9F4",
+    "chat.slashCommandForeground": "#027880",
+    "chat.editedFileForeground": "#8B6606"
   },
 
   // ============================================================
-  // 代码高亮：MATLAB 新版 (R2023b/R2024a) Light Theme 风格映射
+  // 代码高亮：MATLAB 风格 + 终端色板灵感，更丰富的区分度
+  // 从终端 ANSI 色板中吸取：青、橙、紫、绿、金 五种强调色
+  // 搭配深浅蓝和黑色主色，整体干净但不再单调
   // ============================================================
   "tokenColors": [
-    // ---------- 注释：MATLAB 经典绿色 (清晰且不喧宾夺主) ----------
+    // ---------- 注释：MATLAB 经典绿色 ----------
     {
       "name": "Comment",
       "scope": ["comment", "punctuation.definition.comment"],
@@ -187,11 +224,23 @@
       }
     },
 
-    // ---------- 关键字：MATLAB 经典稳重的蓝色 ----------
+    // ---------- 关键字：分两个层次，控制流 vs 声明 ----------
     {
-      "name": "Keywords",
+      "name": "Keywords — Control",
       "scope": [
-        "keyword", "storage.type", "storage.modifier", "keyword.control",
+        "keyword.control",
+        "keyword.control.conditional",
+        "keyword.control.loop",
+        "keyword.control.flow",
+        "keyword.control.return",
+        "keyword.control.exception"
+      ],
+      "settings": { "foreground": "#1656A7" }
+    },
+    {
+      "name": "Keywords — General & Storage",
+      "scope": [
+        "keyword", "storage.type", "storage.modifier",
         "keyword.declaration", "keyword.package.go", "keyword.import.go",
         "keyword.function.go", "keyword.type.go", "keyword.struct.go",
         "keyword.interface.go", "keyword.map.go", "keyword.chan.go"
@@ -199,56 +248,137 @@
       "settings": { "foreground": "#0033CC" }
     },
 
-    // ---------- 函数：深青蓝色，专业且聚焦 ----------
+    // ---------- 函数：暖橙色，灵感来自终端 brightYellow ----------
     {
       "name": "Functions",
       "scope": [
-        "entity.name.function", "support.function", "variable.function", "entity.name.function.go"
+        "entity.name.function", "support.function", "variable.function",
+        "entity.name.function.go", "entity.name.function.call"
+      ],
+      "settings": { "foreground": "#C04C0B" }
+    },
+
+    // ---------- 方法/成员函数：深青蓝 ----------
+    {
+      "name": "Methods",
+      "scope": [
+        "entity.name.function.member", "support.function.member"
       ],
       "settings": { "foreground": "#0054A6" }
     },
 
-    // ---------- 类型：海绿色 (SeaGreen)，与关键字形成优雅区分 ----------
+    // ---------- 类型：海绿色 ----------
     {
       "name": "Types",
       "scope": [
         "entity.name.type", "support.type", "storage.type.primitive",
-        "entity.name.type.alias.go", "entity.name.type.struct.go", "entity.name.type.interface.go"
+        "entity.name.type.alias.go", "entity.name.type.struct.go",
+        "entity.name.type.interface.go", "entity.name.class",
+        "entity.name.type.class", "support.class"
       ],
       "settings": { "foreground": "#2E8B57" }
     },
 
-    // ---------- 字符串：MATLAB 经典紫色 (在浅色背景下极具辨识度) ----------
+    // ---------- HTML/JSX 标签名：终端青色 ----------
+    {
+      "name": "Tags",
+      "scope": [
+        "entity.name.tag", "entity.name.tag.html",
+        "entity.name.tag.jsx", "entity.name.tag.tsx",
+        "entity.name.tag.xml", "entity.name.tag.css"
+      ],
+      "settings": { "foreground": "#027880" }
+    },
+
+    // ---------- 组件/JSX 大写标签：深青 ----------
+    {
+      "name": "Component Tags",
+      "scope": [
+        "entity.name.tag.js", "entity.name.tag.ts",
+        "entity.name.tag.javascript", "entity.name.tag.typescript",
+        "support.class.component"
+      ],
+      "settings": { "foreground": "#007095" }
+    },
+
+    // ---------- 属性名（HTML 属性/JSON key）：青蓝色 ----------
+    {
+      "name": "Attributes",
+      "scope": [
+        "entity.other.attribute-name",
+        "entity.other.attribute-name.html",
+        "entity.other.attribute-name.jsx",
+        "entity.other.attribute-name.tsx"
+      ],
+      "settings": { "foreground": "#027880" }
+    },
+
+    // ---------- 字符串：MATLAB 经典紫色 ----------
     {
       "name": "Strings",
       "scope": "string",
       "settings": { "foreground": "#A709F5" }
     },
 
-    // ---------- 常量：系统命令金棕色，温暖且醒目 ----------
+    // ---------- 常量 / 数字：金棕色 ----------
     {
       "name": "Constants",
       "scope": [
-        "constant.numeric", "constant.language", "constant.boolean", "variable.other.enummember"
+        "constant.numeric", "constant.language", "constant.boolean",
+        "variable.other.enummember"
       ],
       "settings": { "foreground": "#8B6606" }
     },
 
-    // ---------- 变量：MATLAB 默认深灰，保证阅读流畅性 ----------
+    // ---------- 正则表达式：终端亮红 ----------
+    {
+      "name": "Regex",
+      "scope": [
+        "string.regexp", "constant.other.character-class.regexp",
+        "keyword.control.anchor.regexp"
+      ],
+      "settings": { "foreground": "#E11B14" }
+    },
+
+    // ---------- 转义序列：深金 ----------
+    {
+      "name": "Escape",
+      "scope": "constant.character.escape",
+      "settings": { "foreground": "#C04C0B" }
+    },
+
+    // ---------- 变量：默认深灰 ----------
     {
       "name": "Variable",
       "scope": ["variable", "variable.parameter", "variable.other.member"],
       "settings": { "foreground": "#212121" }
     },
-    
-    // ---------- 变量(共享作用域/属性)：MATLAB 特有的青绿色提示 ----------
+
+    // ---------- 变量（共享作用域/属性）：青绿色 ----------
     {
       "name": "Variable Shared Scope",
       "scope": ["variable.readwrite", "variable.other.property"],
       "settings": { "foreground": "#027880" }
     },
 
-    // ---------- 内置函数/常量：深青 ----------
+    // ---------- 对象属性名：深青 ----------
+    {
+      "name": "Object Property",
+      "scope": [
+        "variable.object.property", "variable.other.object.property",
+        "support.variable.property"
+      ],
+      "settings": { "foreground": "#007095" }
+    },
+
+    // ---------- this / self / super：深蓝 ----------
+    {
+      "name": "Language Variable",
+      "scope": ["variable.language", "variable.language.this", "variable.language.super"],
+      "settings": { "foreground": "#0054A6", "fontStyle": "italic" }
+    },
+
+    // ---------- 内置函数/常量：终端青 ----------
     {
       "name": "Built-in",
       "scope": ["support.function.builtin", "support.constant"],
@@ -258,25 +388,25 @@
     // ---------- 预处理/导入：同类型色 ----------
     {
       "name": "Preprocessor",
-      "scope": ["meta.preprocessor", "keyword.control.import"],
+      "scope": ["meta.preprocessor", "keyword.control.import", "keyword.control.export"],
       "settings": { "foreground": "#2E8B57" }
     },
 
-    // ---------- 错误/非法：MATLAB 错误红 ----------
+    // ---------- 错误/非法 ----------
     {
       "name": "Warning",
       "scope": ["invalid", "invalid.illegal"],
       "settings": { "foreground": "#E11B14" }
     },
 
-    // ---------- 操作符：跟随前景 ----------
+    // ---------- 操作符 ----------
     {
       "name": "Operator",
       "scope": "keyword.operator",
       "settings": { "foreground": "#212121" }
     },
 
-    // ---------- 标点：中灰 ----------
+    // ---------- 标点 ----------
     {
       "name": "Punctuation",
       "scope": ["punctuation", "punctuation.separator", "punctuation.definition"],
@@ -287,7 +417,7 @@
     {
       "name": "JSON Property Key",
       "scope": "support.type.property-name.json",
-      "settings": { "foreground": "#0033CC" }
+      "settings": { "foreground": "#027880" }
     },
     {
       "name": "JSON Constant",
@@ -299,7 +429,7 @@
     {
       "name": "YAML Key",
       "scope": "entity.name.tag.yaml",
-      "settings": { "foreground": "#0033CC" }
+      "settings": { "foreground": "#027880" }
     },
     {
       "name": "YAML Constant",
@@ -331,7 +461,7 @@
     {
       "name": "SQL Built-in Function",
       "scope": "support.function.sql",
-      "settings": { "foreground": "#027880" }
+      "settings": { "foreground": "#C04C0B" }
     },
     {
       "name": "SQL Table Name",
@@ -383,7 +513,7 @@
     {
       "name": "Markdown List Bullet",
       "scope": "punctuation.definition.list.markdown",
-      "settings": { "foreground": "#0033CC" }
+      "settings": { "foreground": "#C04C0B" }
     }
   ]
 }
