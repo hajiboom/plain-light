@@ -3,34 +3,32 @@
   "name": "Vinci Dark (Warm)",
   "type": "dark",
   "colors": {
-    // ========== 全局：边框 & 景深系统 ==========
-    // 设计思路：编辑器是离用户最近的"主面板"（最亮），
-    // 侧边栏/面板/状态栏逐层后退（渐暗），
-    // 提高各层文本对比度，确保在任何深色表面上都清晰可读
-    "contrastBorder": "#3d3d3d",
-    "focusBorder": "#6a9cf0",
-    "widget.shadow": "#00000060",
+    // ========== 亚光/亚克力暗色体系 ==========
+    // 每一层之间有微妙灰度差，像毛玻璃一样层叠
+    // 边框用半透明白色模拟亚克力边缘光感
+    "contrastBorder": "#ffffff10",
+    "focusBorder": "#78b0d8",
+    "widget.shadow": "#00000040",
 
-    // ---- 编辑器核心：最亮 = 离用户最近的主工作面 ----
-    // 背景微调更暗，前景更亮，提升代码区域对比度
-    "editor.background": "#282828",
-    "editor.foreground": "#e8e8e8",
-    "editor.lineHighlightBackground": "#323232",
-    "editor.selectionBackground": "#454545",
-    "editor.selectionHighlightBackground": "#3d3d3d80",
-    "editorCursor.foreground": "#82A8D9",
-    "editorWhitespace.foreground": "#3d3d3d",
-    "editorIndentGuide.background1": "#323232",
-    "editorIndentGuide.activeBackground1": "#555555",
-    "editorLineNumber.foreground": "#808080",
-    "editorLineNumber.activeForeground": "#d0d0d0",
-    "editorRuler.foreground": "#32323280",
-    "editorBracketMatch.background": "#383838",
-    "editorBracketMatch.border": "#82A8D9",
-    "editor.findMatchBackground": "#45454560",
-    "editor.findMatchHighlightBackground": "#3d3d3d60",
+    // ---- 编辑器：亚光炭灰底，文字柔和不刺眼 ----
+    "editor.background": "#282c30",
+    "editor.foreground": "#e8e4de",
+    "editor.lineHighlightBackground": "#2d3135",
+    "editor.selectionBackground": "#3a5068",
+    "editor.selectionHighlightBackground": "#3a506860",
+    "editorCursor.foreground": "#78b0d8",
+    "editorWhitespace.foreground": "#383c40",
+    "editorIndentGuide.background1": "#303438",
+    "editorIndentGuide.activeBackground1": "#586068",
+    "editorLineNumber.foreground": "#787c80",
+    "editorLineNumber.activeForeground": "#c8c4be",
+    "editorRuler.foreground": "#30343880",
+    "editorBracketMatch.background": "#384840",
+    "editorBracketMatch.border": "#78b0d8",
+    "editor.findMatchBackground": "#50505060",
+    "editor.findMatchHighlightBackground": "#40404060",
 
-    // ---- Git 变更提示 ----
+    // ---- Git 变更 ----
     "editorGutter.addedBackground": "#4a9e4e",
     "editorGutter.modifiedBackground": "#3a80cc",
     "editorGutter.deletedBackground": "#d13a3a",
@@ -43,498 +41,383 @@
     "gitDecoration.addedResourceForeground": "#4a9e4e",
     "gitDecoration.modifiedResourceForeground": "#3a80cc",
     "gitDecoration.deletedResourceForeground": "#d13a3a",
-    "gitDecoration.untrackedResourceForeground": "#e6c72e",
-    "gitDecoration.ignoredResourceForeground": "#6a6a6a",
+    "gitDecoration.untrackedResourceForeground": "#c8b840",
+    "gitDecoration.ignoredResourceForeground": "#686c70",
 
-    // ---- 侧边栏：第二层，比编辑器暗 = 内凹 ----
-    // 前景提亮，确保文件名/目录名清晰不融入背景
-    "sideBar.background": "#222222",
-    "sideBar.foreground": "#d8d8d8",
-    "sideBarSectionHeader.background": "#1c1c1c",
-    "sideBarSectionHeader.foreground": "#d8d8d8",
-    "sideBarTitle.foreground": "#d8d8d8",
-    "sideBar.border": "#151515",
+    // ---- 侧边栏：比编辑器略深一层 ----
+    "sideBar.background": "#212428",
+    "sideBar.foreground": "#d0ccc6",
+    "sideBarSectionHeader.background": "#1c1f23",
+    "sideBarSectionHeader.foreground": "#d0ccc6",
+    "sideBarTitle.foreground": "#d0ccc6",
+    "sideBar.border": "#ffffff08",
 
-    // ---- 活动栏：最深层 = 最远 ----
-    // 非活跃图标提亮，避免看不清
-    "activityBar.background": "#1a1a1a",
-    "activityBar.foreground": "#d8d8d8",
-    "activityBar.inactiveForeground": "#888888",
-    "activityBar.border": "#151515",
-    "activityBar.activeBorder": "#82A8D9",
-    "activityBar.activeBackground": "#222222",
+    // ---- 活动栏：最深层 ----
+    "activityBar.background": "#1c1f23",
+    "activityBar.foreground": "#d0ccc6",
+    "activityBar.inactiveForeground": "#707478",
+    "activityBar.border": "#ffffff08",
+    "activityBar.activeBorder": "#78b0d8",
+    "activityBar.activeBackground": "#212428",
 
-    // ---- 底部状态栏：深层 ----
-    "statusBar.background": "#1a1a1a",
-    "statusBar.foreground": "#d8d8d8",
-    "statusBar.border": "#151515",
-    "statusBar.noFolderBackground": "#1a1a1a",
-    "statusBar.debuggingBackground": "#b05800",
+    // ---- 底部状态栏 ----
+    "statusBar.background": "#1c1f23",
+    "statusBar.foreground": "#d0ccc6",
+    "statusBar.border": "#ffffff08",
+    "statusBar.noFolderBackground": "#1c1f23",
+    "statusBar.debuggingBackground": "#a05820",
 
-    // ========== 命令中心（新版 VSCode 编辑器顶部） ==========
-    "commandCenter.foreground": "#d8d8d8",
-    "commandCenter.activeForeground": "#82A8D9",
-    "commandCenter.inactiveForeground": "#888888",
-    "commandCenter.background": "#222222",
-    "commandCenter.activeBackground": "#2a2a2a",
-    "commandCenter.border": "#151515",
-    "commandCenter.inactiveBorder": "#15151580",
-    "commandCenter.debuggingBackground": "#b05800",
+    // ---- 命令中心 ----
+    "commandCenter.foreground": "#d0ccc6",
+    "commandCenter.activeForeground": "#78b0d8",
+    "commandCenter.inactiveForeground": "#707478",
+    "commandCenter.background": "#212428",
+    "commandCenter.activeBackground": "#282c30",
+    "commandCenter.border": "#ffffff08",
+    "commandCenter.inactiveBorder": "#ffffff08",
+    "commandCenter.debuggingBackground": "#a05820",
 
-    // ========== 顶部标题栏 Go 蓝色 —— 保留供启用原生标题栏时使用 ==========
+    // ---- 标题栏 ----
     "titleBar.activeBackground": "#007894",
     "titleBar.activeForeground": "#ffffff",
-    "titleBar.inactiveBackground": "#005c72",
-    "titleBar.inactiveForeground": "#d0d0d0",
-    "titleBar.border": "#006982",
+    "titleBar.inactiveBackground": "#1c1f23",
+    "titleBar.inactiveForeground": "#909090",
+    "titleBar.border": "#ffffff08",
 
-    // ---- 顶部菜单栏 ----
-    "menu.background": "#006982",
-    "menu.foreground": "#ffffff",
-    "menu.selectionBackground": "#007894",
+    // ---- 菜单 ----
+    "menu.background": "#2d3135",
+    "menu.foreground": "#e8e4de",
+    "menu.selectionBackground": "#3a5068",
     "menu.selectionForeground": "#ffffff",
-    "menu.border": "#005c72",
+    "menu.border": "#ffffff10",
 
-    // ---- 面板 / 终端 ----
-    "panel.background": "#222222",
-    "panel.border": "#151515",
-    "panelTitle.activeForeground": "#e0e0e0",
-    "panelTitle.inactiveForeground": "#888888",
+    // ---- 面板 / 终端：macOS mi Style 纯黑 ----
+    "panel.background": "#000000",
+    "panel.border": "#80808059",
+    "panelTitle.activeForeground": "#cbcbcb",
+    "panelTitle.inactiveForeground": "#cbcbcb",
+    "panelSection.border": "#80808097",
+    "panelStickyScroll.background": "#000000",
 
-    "terminal.background": "#1a1a1a",
-    "terminal.foreground": "#e8e8e8",
-    "terminal.selectionBackground": "#ffffff20",
-    "terminalCursor.foreground": "#82A8D9",
-    "terminal.ansiBlack": "#0a0a0a",
-    "terminal.ansiRed": "#d13a4f",
-    "terminal.ansiGreen": "#5ea832",
-    "terminal.ansiYellow": "#e6c72e",
-    "terminal.ansiBlue": "#82A8D9",
-    "terminal.ansiMagenta": "#a066b8",
-    "terminal.ansiCyan": "#60b8d8",
-    "terminal.ansiWhite": "#e0e0e0",
-    "terminal.ansiBrightBlack": "#666666",
-    "terminal.ansiBrightRed": "#f05060",
-    "terminal.ansiBrightGreen": "#73c936",
-    "terminal.ansiBrightYellow": "#ffdd33",
-    "terminal.ansiBrightBlue": "#96a6c8",
-    "terminal.ansiBrightMagenta": "#b87ad0",
-    "terminal.ansiBrightCyan": "#7fd0e8",
-    "terminal.ansiBrightWhite": "#f8f8f8",
+    "terminal.background": "#000000",
+    "terminal.foreground": "#cbcbcb",
+    "terminal.selectionBackground": "#331feda6",
+    "terminalCursor.background": "#00fb43",
+    "terminalCursor.foreground": "#ffffff",
+    "terminal.border": "#80808097",
+    "terminal.ansiBlack": "#3f3f3f",
+    "terminal.ansiRed": "#cd3131",
+    "terminal.ansiGreen": "#00bc00",
+    "terminal.ansiYellow": "#c9cf00",
+    "terminal.ansiBlue": "#004cff",
+    "terminal.ansiMagenta": "#bc05bc",
+    "terminal.ansiCyan": "#0598bc",
+    "terminal.ansiWhite": "#b8b8b8",
+    "terminal.ansiBrightBlack": "#8c8c8c",
+    "terminal.ansiBrightRed": "#fb0000",
+    "terminal.ansiBrightGreen": "#00ff00",
+    "terminal.ansiBrightYellow": "#f8ff00",
+    "terminal.ansiBrightBlue": "#007aff",
+    "terminal.ansiBrightMagenta": "#bc05bc",
+    "terminal.ansiBrightCyan": "#0598bc",
+    "terminal.ansiBrightWhite": "#fdfdfd",
 
-    // ---- 列表/树：选中高亮，文本对比度提升 ----
-    "list.activeSelectionBackground": "#2d5a9c",
+    // ---- 列表/树 ----
+    "list.activeSelectionBackground": "#3a5068",
     "list.activeSelectionForeground": "#ffffff",
-    "list.inactiveSelectionBackground": "#333333",
-    "list.inactiveSelectionForeground": "#d8d8d8",
-    "list.hoverBackground": "#363636",
-    "list.hoverForeground": "#f0f0f0",
-    "list.focusBackground": "#2d5a9c",
+    "list.inactiveSelectionBackground": "#282c30",
+    "list.inactiveSelectionForeground": "#d0ccc6",
+    "list.hoverBackground": "#2d3135",
+    "list.hoverForeground": "#ece8e2",
+    "list.focusBackground": "#3a5068",
     "list.focusForeground": "#ffffff",
-    "list.highlightForeground": "#52b7d2",
+    "list.highlightForeground": "#68c0d8",
 
     // ---- 输入框 / 下拉 / 按钮 ----
-    "input.background": "#383838",
-    "input.foreground": "#e8e8e8",
-    "input.border": "#3d3d3d",
-    "input.placeholderForeground": "#888888",
-    "inputOption.activeBorder": "#82A8D9",
-    "dropdown.background": "#383838",
-    "dropdown.foreground": "#e8e8e8",
-    "dropdown.border": "#3d3d3d",
+    "input.background": "#2d3135",
+    "input.foreground": "#e8e4de",
+    "input.border": "#ffffff10",
+    "input.placeholderForeground": "#808488",
+    "inputOption.activeBorder": "#78b0d8",
+    "dropdown.background": "#2d3135",
+    "dropdown.foreground": "#e8e4de",
+    "dropdown.border": "#ffffff10",
 
-    "button.background": "#404040",
-    "button.foreground": "#e8e8e8",
-    "button.hoverBackground": "#505050",
-    "button.border": "#3d3d3d",
+    "button.background": "#404448",
+    "button.foreground": "#e8e4de",
+    "button.hoverBackground": "#505458",
+    "button.border": "#ffffff10",
 
-    "scrollbarSlider.background": "#404040",
-    "scrollbarSlider.hoverBackground": "#505050",
-    "scrollbarSlider.activeBackground": "#606060",
+    "scrollbarSlider.background": "#40444880",
+    "scrollbarSlider.hoverBackground": "#50545880",
+    "scrollbarSlider.activeBackground": "#60646880",
 
-    // ---- 标签栏：文件名清晰可读 ----
-    "editorGroup.border": "#151515",
-    "editorGroupHeader.tabsBackground": "#222222",
-    "editorGroupHeader.border": "#151515",
-    "tab.activeBackground": "#282828",
-    "tab.inactiveBackground": "#222222",
-    "tab.activeForeground": "#f0f0f0",
-    "tab.inactiveForeground": "#b8b8b8",
-    "tab.border": "#151515",
+    // ---- 标签栏 ----
+    "editorGroup.border": "#ffffff08",
+    "editorGroupHeader.tabsBackground": "#1c1f23",
+    "editorGroupHeader.border": "#ffffff08",
+    "tab.activeBackground": "#282c30",
+    "tab.inactiveBackground": "#1c1f23",
+    "tab.activeForeground": "#ece8e2",
+    "tab.inactiveForeground": "#a0a098",
+    "tab.border": "#ffffff08",
     "tab.activeBorder": "#007894",
     "tab.activeBorderTop": "#007894",
-    "tab.unfocusedActiveBorderTop": "#3d3d3d",
+    "tab.unfocusedActiveBorderTop": "#ffffff10",
 
     // ---- 通知 ----
-    "notifications.background": "#383838",
-    "notifications.foreground": "#e8e8e8",
-    "notificationsWarningIcon.foreground": "#e6c72e",
-    "notificationsErrorIcon.foreground": "#f43841",
-    "notificationsInfoIcon.foreground": "#82A8D9",
+    "notifications.background": "#2d3135",
+    "notifications.foreground": "#e8e4de",
+    "notificationsWarningIcon.foreground": "#c8b840",
+    "notificationsErrorIcon.foreground": "#e05858",
+    "notificationsInfoIcon.foreground": "#78b0d8",
 
     // ---- 徽章 / 进度条 ----
-    "badge.background": "#82A8D9",
+    "badge.background": "#78b0d8",
     "badge.foreground": "#ffffff",
-    "progressBar.background": "#82A8D9",
+    "progressBar.background": "#78b0d8",
 
     // ---- 浮层 / 建议框 ----
-    "editorWidget.background": "#383838",
-    "editorWidget.border": "#3d3d3d",
-    "editorSuggestWidget.background": "#383838",
-    "editorSuggestWidget.border": "#3d3d3d",
-    "editorSuggestWidget.selectedBackground": "#454545",
-    "editorSuggestWidget.foreground": "#e8e8e8",
-    "editorHoverWidget.background": "#383838",
-    "editorHoverWidget.border": "#3d3d3d",
+    "editorWidget.background": "#2d3135",
+    "editorWidget.border": "#ffffff10",
+    "editorSuggestWidget.background": "#2d3135",
+    "editorSuggestWidget.border": "#ffffff10",
+    "editorSuggestWidget.selectedBackground": "#3a4048",
+    "editorSuggestWidget.foreground": "#e8e4de",
+    "editorHoverWidget.background": "#2d3135",
+    "editorHoverWidget.border": "#ffffff10",
 
-    // ---- 内嵌聊天 / Chat（新版 VSCode）关键对比度修复 ----
-    "inlineChat.background": "#2a2a2a",
-    "inlineChat.foreground": "#e8e8e8",
-    "inlineChat.border": "#3d3d3d",
-    "inlineChatInput.background": "#383838",
-    "inlineChatInput.border": "#3d3d3d",
-    "inlineChatInput.focusBorder": "#82A8D9",
-    "chat.requestBackground": "#2a2a2a",
-    "chat.requestBorder": "#3d3d3d",
-    "chat.slashCommandBackground": "#2d5a9c",
-    "chat.slashCommandForeground": "#82A8D9",
-    "chat.editedFileForeground": "#e6c72e"
+    // ---- 内嵌聊天 / Chat ----
+    "inlineChat.background": "#282c30",
+    "inlineChat.foreground": "#e8e4de",
+    "inlineChat.border": "#ffffff10",
+    "inlineChatInput.background": "#2d3135",
+    "inlineChatInput.border": "#ffffff10",
+    "inlineChatInput.focusBorder": "#78b0d8",
+    "chat.requestBackground": "#282c30",
+    "chat.requestBorder": "#ffffff10",
+    "chat.slashCommandBackground": "#3a5068",
+    "chat.slashCommandForeground": "#78b0d8",
+    "chat.editedFileForeground": "#c8b840"
   },
 
   // ============================================================
-  // tokenColors 语法高亮
-  // 提高部分暗色 token 的亮度以增强对比度
+  // tokenColors：亚光柔和色调，字符间区分清晰但不刺眼
   // ============================================================
   "tokenColors": [
     {
       "name": "Comment",
       "scope": ["comment", "punctuation.definition.comment"],
-      "settings": {
-        "foreground": "#b88840"
-      }
+      "settings": { "foreground": "#b09468" }
     },
 
     {
       "name": "Keyword",
       "scope": [
-        "keyword",
-        "storage.type",
-        "storage.modifier",
-        "keyword.control",
-        "keyword.declaration"
+        "keyword", "storage.type", "storage.modifier",
+        "keyword.control", "keyword.declaration"
       ],
-      "settings": {
-        "foreground": "#eedc50"
-      }
+      "settings": { "foreground": "#e0cc68" }
     },
 
     {
       "name": "Function",
       "scope": [
-        "entity.name.function",
-        "support.function",
-        "variable.function"
+        "entity.name.function", "support.function", "variable.function"
       ],
-      "settings": {
-        "foreground": "#8a9abc"
-      }
+      "settings": { "foreground": "#98a8c8" }
     },
 
     {
       "name": "Type",
       "scope": [
-        "entity.name.type",
-        "support.type",
-        "storage.type.primitive"
+        "entity.name.type", "support.type", "storage.type.primitive"
       ],
-      "settings": {
-        "foreground": "#99aa9f"
-      }
+      "settings": { "foreground": "#98b898" }
     },
 
     {
       "name": "String",
       "scope": "string",
-      "settings": {
-        "foreground": "#6db840"
-      }
+      "settings": { "foreground": "#80b860" }
     },
 
     {
       "name": "Constant",
       "scope": [
-        "constant.numeric",
-        "constant.language",
-        "constant.boolean"
+        "constant.numeric", "constant.language", "constant.boolean"
       ],
-      "settings": {
-        "foreground": "#99aa9f"
-      }
+      "settings": { "foreground": "#c89860" }
     },
 
     {
       "name": "Variable",
       "scope": [
-        "variable",
-        "variable.parameter",
-        "variable.other.member"
+        "variable", "variable.parameter", "variable.other.member"
       ],
-      "settings": {
-        "foreground": "#dcdce0"
-      }
+      "settings": { "foreground": "#e4e0da" }
     },
 
     {
       "name": "Variable Property",
       "scope": [
-        "variable.other.property",
-        "variable.object.property"
+        "variable.other.property", "variable.object.property"
       ],
-      "settings": {
-        "foreground": "#a8c0d0"
-      }
+      "settings": { "foreground": "#a8c0d0" }
     },
 
     {
       "name": "Built-in",
       "scope": [
-        "support.function.builtin",
-        "support.constant"
+        "support.function.builtin", "support.constant"
       ],
-      "settings": {
-        "foreground": "#52b7d2"
-      }
+      "settings": { "foreground": "#68c8d8" }
     },
 
     {
       "name": "Preprocessor",
       "scope": [
-        "meta.preprocessor",
-        "keyword.control.import"
+        "meta.preprocessor", "keyword.control.import"
       ],
-      "settings": {
-        "foreground": "#99aa9f"
-      }
+      "settings": { "foreground": "#98b898" }
     },
 
     {
       "name": "Warning",
-      "scope": [
-        "invalid",
-        "invalid.illegal"
-      ],
-      "settings": {
-        "foreground": "#f05050"
-      }
+      "scope": ["invalid", "invalid.illegal"],
+      "settings": { "foreground": "#e86060" }
     },
 
     {
       "name": "Operator",
       "scope": "keyword.operator",
-      "settings": {
-        "foreground": "#e0e0e0"
-      }
+      "settings": { "foreground": "#d8d4ce" }
     },
 
     {
       "name": "Punctuation",
       "scope": [
-        "punctuation",
-        "punctuation.separator",
-        "punctuation.definition"
+        "punctuation", "punctuation.separator", "punctuation.definition"
       ],
-      "settings": {
-        "foreground": "#d4d3d3"
-      }
+      "settings": { "foreground": "#c0bcb8" }
     },
 
     {
       "name": "Entity Tag",
       "scope": [
-        "entity.name.tag",
-        "entity.name.tag.html",
-        "entity.name.tag.jsx",
-        "entity.name.tag.tsx"
+        "entity.name.tag", "entity.name.tag.html",
+        "entity.name.tag.jsx", "entity.name.tag.tsx"
       ],
-      "settings": {
-        "foreground": "#60b8d8"
-      }
+      "settings": { "foreground": "#70c8e0" }
     },
 
     {
       "name": "Entity Attribute",
-      "scope": [
-        "entity.other.attribute-name"
-      ],
-      "settings": {
-        "foreground": "#a8c0d0"
-      }
+      "scope": ["entity.other.attribute-name"],
+      "settings": { "foreground": "#a8c0d0" }
     },
 
-    // ---------- JSON 文件专属高亮 ----------
+    // ---------- JSON ----------
     {
       "name": "JSON Property Key",
       "scope": "support.type.property-name.json",
-      "settings": {
-        "foreground": "#52b7d2"
-      }
+      "settings": { "foreground": "#68c8d8" }
     },
     {
-      "name": "JSON Constant (true/false/null)",
+      "name": "JSON Constant",
       "scope": "constant.language.json",
-      "settings": {
-        "foreground": "#eedc50"
-      }
+      "settings": { "foreground": "#e0cc68" }
     },
 
-    // ---------- YAML 文件专属高亮 ----------
+    // ---------- YAML ----------
     {
       "name": "YAML Key",
       "scope": "entity.name.tag.yaml",
-      "settings": {
-        "foreground": "#52b7d2"
-      }
+      "settings": { "foreground": "#68c8d8" }
     },
     {
       "name": "YAML Constant",
-      "scope": [
-        "constant.language.yaml",
-        "constant.numeric.yaml",
-        "constant.other.timestamp.yaml"
-      ],
-      "settings": {
-        "foreground": "#99aa9f"
-      }
+      "scope": ["constant.language.yaml", "constant.numeric.yaml", "constant.other.timestamp.yaml"],
+      "settings": { "foreground": "#c89860" }
     },
     {
       "name": "YAML String",
       "scope": "string.yaml",
-      "settings": {
-        "foreground": "#6db840"
-      }
+      "settings": { "foreground": "#80b860" }
     },
     {
       "name": "YAML Anchor & Alias",
-      "scope": [
-        "variable.other.anchor.yaml",
-        "variable.other.alias.yaml"
-      ],
-      "settings": {
-        "foreground": "#eedc50"
-      }
+      "scope": ["variable.other.anchor.yaml", "variable.other.alias.yaml"],
+      "settings": { "foreground": "#e0cc68" }
     },
     {
       "name": "YAML Punctuation",
-      "scope": [
-        "punctuation.definition.mapping.yaml",
-        "punctuation.definition.sequence.yaml",
-        "punctuation.definition.string.yaml"
-      ],
-      "settings": {
-        "foreground": "#d4d3d3"
-      }
+      "scope": ["punctuation.definition.mapping.yaml", "punctuation.definition.sequence.yaml", "punctuation.definition.string.yaml"],
+      "settings": { "foreground": "#c0bcb8" }
     },
 
-    // ---------- SQL 文件专属高亮 ----------
+    // ---------- SQL ----------
     {
       "name": "SQL Keyword",
-      "scope": [
-        "keyword.sql",
-        "keyword.ddl.sql",
-        "keyword.dml.sql"
-      ],
-      "settings": {
-        "foreground": "#eedc50"
-      }
+      "scope": ["keyword.sql", "keyword.ddl.sql", "keyword.dml.sql"],
+      "settings": { "foreground": "#e0cc68" }
     },
     {
       "name": "SQL Built-in Function",
       "scope": "support.function.sql",
-      "settings": {
-        "foreground": "#52b7d2"
-      }
+      "settings": { "foreground": "#68c8d8" }
     },
     {
       "name": "SQL Table Name",
       "scope": "entity.name.table.sql",
-      "settings": {
-        "foreground": "#99aa9f"
-      }
+      "settings": { "foreground": "#98b898" }
     },
     {
       "name": "SQL Column Name",
       "scope": "entity.name.column.sql",
-      "settings": {
-        "foreground": "#dcdce0"
-      }
+      "settings": { "foreground": "#e4e0da" }
     },
 
-    // ---------- Markdown 文件专属高亮 ----------
+    // ---------- Markdown ----------
     {
       "name": "Markdown Heading",
-      "scope": [
-        "markup.heading",
-        "entity.name.section.markdown"
-      ],
-      "settings": {
-        "foreground": "#eedc50",
-        "fontStyle": "bold"
-      }
+      "scope": ["markup.heading", "entity.name.section.markdown"],
+      "settings": { "foreground": "#e0cc68", "fontStyle": "bold" }
     },
     {
       "name": "Markdown Bold",
       "scope": "markup.bold",
-      "settings": {
-        "foreground": "#8a9abc",
-        "fontStyle": "bold"
-      }
+      "settings": { "foreground": "#98a8c8", "fontStyle": "bold" }
     },
     {
       "name": "Markdown Italic",
       "scope": "markup.italic",
-      "settings": {
-        "foreground": "#b88840",
-        "fontStyle": "italic"
-      }
+      "settings": { "foreground": "#b09468", "fontStyle": "italic" }
     },
     {
       "name": "Markdown Link URL",
       "scope": "markup.link.url",
-      "settings": {
-        "foreground": "#6db840",
-        "fontStyle": "underline"
-      }
+      "settings": { "foreground": "#80b860", "fontStyle": "underline" }
     },
     {
       "name": "Markdown Link Text",
       "scope": "string.other.link.title.markdown",
-      "settings": {
-        "foreground": "#52b7d2"
-      }
+      "settings": { "foreground": "#68c8d8" }
     },
     {
       "name": "Markdown Quote",
       "scope": "markup.quote",
-      "settings": {
-        "foreground": "#b88840"
-      }
+      "settings": { "foreground": "#b09468" }
     },
     {
       "name": "Markdown Code",
-      "scope": [
-        "markup.inline.raw",
-        "markup.fenced_code.block"
-      ],
-      "settings": {
-        "foreground": "#6db840"
-      }
+      "scope": ["markup.inline.raw", "markup.fenced_code.block"],
+      "settings": { "foreground": "#80b860" }
     },
     {
       "name": "Markdown List Bullet",
       "scope": "punctuation.definition.list.markdown",
-      "settings": {
-        "foreground": "#52b7d2"
-      }
+      "settings": { "foreground": "#68c8d8" }
     }
   ]
 }
