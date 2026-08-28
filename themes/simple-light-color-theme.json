@@ -210,17 +210,17 @@
 
   // ============================================================
   // 代码高亮：MATLAB 风格 + 终端色板灵感，更丰富的区分度
-  // 从终端 ANSI 色板中吸取：青、橙、紫、绿、金 五种强调色
+  // 从终端 ANSI 色板中吸取：青、橙、陶土红、绿、金 五种强调色
   // 搭配深浅蓝和黑色主色，整体干净但不再单调
   // ============================================================
   "tokenColors": [
-    // ---------- 注释：MATLAB 经典绿色 ----------
+    // ---------- 注释：橙黄色（与暗色一致，偏浅） ----------
     {
       "name": "Comment",
       "scope": ["comment", "punctuation.definition.comment"],
       "settings": {
         "fontStyle": "italic",
-        "foreground": "#008013"
+        "foreground": "#b8892f"
       }
     },
 
@@ -313,11 +313,11 @@
       "settings": { "foreground": "#027880" }
     },
 
-    // ---------- 字符串：MATLAB 经典紫色 ----------
+    // ---------- 字符串：陶土红 ----------
     {
       "name": "Strings",
       "scope": "string",
-      "settings": { "foreground": "#A709F5" }
+      "settings": { "foreground": "#A0522D" }
     },
 
     // ---------- 常量 / 数字：金棕色 ----------
@@ -439,7 +439,7 @@
     {
       "name": "YAML String",
       "scope": "string.yaml",
-      "settings": { "foreground": "#A709F5" }
+      "settings": { "foreground": "#A0522D" }
     },
     {
       "name": "YAML Anchor & Alias",
@@ -488,7 +488,7 @@
     {
       "name": "Markdown Italic",
       "scope": "markup.italic",
-      "settings": { "foreground": "#008013", "fontStyle": "italic" }
+      "settings": { "foreground": "#b8892f", "fontStyle": "italic" }
     },
     {
       "name": "Markdown Link URL",
@@ -503,7 +503,7 @@
     {
       "name": "Markdown Quote",
       "scope": "markup.quote",
-      "settings": { "foreground": "#008013" }
+      "settings": { "foreground": "#b8892f" }
     },
     {
       "name": "Markdown Code",
