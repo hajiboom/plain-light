@@ -1,10 +1,10 @@
 {
-  "name": "plain-light",
-  "displayName": "Plain Light",
+  "name": "julia",
+  "displayName": "Julia",
   "publisher": "hajiboom",
   "icon": "images/icon.png",
   "description": "A minimal light theme, no fancy highlights, eye-friendly",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.106.0"
   },
