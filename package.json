@@ -4,7 +4,7 @@
   "publisher": "hajiboom",
   "icon": "images/icon.png",
   "description": "A minimal light theme, no fancy highlights, eye-friendly",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.106.0"
   },

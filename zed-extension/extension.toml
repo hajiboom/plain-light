@@ -1,0 +1,8 @@
+id = "plain-light-simple-dark"
+name = "Simple Dark"
+version = "0.1.0"
+schema_version = 1
+authors = ["neoh"]
+description = "Simple dark theme fused with Subliminal Nightfall Hazy's glassmorphism transparency."
+
+themes = ["themes/simple-dark.json"]

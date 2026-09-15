@@ -12,7 +12,7 @@
 
     // ---- 编辑器：不透底 + 近白文字 ----
     "editor.background": "#1e2226",
-    "editor.foreground": "#faf8f2",
+    "editor.foreground": "#ddd8d2",
     "editor.lineHighlightBackground": "#22262a",
     "editor.selectionBackground": "#4a6890",
     "editor.selectionHighlightBackground": "#4a689060",
@@ -21,7 +21,7 @@
     "editorIndentGuide.background1": "#292d31",
     "editorIndentGuide.activeBackground1": "#788088",
     "editorLineNumber.foreground": "#a8acb0",
-    "editorLineNumber.activeForeground": "#f4f0e8",
+    "editorLineNumber.activeForeground": "#d8d4cc",
     "editorRuler.foreground": "#292d31",
     "editorBracketMatch.background": "#406050",
     "editorBracketMatch.border": "#88c8f0",
@@ -46,15 +46,15 @@
 
     // ---- 侧边栏 ----
     "sideBar.background": "#1a1e22",
-    "sideBar.foreground": "#f8f4f0",
+    "sideBar.foreground": "#dcd8d4",
     "sideBarSectionHeader.background": "#161a1e",
-    "sideBarSectionHeader.foreground": "#f8f4f0",
-    "sideBarTitle.foreground": "#f8f4f0",
+    "sideBarSectionHeader.foreground": "#dcd8d4",
+    "sideBarTitle.foreground": "#dcd8d4",
     "sideBar.border": "#3c4044",
 
     // ---- 活动栏 ----
     "activityBar.background": "#161a1e",
-    "activityBar.foreground": "#f4f0e8",
+    "activityBar.foreground": "#dcd8d4",
     "activityBar.inactiveForeground": "#a0a4a8",
     "activityBar.border": "#3c4044",
     "activityBar.activeBorder": "#90e0ff",
@@ -62,13 +62,16 @@
 
     // ---- 底部状态栏 ----
     "statusBar.background": "#161a1e",
-    "statusBar.foreground": "#f4f0e8",
+    "statusBar.foreground": "#dcd8d4",
     "statusBar.border": "#3c4044",
     "statusBar.noFolderBackground": "#161a1e",
     "statusBar.debuggingBackground": "#b86820",
+    "statusBarItem.remoteBackground": "#161a1e",
+    "statusBarItem.remoteForeground": "#d8d4cc",
+    "statusBarItem.hoverBackground": "#22262a",
 
     // ---- 命令中心 ----
-    "commandCenter.foreground": "#f4f0e8",
+    "commandCenter.foreground": "#d8d4cc",
     "commandCenter.activeForeground": "#90e0ff",
     "commandCenter.inactiveForeground": "#a0a4a8",
     "commandCenter.background": "#1a1e22",
@@ -86,7 +89,7 @@
 
     // ---- 菜单 ----
     "menu.background": "#262a2e",
-    "menu.foreground": "#f4f0e8",
+    "menu.foreground": "#d8d4cc",
     "menu.selectionBackground": "#4a6890",
     "menu.selectionForeground": "#ffffff",
     "menu.border": "#484848",
@@ -98,7 +101,7 @@
     "panelTitle.inactiveForeground": "#989c9e",
 
     "terminal.background": "#1a1e22",
-    "terminal.foreground": "#f4f0e8",
+    "terminal.foreground": "#d8d4cc",
     "terminal.selectionBackground": "#4a689080",
     "terminalCursor.foreground": "#88c8f0",
     "terminal.ansiBlack": "#1c1c1c",
@@ -122,25 +125,25 @@
     "list.activeSelectionBackground": "#4a6890",
     "list.activeSelectionForeground": "#ffffff",
     "list.inactiveSelectionBackground": "#294452",
-    "list.inactiveSelectionForeground": "#f8f4f0",
+    "list.inactiveSelectionForeground": "#dcd8d4",
     "list.hoverBackground": "#292d31",
-    "list.hoverForeground": "#fcfaf8",
+    "list.hoverForeground": "#e2ded8",
     "list.focusBackground": "#4a6890",
     "list.focusForeground": "#ffffff",
     "list.highlightForeground": "#90f0ff",
 
     // ---- 输入框 / 下拉 / 按钮 ----
     "input.background": "#262a2e",
-    "input.foreground": "#faf8f2",
+    "input.foreground": "#ddd8d2",
     "input.border": "#484848",
     "input.placeholderForeground": "#a8acb0",
     "inputOption.activeBorder": "#90e0ff",
     "dropdown.background": "#262a2e",
-    "dropdown.foreground": "#faf8f2",
+    "dropdown.foreground": "#ddd8d2",
     "dropdown.border": "#484848",
 
     "button.background": "#484c50",
-    "button.foreground": "#faf8f2",
+    "button.foreground": "#ddd8d2",
     "button.hoverBackground": "#585c60",
     "button.border": "#585858",
 
@@ -154,7 +157,7 @@
     "editorGroupHeader.border": "#3c4044",
     "tab.activeBackground": "#1e2226",
     "tab.inactiveBackground": "#161a1e",
-    "tab.activeForeground": "#fcfaf8",
+    "tab.activeForeground": "#e2ded8",
     "tab.inactiveForeground": "#d0ccc8",
     "tab.border": "#3c4044",
     "tab.activeBorder": "#007894",
@@ -163,7 +166,7 @@
 
     // ---- 通知 ----
     "notifications.background": "#262a2e",
-    "notifications.foreground": "#faf8f2",
+    "notifications.foreground": "#ddd8d2",
     "notificationsWarningIcon.foreground": "#f0e080",
     "notificationsErrorIcon.foreground": "#ff8080",
     "notificationsInfoIcon.foreground": "#90e0ff",
@@ -179,13 +182,13 @@
     "editorSuggestWidget.background": "#262a2e",
     "editorSuggestWidget.border": "#484848",
     "editorSuggestWidget.selectedBackground": "#32363a",
-    "editorSuggestWidget.foreground": "#faf8f2",
+    "editorSuggestWidget.foreground": "#ddd8d2",
     "editorHoverWidget.background": "#262a2e",
     "editorHoverWidget.border": "#484848",
 
     // ---- 内嵌聊天 / Chat ----
     "inlineChat.background": "#1e2226",
-    "inlineChat.foreground": "#faf8f2",
+    "inlineChat.foreground": "#ddd8d2",
     "inlineChat.border": "#484848",
     "inlineChatInput.background": "#262a2e",
     "inlineChatInput.border": "#484848",
@@ -221,7 +224,7 @@
       "scope": [
         "entity.name.function", "support.function", "variable.function"
       ],
-      "settings": { "foreground": "#b8c8f0" }
+      "settings": { "foreground": "#d4d0c8" }
     },
 
     {
@@ -287,7 +290,7 @@
     {
       "name": "Operator",
       "scope": "keyword.operator",
-      "settings": { "foreground": "#f4f0e8" }
+      "settings": { "foreground": "#d8d4cc" }
     },
 
     {
@@ -295,7 +298,7 @@
       "scope": [
         "punctuation", "punctuation.separator", "punctuation.definition"
       ],
-      "settings": { "foreground": "#f4f0e8" }
+      "settings": { "foreground": "#d8d4cc" }
     },
 
     {
@@ -349,7 +352,7 @@
     {
       "name": "YAML Punctuation",
       "scope": ["punctuation.definition.mapping.yaml", "punctuation.definition.sequence.yaml", "punctuation.definition.string.yaml"],
-      "settings": { "foreground": "#f4f0e8" }
+      "settings": { "foreground": "#d8d4cc" }
     },
 
     // ---------- SQL ----------
@@ -383,7 +386,7 @@
     {
       "name": "Markdown Bold",
       "scope": "markup.bold",
-      "settings": { "foreground": "#b8c8f0", "fontStyle": "bold" }
+      "settings": { "foreground": "#d4d0c8", "fontStyle": "bold" }
     },
     {
       "name": "Markdown Italic",

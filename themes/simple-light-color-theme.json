@@ -63,9 +63,9 @@
 
     // ========== 标题栏：保留 go.dev 藏蓝 ==========
     "titleBar.activeBackground": "#007894",
-    "titleBar.activeForeground": "#212121",
+    "titleBar.activeForeground": "#ffffff",
     "titleBar.inactiveBackground": "#005c72",
-    "titleBar.inactiveForeground": "#555555",
+    "titleBar.inactiveForeground": "#d9d9d9",
     "titleBar.border": "#006982",
 
     // ---- 命令中心（新版 VSCode 编辑器顶部） ----
@@ -79,11 +79,11 @@
     "commandCenter.debuggingBackground": "#B3620580",
 
     // ---- 菜单栏 ----
-    "menu.background": "#ffffff",
+    "menu.background": "#f3f3f3",
     "menu.foreground": "#000000",
     "menu.selectionBackground": "#cce4ff",
     "menu.selectionForeground": "#000000",
-    "menu.border": "#d4d4d4",
+    "menu.border": "#b8b8b8",
 
     // ========== 底部状态栏：保留 go.dev 藏蓝 ==========
     "statusBar.background": "#007894",
@@ -93,7 +93,7 @@
     "statusBar.debuggingForeground": "#ffffff",
     "statusBar.noFolderBackground": "#007894",
     "statusBar.focusBorder": "#40b8d8",
-    "statusBarItem.remoteBackground": "#006680",
+    "statusBarItem.remoteBackground": "#007894",
     "statusBarItem.remoteForeground": "#ffffff",
     "statusBarItem.warningBackground": "#B36205",
     "statusBarItem.warningForeground": "#ffffff",
@@ -208,7 +208,7 @@
 
   // ============================================================
   // 代码高亮：极简四色 —
-  // 藏蓝加粗关键字、暗红字符串、灰绿注释、暗绿常量，
+  // 藏蓝关键字、暗红字符串、灰绿注释、暗绿常量，
   // 函数 / 类型 / 变量等自定义标识符保持纯黑原色
   // ============================================================
   "tokenColors": [
@@ -222,7 +222,7 @@
       }
     },
 
-    // ---------- 关键字：藏蓝加粗（含内置类型 / 修饰符） ----------
+    // ---------- 关键字：藏蓝（含内置类型 / 修饰符） ----------
     {
       "name": "Keywords",
       "scope": [
@@ -241,10 +241,10 @@
         "keyword.interface.go", "keyword.map.go", "keyword.chan.go",
         "storage.type", "storage.modifier"
       ],
-      "settings": { "foreground": "#000080", "fontStyle": "bold" }
+      "settings": { "foreground": "#005c72" }
     },
 
-    // ---------- 预处理指令：藏蓝 ----------
+    // ---------- 预处理指令：深藏蓝 ----------
     {
       "name": "Preprocessor",
       "scope": "meta.preprocessor",
