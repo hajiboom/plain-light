@@ -1512,7 +1512,7 @@
       "appearance": "light",
       "style": {
         "background.appearance": "blurred",
-        "background": "#ffffffB3",
+        "background": "#ffffffE6",
         "editor.background": "#ffffff00",
         "editor.gutter.background": "#ffffff00",
         "editor.subheader.background": "#f3f3f3BC",

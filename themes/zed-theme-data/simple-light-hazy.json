@@ -14,7 +14,7 @@
         // 底色为 simple-light 的纯白 + go.dev 藏蓝 UI
         // ============================================================
         "background.appearance": "blurred",
-        "background": "#ffffffB3",
+        "background": "#ffffffE6",
         "editor.background": "#ffffff00",
         "editor.gutter.background": "#ffffff00",
         "editor.subheader.background": "#f3f3f3BC",
