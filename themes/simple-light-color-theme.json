@@ -276,6 +276,15 @@
       "settings": { "foreground": "#a31515" }
     },
 
+    // ---------- 函数名：暖灰，与普通文本黑色区分 ----------
+    {
+      "name": "Function",
+      "scope": [
+        "entity.name.function", "support.function", "variable.function"
+      ],
+      "settings": { "foreground": "#6b6252" }
+    },
+
     // ---------- 数字 / 布尔 / 常量：暗绿 ----------
     {
       "name": "Constants",

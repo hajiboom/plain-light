@@ -5,4 +5,4 @@ schema_version = 1
 authors = ["neoh"]
 description = "Simple dark theme fused with Subliminal Nightfall Hazy's glassmorphism transparency."
 
-themes = ["themes/simple-dark.json"]
+themes = ["themes/simple.json"]
