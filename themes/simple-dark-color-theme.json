@@ -12,7 +12,7 @@
 
     // ---- 编辑器：不透底 + 近白文字 ----
     "editor.background": "#1e2226",
-    "editor.foreground": "#ddd8d2",
+    "editor.foreground": "#d8d4ce",
     "editor.lineHighlightBackground": "#22262a",
     "editor.selectionBackground": "#4a6890",
     "editor.selectionHighlightBackground": "#4a689060",
@@ -60,15 +60,15 @@
     "activityBar.activeBorder": "#90e0ff",
     "activityBar.activeBackground": "#1a1e22",
 
-    // ---- 底部状态栏 ----
-    "statusBar.background": "#161a1e",
-    "statusBar.foreground": "#dcd8d4",
-    "statusBar.border": "#3c4044",
-    "statusBar.noFolderBackground": "#161a1e",
+    // ---- 底部状态栏：与顶部标题栏一致的藏青色 ----
+    "statusBar.background": "#007894",
+    "statusBar.foreground": "#ffffff",
+    "statusBar.border": "#006982",
+    "statusBar.noFolderBackground": "#007894",
     "statusBar.debuggingBackground": "#b86820",
-    "statusBarItem.remoteBackground": "#161a1e",
-    "statusBarItem.remoteForeground": "#d8d4cc",
-    "statusBarItem.hoverBackground": "#22262a",
+    "statusBarItem.remoteBackground": "#007894",
+    "statusBarItem.remoteForeground": "#ffffff",
+    "statusBarItem.hoverBackground": "#007aa4",
 
     // ---- 命令中心 ----
     "commandCenter.foreground": "#d8d4cc",
