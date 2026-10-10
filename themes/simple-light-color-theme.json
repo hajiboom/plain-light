@@ -207,22 +207,22 @@
   },
 
   // ============================================================
-  // 代码高亮：极简四色 —
-  // 藏蓝关键字、暗红字符串、灰绿注释、暗绿常量，
-  // 函数 / 类型 / 变量等自定义标识符保持纯黑原色
+  // 代码高亮：MATLAB 经典配色 —
+  // 蓝色关键字、紫色字符串、森林绿注释、金色预处理指令，
+  // 数字 / 布尔 / 常量与函数、变量等自定义标识符保持纯黑原色
   // ============================================================
   "tokenColors": [
-    // ---------- 注释：灰绿斜体 ----------
+    // ---------- 注释：森林绿斜体 ----------
     {
       "name": "Comment",
       "scope": ["comment", "punctuation.definition.comment"],
       "settings": {
         "fontStyle": "italic",
-        "foreground": "#608b4e"
+        "foreground": "#228B22"
       }
     },
 
-    // ---------- 关键字：藏蓝（含内置类型 / 修饰符） ----------
+    // ---------- 关键字：MATLAB 经典蓝（含内置类型 / 修饰符） ----------
     {
       "name": "Keywords",
       "scope": [
@@ -241,14 +241,14 @@
         "keyword.interface.go", "keyword.map.go", "keyword.chan.go",
         "storage.type", "storage.modifier"
       ],
-      "settings": { "foreground": "#005c72" }
+      "settings": { "foreground": "#0000FF" }
     },
 
-    // ---------- 预处理指令：深藏蓝 ----------
+    // ---------- 预处理 / 系统指令：金色 ----------
     {
       "name": "Preprocessor",
       "scope": "meta.preprocessor",
-      "settings": { "foreground": "#000080" }
+      "settings": { "foreground": "#B28C00" }
     },
 
     // ---------- HTML/JSX 标签名：藏蓝 ----------
@@ -269,11 +269,11 @@
       "settings": { "foreground": "#000080" }
     },
 
-    // ---------- 字符串：暗红 ----------
+    // ---------- 字符串：MATLAB 经典紫 ----------
     {
       "name": "Strings",
       "scope": "string",
-      "settings": { "foreground": "#a31515" }
+      "settings": { "foreground": "#A020F0" }
     },
 
     // ---------- 函数名：暖灰，与普通文本黑色区分 ----------
@@ -285,21 +285,21 @@
       "settings": { "foreground": "#6b6252" }
     },
 
-    // ---------- 数字 / 布尔 / 常量：暗绿 ----------
+    // ---------- 数字 / 布尔 / 常量：黑色原色（MATLAB 同款不着色） ----------
     {
       "name": "Constants",
       "scope": [
         "constant.numeric", "constant.language", "constant.boolean",
         "variable.other.enummember"
       ],
-      "settings": { "foreground": "#098658" }
+      "settings": { "foreground": "#000000" }
     },
 
-    // ---------- 转义序列：暗绿 ----------
+    // ---------- 转义序列：深紫 ----------
     {
       "name": "Escape",
       "scope": "constant.character.escape",
-      "settings": { "foreground": "#098658" }
+      "settings": { "foreground": "#7F007F" }
     },
 
     // ---------- this / self / super：仅斜体，不换色 ----------
@@ -309,11 +309,11 @@
       "settings": { "fontStyle": "italic" }
     },
 
-    // ---------- 错误 / 非法 ----------
+    // ---------- 错误 / 非法（含未闭合字符串）：暗红 ----------
     {
       "name": "Invalid",
       "scope": ["invalid", "invalid.illegal"],
-      "settings": { "foreground": "#cd3131" }
+      "settings": { "foreground": "#B20000" }
     },
 
     // ---------- Markdown ----------
@@ -335,12 +335,12 @@
     {
       "name": "Markdown Quote",
       "scope": "markup.quote",
-      "settings": { "foreground": "#608b4e", "fontStyle": "italic" }
+      "settings": { "foreground": "#228B22", "fontStyle": "italic" }
     },
     {
       "name": "Markdown Code",
       "scope": ["markup.inline.raw", "markup.fenced_code.block"],
-      "settings": { "foreground": "#098658" }
+      "settings": { "foreground": "#A020F0" }
     },
     {
       "name": "Markdown Link",

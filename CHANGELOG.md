@@ -6,6 +6,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+## [1.1.0] - 2026-10-10
+- 浅色主题代码高亮改为 MATLAB 经典配色：关键字 `#0000FF`、字符串 `#A020F0`、注释 `#228B22`、预处理指令 `#B28C00`，数字/常量回归黑色原色；标题栏/状态栏藏蓝与 UI 配色保持不变
+- 同步更新 Zed 浅色主题（Simple Light / Simple Light Hazy）语法配色
+
 ## [1.0.0] - 2026-09-15
 - 新增 Zed 主题扩展：Simple Dark / Simple Dark Hazy（毛玻璃透明，融合 Subliminal Nightfall Hazy 透明层级）
 - dark 主题：白色文本整体降亮度，Function 改为哑光白，状态栏 remote 图标与背景同色

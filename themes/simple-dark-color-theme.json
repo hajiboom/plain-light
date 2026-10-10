@@ -12,7 +12,8 @@
 
     // ---- 编辑器：不透底 + 近白文字 ----
     "editor.background": "#1e2226",
-    "editor.foreground": "#d8d4ce",
+    //     "editor.foreground": "#cfcac4",
+    "editor.foreground": "#d0cdc8",
     "editor.lineHighlightBackground": "#22262a",
     "editor.selectionBackground": "#4a6890",
     "editor.selectionHighlightBackground": "#4a689060",
@@ -224,7 +225,8 @@
       "scope": [
         "entity.name.function", "support.function", "variable.function"
       ],
-      "settings": { "foreground": "#d4d0c8" }
+      // "settings": { "foreground": "#d0cdc8" }
+      "settings": { "foreground": "#d8d4ce" }
     },
 
     {
@@ -254,7 +256,7 @@
       "scope": [
         "variable", "variable.parameter", "variable.other.member"
       ],
-      "settings": { "foreground": "#faf8f4" }
+      "settings": { "foreground": "#d8d4cc" }
     },
 
     {
@@ -262,7 +264,7 @@
       "scope": [
         "variable.other.property", "variable.object.property"
       ],
-      "settings": { "foreground": "#e0e0f0" }
+      "settings": { "foreground": "#d4d0c8" }
     },
 
     {
@@ -374,7 +376,7 @@
     {
       "name": "SQL Column Name",
       "scope": "entity.name.column.sql",
-      "settings": { "foreground": "#faf8f4" }
+      "settings": { "foreground": "#d8d4cc" }
     },
 
     // ---------- Markdown ----------
