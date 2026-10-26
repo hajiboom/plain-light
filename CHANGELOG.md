@@ -5,6 +5,8 @@ All notable changes to the "julia" extension will be documented in this file.
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
 ## [Unreleased]
+- 新增 OpenCode TUI 自定义主题：`opencode/themes/simple.json`，由 Zed 配色数据生成，包含亮/暗模式并映射语法、Markdown、Diff 与反馈色
+- 新增 `scripts/build-opencode-theme.js` 与 `npm run build:opencode`
 
 ## [1.1.0] - 2026-10-10
 - 浅色主题代码高亮改为 MATLAB 经典配色：关键字 `#0000FF`、字符串 `#A020F0`、注释 `#228B22`、预处理指令 `#B28C00`，数字/常量回归黑色原色；标题栏/状态栏藏蓝与 UI 配色保持不变

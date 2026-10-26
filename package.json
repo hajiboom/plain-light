@@ -5,6 +5,10 @@
   "icon": "images/icon.png",
   "description": "A minimal light theme, no fancy highlights, eye-friendly",
   "version": "1.1.0",
+  "scripts": {
+    "build:zed": "node scripts/build-zed-theme.js",
+    "build:opencode": "node scripts/build-opencode-theme.js"
+  },
   "engines": {
     "vscode": "^1.106.0"
   },

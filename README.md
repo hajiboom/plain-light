@@ -23,6 +23,34 @@
 2. 打开 Zed → `Ctrl+Shift+P` → `zed: install dev extension` → 选择 `zed-extension` 目录
 3. 通过 `theme selector: toggle` 选择主题；Hazy 变体建议在 `settings.json` 中添加 `"window_background_blur": 24` 以获得完整毛玻璃效果
 
+### OpenCode TUI 支持
+
+仓库同时提供 OpenCode 自定义主题（`opencode/themes/simple.json`），从上面的 VS Code / Zed 配色自动生成，同时包含亮色与暗色模式，并映射了语法高亮、Markdown、Diff、边框与反馈色。终端无法合成半透明颜色，因此 OpenCode 版本使用不透明色值。
+
+安装：
+
+```bash
+mkdir -p ~/.config/opencode/themes
+cp opencode/themes/simple.json ~/.config/opencode/themes/
+```
+
+重启 OpenCode 后运行 `/themes` 选择 `simple`，或在 `~/.config/opencode/cli.json` 中固定主题与模式：
+
+```json
+{
+  "theme": {
+    "name": "simple",
+    "mode": "dark"
+  }
+}
+```
+
+修改 `themes/zed-theme-data/` 中的配色后，可重新生成：
+
+```bash
+npm run build:opencode
+```
+
 ### 方式一：插件市场安装（推荐）
 1. 打开 VS Code → 扩展面板（快捷键 `Ctrl+Shift+X` / `Cmd+Shift+X`）
 2. 搜索 `julia`
