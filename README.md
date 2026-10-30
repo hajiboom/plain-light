@@ -45,11 +45,64 @@ cp opencode/themes/simple.json ~/.config/opencode/themes/
 }
 ```
 
-修改 `themes/zed-theme-data/` 中的配色后，可重新生成：
+### OpenAI Codex CLI 支持
+
+仓库提供两套 Codex `.tmTheme` 主题（`codex/themes/`）：
+
+- **Simple Dark**：适合深色终端
+- **Simple Light**：适合浅色终端
+
+Codex 的 TUI 背景由终端决定，主题主要负责语法高亮、`codex.accent` 强调色和 Diff 背景，因此请按终端明暗选择对应版本。
+
+安装：
 
 ```bash
-npm run build:opencode
+mkdir -p ~/.codex/themes
+cp codex/themes/*.tmTheme ~/.codex/themes/
 ```
+
+在 Codex 中执行 `/theme`，选择 `simple-dark (custom)` 或 `simple-light (custom)`；或在 `~/.codex/config.toml` 中固定：
+
+```toml
+[tui]
+theme = "simple-dark"
+```
+
+### Claude Code 支持
+
+仓库提供两套 Claude Code 自定义主题（`claude/themes/`）：
+
+- `simple-dark.json`：暗色模式
+- `simple-light.json`：亮色模式
+
+Claude Code 不控制终端自身的底色，`simple-dark` / `simple-light` 需配合对应明暗的终端使用。
+
+安装：
+
+```bash
+mkdir -p ~/.claude/themes
+cp claude/themes/*.json ~/.claude/themes/
+```
+
+在 Claude Code 中执行 `/theme`，选择 **Simple Dark (custom)** 或 **Simple Light (custom)**；或在 `~/.claude/settings.json` 中固定：
+
+```json
+{
+  "theme": "custom:simple-dark"
+}
+```
+
+Claude Code 会监听 `~/.claude/themes/`，修改主题文件后无需重启。
+
+### 重新生成 TUI 主题
+
+修改 `themes/zed-theme-data/` 中的配色后，可一次性重新生成 OpenCode、Codex 和 Claude Code 主题：
+
+```bash
+npm run build:themes
+```
+
+也可以单独运行 `npm run build:opencode`、`npm run build:codex` 或 `npm run build:claude`。
 
 ### 方式一：插件市场安装（推荐）
 1. 打开 VS Code → 扩展面板（快捷键 `Ctrl+Shift+X` / `Cmd+Shift+X`）

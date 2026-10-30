@@ -7,7 +7,10 @@
   "version": "1.1.0",
   "scripts": {
     "build:zed": "node scripts/build-zed-theme.js",
-    "build:opencode": "node scripts/build-opencode-theme.js"
+    "build:opencode": "node scripts/build-opencode-theme.js",
+    "build:codex": "node scripts/build-codex-theme.js",
+    "build:claude": "node scripts/build-claude-theme.js",
+    "build:themes": "npm run build:opencode && npm run build:codex && npm run build:claude"
   },
   "engines": {
     "vscode": "^1.106.0"
