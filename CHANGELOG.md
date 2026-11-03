@@ -5,6 +5,10 @@ All notable changes to the "julia" extension will be documented in this file.
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
 ## [Unreleased]
+- 暗色主题整体重做：配色与界面样式移植自 Tsoding Emacs Gruber Minimal（`#181818` 炭黑底、`#ffdd33` 关键字/强调色、`#79bf46` 字符串、`#c18132` 注释、`#ff6200` 数字、`#949bb0` 函数、`#94b0a6` 类型/常量、`#504945` 选区），移除此前混入的藏蓝状态栏、灰蓝选中色与霓虹绿；补全 semanticTokenColors、终端 ANSI、Chat/Peek/Diff/Git 装饰等新版 UI 配色
+- 藏蓝"go.dev"配色改为只保留在顶部标题栏：暗色状态栏改用 `#141414`，浅色状态栏改用 `#f3f3f3`；VSCode 与 Zed 主题同步调整
+- Zed 暗色主题（Simple Dark / Simple Dark Hazy）整套换成新的 Gruber 调色板，OpenCode、Codex、Claude Code 主题由新调色板重新生成
+- 新增 Pi 主题：`pi/themes/simple-dark.json`、`pi/themes/simple-light.json`，覆盖消息、工具、Markdown、Diff、语法与 thinking 渐变
 - 新增 OpenCode TUI 自定义主题：`opencode/themes/simple.json`，由 Zed 配色数据生成，包含亮/暗模式并映射语法、Markdown、Diff 与反馈色
 - 新增 Codex CLI 主题：`codex/themes/simple-dark.tmTheme`、`simple-light.tmTheme`
 - 新增 Claude Code 主题：`claude/themes/simple-dark.json`、`simple-light.json`

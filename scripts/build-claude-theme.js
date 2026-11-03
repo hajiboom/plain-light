@@ -7,22 +7,23 @@ const outDir = path.join(repo, 'claude', 'themes');
 function overrides(p) {
   const dark = p.mode === 'dark';
   const accent = p.accent;
-  const purple = dark ? '#c888d0' : '#a020f0';
+  const purple = dark ? '#9e95c7' : '#a020f0';
   const pink = dark ? '#f1a5ab' : '#c2185b';
-  const orange = dark ? '#e09a50' : '#b36205';
-  const indigo = dark ? '#80a8e0' : '#0000ff';
-  const surface = dark ? '#22262a' : '#f3f3f3';
-  const surfaceHover = dark ? '#292d31' : '#ececec';
-  const sidebar = dark ? '#1a1e22' : '#f3f3f3';
-  const selection = dark ? '#4a6890' : '#cce4ff';
-  const rateEmpty = dark ? '#3c4044' : '#d4d4d4';
+  const orange = dark ? '#ff9b21' : '#b36205';
+  const indigo = dark ? '#95a2c9' : '#0000ff';
+  const surface = dark ? '#282828' : '#f3f3f3';
+  const surfaceHover = dark ? '#333333' : '#ececec';
+  const sidebar = dark ? '#181818' : '#f3f3f3';
+  const selection = dark ? '#504945' : '#cce4ff';
+  const rateEmpty = dark ? '#444444' : '#d4d4d4';
+  const professionalBlue = dark ? '#95a2c9' : p.modified;
 
   const rainbow = {
-    red: dark ? '#ff5860' : '#e11b14',
+    red: dark ? '#f43841' : '#e11b14',
     orange,
-    yellow: dark ? '#ffe850' : '#b28c00',
-    green: dark ? '#90e050' : '#388e3c',
-    blue: dark ? '#4898e0' : '#1976d2',
+    yellow: dark ? '#ffdd33' : '#b28c00',
+    green: dark ? '#79bf46' : '#388e3c',
+    blue: dark ? '#95a2c9' : '#1976d2',
     indigo,
     violet: purple,
   };
@@ -38,9 +39,9 @@ function overrides(p) {
     // Brand and accent
     claude: accent,
     claudeShimmer: shimmer(accent, p.mode),
-    claudeBlue_FOR_SYSTEM_SPINNER: p.modified,
-    claudeBlueShimmer_FOR_SYSTEM_SPINNER: shimmer(p.modified, p.mode),
-    professionalBlue: p.modified,
+    claudeBlue_FOR_SYSTEM_SPINNER: professionalBlue,
+    claudeBlueShimmer_FOR_SYSTEM_SPINNER: shimmer(professionalBlue, p.mode),
+    professionalBlue,
     chromeYellow: p.warning,
 
     // Foreground text
@@ -49,8 +50,8 @@ function overrides(p) {
     inactive: p.muted,
     inactiveShimmer: shimmer(p.muted, p.mode),
     subtle: p.faint,
-    suggestion: dark ? '#78d8f0' : accent,
-    remember: dark ? '#f0e080' : '#8b6606',
+    suggestion: dark ? '#95a2c9' : accent,
+    remember: dark ? '#ffdd33' : '#8b6606',
     background: p.background,
 
     // Status
@@ -65,7 +66,7 @@ function overrides(p) {
     promptBorderShimmer: shimmer(accent, p.mode),
     permission: accent,
     permissionShimmer: shimmer(accent, p.mode),
-    planMode: dark ? '#78d8f0' : p.modified,
+    planMode: dark ? '#95a2c9' : p.modified,
     autoAccept: p.success,
     autoAcceptShimmer: shimmer(p.success, p.mode),
     skill: p.success,
@@ -95,10 +96,10 @@ function overrides(p) {
     rate_limit_fill: accent,
     rate_limit_empty: rateEmpty,
     briefLabelYou: accent,
-    briefLabelClaude: dark ? '#90e0ff' : '#000080',
+    briefLabelClaude: dark ? '#95a2c9' : '#000080',
 
     // Mascot
-    clawd_body: dark ? '#c89648' : '#8b6606',
+    clawd_body: dark ? '#c18132' : '#8b6606',
     clawd_background: surface,
 
     // Rainbow palette
@@ -119,7 +120,7 @@ function overrides(p) {
 
     // Subagent palette
     red_FOR_SUBAGENTS_ONLY: rainbow.red,
-    blue_FOR_SUBAGENTS_ONLY: p.modified,
+    blue_FOR_SUBAGENTS_ONLY: professionalBlue,
     green_FOR_SUBAGENTS_ONLY: p.success,
     yellow_FOR_SUBAGENTS_ONLY: p.warning,
     purple_FOR_SUBAGENTS_ONLY: purple,

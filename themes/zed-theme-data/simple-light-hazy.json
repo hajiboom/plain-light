@@ -10,7 +10,7 @@
         // ============================================================
         // 毛玻璃层级：与 Simple Dark Hazy 相同的 alpha 结构
         //   editor / panel 完全透明 (00)，表面 70% (B3)，
-        //   标题栏/状态栏 74% (BC)，浮层 90% (E6)
+        //   标题栏 74% (BC)，浮层 90% (E6)
         // 底色为 simple-light 的纯白 + go.dev 藏蓝 UI
         // ============================================================
         "background.appearance": "blurred",
@@ -47,7 +47,7 @@
         "minimap.thumb.hover_background": "#9e9e9e73",
         "minimap.thumb.active_background": "#007894A6",
 
-        // ---- 窗口 / 标题栏：go.dev 藏蓝 ----
+        // ---- 窗口 / 标题栏：仅顶部保留 go.dev 藏蓝 ----
         "title_bar.background": "#007894BC",
         "title_bar.inactive_background": "#005c726B",
         "toolbar.background": "#ffffff1A",
@@ -55,8 +55,8 @@
         "panel.overlay_background": "#ffffffF2",
         "panel.indent_guide": "#e6e6e6A6",
         "panel.indent_guide_active": "#b0b0b0",
-        "status_bar.background": "#007894BC",
-        "status_bar.border": "#006982A6",
+        "status_bar.background": "#f3f3f3BC",
+        "status_bar.border": "#dcdcdcA6",
         "tab_bar.background": "#f3f3f311",
         "tab.active_background": "#ffffff55",
         "tab.inactive_background": "#f3f3f322",

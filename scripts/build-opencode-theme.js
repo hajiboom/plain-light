@@ -68,19 +68,20 @@ function scale(anchor, mode) {
   return steps;
 }
 
-// The native Zed/VSCode grays are deliberately kept as-is instead of being
-// regenerated, so the TUI surfaces match the editor themes exactly.
+// The neutral grays are pinned to the editor themes' palette (Gruber Darker
+// for dark, #f3f3f3/#ffffff for light) instead of being regenerated, so the
+// TUI surfaces match the editor themes exactly.
 const NEUTRAL = {
   dark: {
-    100: '#e6e2dc',
-    200: '#d8d4cc',
-    300: '#a0a4a8',
-    400: '#787c80',
-    500: '#3c4044',
-    600: '#292d31',
-    700: '#22262a',
-    800: '#1e2226',
-    900: '#161a1e',
+    100: '#e4e4ef',
+    200: '#d4d4d4',
+    300: '#a6a6a6',
+    400: '#6b6b6b',
+    500: '#444444',
+    600: '#333333',
+    700: '#282828',
+    800: '#181818',
+    900: '#101010',
   },
   light: {
     100: '#000000',
@@ -100,12 +101,12 @@ function hues(p) {
   return {
     gray: NEUTRAL[p.mode],
     red: scale(p.error, p.mode),
-    orange: scale(dark ? '#c98538' : '#c9722a', p.mode),
+    orange: scale(dark ? '#c18132' : '#c9722a', p.mode),
     yellow: scale(p.warning, p.mode),
     green: scale(p.success, p.mode),
     cyan: scale(p.accent, p.mode),
-    blue: scale(dark ? p.modified : p.info, p.mode),
-    purple: scale(dark ? '#c888d0' : '#a020f0', p.mode),
+    blue: scale(dark ? '#95a2c9' : p.info, p.mode),
+    purple: scale(dark ? '#9e95c7' : '#a020f0', p.mode),
     accent: '$hue.cyan',
     interactive: '$hue.blue',
     neutral: '$hue.gray',
@@ -183,10 +184,10 @@ function markdownTokens(p) {
 function feedbackBackgrounds(mode) {
   return mode === 'dark'
     ? {
-        error: '#3b292b',
-        warning: '#3a3726',
-        success: '#27392e',
-        info: '#2f3e47',
+        error: '#2b1a1c',
+        warning: '#2b2418',
+        success: '#1e2a1a',
+        info: '#1f252e',
       }
     : {
         error: '#fce8e7',
@@ -333,7 +334,7 @@ function modeOverrides(p) {
       base: dark ? '$hue.neutral.500' : '#d4d4d4',
     },
     scrollbar: {
-      base: dark ? '#484c50' : '#c0c0c0',
+      base: dark ? '#504945' : '#c0c0c0',
     },
     diff: diffTokens(p),
     syntax: syntaxTokens(p),

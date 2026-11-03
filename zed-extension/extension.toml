@@ -1,8 +1,8 @@
 id = "plain-light-simple-dark"
 name = "Simple Dark"
-version = "0.1.0"
+version = "0.2.0"
 schema_version = 1
 authors = ["neoh"]
-description = "Simple dark theme fused with Subliminal Nightfall Hazy's glassmorphism transparency."
+description = "Simple Dark (Gruber Darker) and Simple Light (MATLAB) themes, plus hazy glassmorphism variants; go.dev teal kept on the title bar only."
 
 themes = ["themes/simple.json"]
