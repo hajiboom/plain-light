@@ -5,18 +5,18 @@
   "vars": {
     "bg": "#181818",
     "surface": "#282828",
-    "text": "#d4d4d4",
+    "text": "#c6c6c6",
     "muted": "#a6a6a6",
     "dim": "#6b6b6b",
-    "yellow": "#ffdd33",
-    "green": "#79bf46",
+    "yellow": "#d8bd55",
+    "green": "#7fb757",
     "comment": "#c18132",
-    "orange": "#ff6200",
-    "amber": "#ff9b21",
+    "orange": "#dc7a45",
+    "amber": "#d99f57",
     "niagara": "#949bb0",
     "quartz": "#94b0a6",
     "blue": "#95a2c9",
-    "red": "#f43841",
+    "red": "#e35d64",
     "selection": "#504945"
   },
   "colors": {
@@ -35,7 +35,7 @@
     "scrollbarTrack": "#282828",
     "scrollbarThumb": "selection",
     "searchMatchBg": "#4a3c18",
-    "searchMatchText": "#f4f4ff",
+    "searchMatchText": "#dfe0ea",
     "thinkingMax": "orange",
 
     "userMessageBg": "surface",

@@ -4,6 +4,14 @@ All notable changes to the "julia" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [1.2.2] - 2026-11-16
+### 暗色主题：降亮降饱和（与浅色同一套思路）
+- 检出问题：关键字黄 `#ffdd33` 对比度 13.23:1、峰值亮度 0.73、饱和度 100%；数字 `#ff6200` 与 warning `#ff9b21` 饱和度 100%；error `#f43841` 4.64:1 / 饱和度 90%；终端 brightYellow `#ffe566` 峰值亮度 0.78、brightWhite `#f4f4ff` 0.91；ANSI 红 `#c73c3f` 仅 3.51:1。暗底上的高亮度、纯饱和字会“外溢”成光晕，散光下更明显，且纯饱和度的边缘会被眼球色差抹出色带
+- 正文 `#d4d4d4` → `#c6c6c6`（11.98:1 → 10.40:1），二级 UI 文字 `#cccccc` → `#bfbfbf`，行号 `#b3b3b3` → `#9a9a9a`；纯白 UI 文字降为 `#e8e8e8`，但标题栏、按钮、徽标、调试状态栏等色块上的文字仍保留 `#ffffff`
+- 色相不变，只压饱和度与峰值亮度：关键字 `#ffdd33` → `#d8bd55`（0.73 → 0.52、100% → 63%），字符串 `#79bf46` → `#7fb757`，数字 `#ff6200` → `#dc7a45`（100% → 68%），error `#f43841` → `#e35d64`（4.64 → 5.09:1），warning `#ff9b21` → `#d99f57`，conflict `#f1a5ab` → `#dc9ba1`，modified `#e2c08d` → `#d6b98d`
+- 终端：bright 系列同步降亮（亮黄 0.78 → 0.62、亮白 0.91 → 0.75），ANSI 红 `#c73c3f` → `#d05f61`（3.51 → 4.64:1），终端正文与编辑区正文对齐为 `#c6c6c6`
+- 语法色在 `#181818` 上全部 ≥4.5:1；同步重生成 Zed（Simple Dark / Hazy）、OpenCode、Codex CLI、Claude Code 暗色主题与 Pi 暗色配置；浅色主题本轮未改动
+
 ## [1.2.1] - 2026-11-16
 ### 浅色主题：暖白降对比（散光友好）
 - 底色由纯白 `#ffffff` 改为暖白 `#F5F5F5`，正文由纯黑改为深灰 `#1a1a1a`（白底对比度 21:1 → 15.96:1），降低高对比边缘的光晕（halation）与重影；界面浅色分层层级同步下移一档（侧栏/状态栏 `#ededed`、标签栏 `#ebebeb`、浮层 `#fafafa`、活动栏 `#e7e7e7`），行高亮改为 `#ededed` 以免与底色重叠

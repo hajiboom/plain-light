@@ -8,8 +8,8 @@ function overrides(p) {
   const dark = p.mode === 'dark';
   const accent = p.accent;
   const purple = dark ? '#9e95c7' : '#7a1fa2';
-  const pink = dark ? '#f1a5ab' : '#c2185b';
-  const orange = dark ? '#ff9b21' : '#a4560a';
+  const pink = dark ? '#dc9ba1' : '#c2185b';
+  const orange = dark ? '#d99f57' : '#a4560a';
   const indigo = dark ? '#95a2c9' : '#1b4b8f';
   const surface = dark ? '#282828' : '#ededed';
   const surfaceHover = dark ? '#333333' : '#e6e6e6';
@@ -19,10 +19,10 @@ function overrides(p) {
   const professionalBlue = dark ? '#95a2c9' : p.modified;
 
   const rainbow = {
-    red: dark ? '#f43841' : '#b31d28',
+    red: dark ? '#e35d64' : '#b31d28',
     orange,
-    yellow: dark ? '#ffdd33' : '#8a6100',
-    green: dark ? '#79bf46' : '#1a7f37',
+    yellow: dark ? '#d8bd55' : '#8a6100',
+    green: dark ? '#7fb757' : '#1a7f37',
     blue: dark ? '#95a2c9' : '#2c63a8',
     indigo,
     violet: purple,
@@ -51,7 +51,7 @@ function overrides(p) {
     inactiveShimmer: shimmer(p.muted, p.mode),
     subtle: p.faint,
     suggestion: dark ? '#95a2c9' : accent,
-    remember: dark ? '#ffdd33' : '#8a6100',
+    remember: dark ? '#d8bd55' : '#8a6100',
     background: p.background,
 
     // Status

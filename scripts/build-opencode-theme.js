@@ -73,8 +73,8 @@ function scale(anchor, mode) {
 // TUI surfaces match the editor themes exactly.
 const NEUTRAL = {
   dark: {
-    100: '#e4e4ef',
-    200: '#d4d4d4',
+    100: '#d6d7e2',
+    200: '#c6c6c6',
     300: '#a6a6a6',
     400: '#6b6b6b',
     500: '#444444',

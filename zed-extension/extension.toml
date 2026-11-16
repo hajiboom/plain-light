@@ -1,6 +1,6 @@
 id = "plain-light-simple-dark"
 name = "Simple Dark"
-version = "0.2.1"
+version = "0.2.2"
 schema_version = 1
 authors = ["neoh"]
 description = "Simple Dark (Gruber Darker) and Simple Light (MATLAB) themes, plus hazy glassmorphism variants; go.dev teal kept on the title bar only."
