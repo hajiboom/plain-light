@@ -3,18 +3,19 @@
   "name": "simple-light",
   "appearance": "light",
   "vars": {
-    "bg": "#ffffff",
-    "surface": "#f3f3f3",
-    "text": "#000000",
-    "muted": "#555555",
+    "bg": "#f5f5f5",
+    "surface": "#ededed",
+    "text": "#1a1a1a",
+    "muted": "#6e6e6e",
     "dim": "#9e9e9e",
     "teal": "#007894",
-    "blue": "#0000ff",
-    "green": "#228b22",
-    "gold": "#b28c00",
-    "orange": "#b36205",
-    "purple": "#a020f0",
-    "red": "#c72824",
+    "blue": "#1b4b8f",
+    "navy": "#123c63",
+    "green": "#1a7f37",
+    "gold": "#8a6100",
+    "orange": "#976404",
+    "purple": "#7a1fa2",
+    "red": "#b31d28",
     "selection": "#cce4ff"
   },
   "colors": {
@@ -22,7 +23,7 @@
     "border": "#d4d4d4",
     "borderAccent": "teal",
     "borderMuted": "#e6e6e6",
-    "success": "#388e3c",
+    "success": "green",
     "error": "red",
     "warning": "orange",
     "muted": "muted",
@@ -35,19 +36,19 @@
     "searchMatchBg": "#fde3a7",
     "searchMatchText": "text",
 
-    "userMessageBg": "#eaf3f5",
+    "userMessageBg": "#e9f1f3",
     "userMessageText": "text",
     "customMessageBg": "surface",
     "customMessageText": "text",
     "customMessageLabel": "teal",
 
     "toolPendingBg": "surface",
-    "toolSuccessBg": "#eaf4ea",
-    "toolErrorBg": "#faeceb",
+    "toolSuccessBg": "#e8eee6",
+    "toolErrorBg": "#f7e5e4",
     "toolTitle": "text",
     "toolOutput": "muted",
 
-    "mdHeading": "#000080",
+    "mdHeading": "navy",
     "mdLink": "teal",
     "mdLinkUrl": "dim",
     "mdCode": "purple",
@@ -56,9 +57,9 @@
     "mdQuote": "green",
     "mdQuoteBorder": "green",
     "mdHr": "#d4d4d4",
-    "mdListBullet": "#000080",
+    "mdListBullet": "navy",
 
-    "toolDiffAdded": "#388e3c",
+    "toolDiffAdded": "green",
     "toolDiffRemoved": "red",
     "toolDiffContext": "muted",
 
@@ -80,11 +81,11 @@
     "thinkingXhigh": "teal",
     "thinkingMax": "#005c72",
 
-    "bashMode": "#388e3c"
+    "bashMode": "green"
   },
   "export": {
     "pageBg": "bg",
     "cardBg": "surface",
-    "infoBg": "#eaf3f5"
+    "infoBg": "#e9f1f3"
   }
 }

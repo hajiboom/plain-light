@@ -7,7 +7,7 @@
   <array>
   <dict>
     <key>settings</key><dict>
-      <key>foreground</key><string>#000000</string>
+      <key>foreground</key><string>#1a1a1a</string>
     </dict>
   </dict>
   <dict>
@@ -19,32 +19,32 @@
   <dict>
     <key>scope</key><string>comment, punctuation.definition.comment</string>
     <key>settings</key><dict>
-      <key>foreground</key><string>#228B22</string>
+      <key>foreground</key><string>#1a7f37</string>
       <key>fontStyle</key><string>italic</string>
     </dict>
   </dict>
   <dict>
     <key>scope</key><string>string, punctuation.definition.string</string>
     <key>settings</key><dict>
-      <key>foreground</key><string>#A020F0</string>
+      <key>foreground</key><string>#7a1fa2</string>
     </dict>
   </dict>
   <dict>
     <key>scope</key><string>keyword, storage, keyword.control, keyword.declaration</string>
     <key>settings</key><dict>
-      <key>foreground</key><string>#0000FF</string>
+      <key>foreground</key><string>#1b4b8f</string>
     </dict>
   </dict>
   <dict>
     <key>scope</key><string>support.type, support.class, support.variable, entity.name.type</string>
     <key>settings</key><dict>
-      <key>foreground</key><string>#0000FF</string>
+      <key>foreground</key><string>#1b4b8f</string>
     </dict>
   </dict>
   <dict>
     <key>scope</key><string>constant, constant.numeric, constant.language, constant.boolean</string>
     <key>settings</key><dict>
-      <key>foreground</key><string>#000000</string>
+      <key>foreground</key><string>#1a1a1a</string>
     </dict>
   </dict>
   <dict>
@@ -56,53 +56,53 @@
   <dict>
     <key>scope</key><string>variable, variable.parameter, variable.other.member</string>
     <key>settings</key><dict>
-      <key>foreground</key><string>#000000</string>
+      <key>foreground</key><string>#1a1a1a</string>
     </dict>
   </dict>
   <dict>
     <key>scope</key><string>punctuation, keyword.operator</string>
     <key>settings</key><dict>
-      <key>foreground</key><string>#000000</string>
+      <key>foreground</key><string>#1a1a1a</string>
     </dict>
   </dict>
   <dict>
     <key>scope</key><string>invalid, invalid.illegal</string>
     <key>settings</key><dict>
-      <key>foreground</key><string>#b20000</string>
+      <key>foreground</key><string>#b31d28</string>
     </dict>
   </dict>
   <dict>
     <key>scope</key><string>markup.heading, entity.name.section.markdown</string>
     <key>settings</key><dict>
-      <key>foreground</key><string>#000080</string>
+      <key>foreground</key><string>#123c63</string>
       <key>fontStyle</key><string>bold</string>
     </dict>
   </dict>
   <dict>
     <key>scope</key><string>markup.bold</string>
     <key>settings</key><dict>
-      <key>foreground</key><string>#000000</string>
+      <key>foreground</key><string>#1a1a1a</string>
       <key>fontStyle</key><string>bold</string>
     </dict>
   </dict>
   <dict>
     <key>scope</key><string>markup.italic</string>
     <key>settings</key><dict>
-      <key>foreground</key><string>#228b22</string>
+      <key>foreground</key><string>#1a7f37</string>
       <key>fontStyle</key><string>italic</string>
     </dict>
   </dict>
   <dict>
     <key>scope</key><string>markup.quote</string>
     <key>settings</key><dict>
-      <key>foreground</key><string>#228b22</string>
+      <key>foreground</key><string>#1a7f37</string>
       <key>fontStyle</key><string>italic</string>
     </dict>
   </dict>
   <dict>
     <key>scope</key><string>markup.inline.raw, markup.fenced_code.block</string>
     <key>settings</key><dict>
-      <key>foreground</key><string>#A020F0</string>
+      <key>foreground</key><string>#7a1fa2</string>
     </dict>
   </dict>
   <dict>
@@ -115,27 +115,27 @@
   <dict>
     <key>scope</key><string>string.other.link.title.markdown</string>
     <key>settings</key><dict>
-      <key>foreground</key><string>#000080</string>
+      <key>foreground</key><string>#123c63</string>
     </dict>
   </dict>
   <dict>
     <key>scope</key><string>punctuation.definition.list.markdown</string>
     <key>settings</key><dict>
-      <key>foreground</key><string>#000080</string>
+      <key>foreground</key><string>#123c63</string>
     </dict>
   </dict>
   <dict>
     <key>scope</key><string>markup.inserted, diff.inserted</string>
     <key>settings</key><dict>
-      <key>foreground</key><string>#388e3c</string>
-      <key>background</key><string>#e8f2e9</string>
+      <key>foreground</key><string>#1a7f37</string>
+      <key>background</key><string>#e8eee6</string>
     </dict>
   </dict>
   <dict>
     <key>scope</key><string>markup.deleted, diff.deleted</string>
     <key>settings</key><dict>
-      <key>foreground</key><string>#e11b14</string>
-      <key>background</key><string>#fce8e7</string>
+      <key>foreground</key><string>#b31d28</string>
+      <key>background</key><string>#f7e5e4</string>
     </dict>
   </dict>
   </array>

@@ -7,23 +7,23 @@ const outDir = path.join(repo, 'claude', 'themes');
 function overrides(p) {
   const dark = p.mode === 'dark';
   const accent = p.accent;
-  const purple = dark ? '#9e95c7' : '#a020f0';
+  const purple = dark ? '#9e95c7' : '#7a1fa2';
   const pink = dark ? '#f1a5ab' : '#c2185b';
-  const orange = dark ? '#ff9b21' : '#b36205';
-  const indigo = dark ? '#95a2c9' : '#0000ff';
-  const surface = dark ? '#282828' : '#f3f3f3';
-  const surfaceHover = dark ? '#333333' : '#ececec';
-  const sidebar = dark ? '#181818' : '#f3f3f3';
+  const orange = dark ? '#ff9b21' : '#a4560a';
+  const indigo = dark ? '#95a2c9' : '#1b4b8f';
+  const surface = dark ? '#282828' : '#ededed';
+  const surfaceHover = dark ? '#333333' : '#e6e6e6';
+  const sidebar = dark ? '#181818' : '#ededed';
   const selection = dark ? '#504945' : '#cce4ff';
   const rateEmpty = dark ? '#444444' : '#d4d4d4';
   const professionalBlue = dark ? '#95a2c9' : p.modified;
 
   const rainbow = {
-    red: dark ? '#f43841' : '#e11b14',
+    red: dark ? '#f43841' : '#b31d28',
     orange,
-    yellow: dark ? '#ffdd33' : '#b28c00',
-    green: dark ? '#79bf46' : '#388e3c',
-    blue: dark ? '#95a2c9' : '#1976d2',
+    yellow: dark ? '#ffdd33' : '#8a6100',
+    green: dark ? '#79bf46' : '#1a7f37',
+    blue: dark ? '#95a2c9' : '#2c63a8',
     indigo,
     violet: purple,
   };
@@ -51,7 +51,7 @@ function overrides(p) {
     inactiveShimmer: shimmer(p.muted, p.mode),
     subtle: p.faint,
     suggestion: dark ? '#95a2c9' : accent,
-    remember: dark ? '#ffdd33' : '#8b6606',
+    remember: dark ? '#ffdd33' : '#8a6100',
     background: p.background,
 
     // Status
@@ -96,10 +96,10 @@ function overrides(p) {
     rate_limit_fill: accent,
     rate_limit_empty: rateEmpty,
     briefLabelYou: accent,
-    briefLabelClaude: dark ? '#95a2c9' : '#000080',
+    briefLabelClaude: dark ? '#95a2c9' : '#123c63',
 
     // Mascot
-    clawd_body: dark ? '#c18132' : '#8b6606',
+    clawd_body: dark ? '#c18132' : '#8a6100',
     clawd_background: surface,
 
     // Rainbow palette

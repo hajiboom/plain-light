@@ -69,7 +69,7 @@ function scale(anchor, mode) {
 }
 
 // The neutral grays are pinned to the editor themes' palette (Gruber Darker
-// for dark, #f3f3f3/#ffffff for light) instead of being regenerated, so the
+// for dark, #ededed/#f5f5f5 warm light) instead of being regenerated, so the
 // TUI surfaces match the editor themes exactly.
 const NEUTRAL = {
   dark: {
@@ -84,15 +84,15 @@ const NEUTRAL = {
     900: '#101010',
   },
   light: {
-    100: '#000000',
-    200: '#000000',
-    300: '#9e9e9e',
-    400: '#b0b0b0',
+    100: '#1a1a1a',
+    200: '#1a1a1a',
+    300: '#6e6e6e',
+    400: '#9e9e9e',
     500: '#d4d4d4',
-    600: '#ececec',
-    700: '#f3f3f3',
-    800: '#ffffff',
-    900: '#ffffff',
+    600: '#e6e6e6',
+    700: '#ededed',
+    800: '#f5f5f5',
+    900: '#f5f5f5',
   },
 };
 
@@ -106,7 +106,7 @@ function hues(p) {
     green: scale(p.success, p.mode),
     cyan: scale(p.accent, p.mode),
     blue: scale(dark ? '#95a2c9' : p.info, p.mode),
-    purple: scale(dark ? '#9e95c7' : '#a020f0', p.mode),
+    purple: scale(dark ? '#9e95c7' : '#7a1fa2', p.mode),
     accent: '$hue.cyan',
     interactive: '$hue.blue',
     neutral: '$hue.gray',
@@ -190,10 +190,10 @@ function feedbackBackgrounds(mode) {
         info: '#1f252e',
       }
     : {
-        error: '#fce8e7',
-        warning: '#f6eee1',
-        success: '#e8f2e9',
-        info: '#e8f1fa',
+        error: '#f7e5e4',
+        warning: '#f6ecde',
+        success: '#e8eee6',
+        info: '#e6ecf2',
       };
 }
 

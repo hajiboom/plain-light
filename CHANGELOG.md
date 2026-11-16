@@ -4,7 +4,15 @@ All notable changes to the "julia" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
-## [Unreleased]
+## [1.2.1] - 2026-11-16
+### 浅色主题：暖白降对比（散光友好）
+- 底色由纯白 `#ffffff` 改为暖白 `#F5F5F5`，正文由纯黑改为深灰 `#1a1a1a`（白底对比度 21:1 → 15.96:1），降低高对比边缘的光晕（halation）与重影；界面浅色分层层级同步下移一档（侧栏/状态栏 `#ededed`、标签栏 `#ebebeb`、浮层 `#fafafa`、活动栏 `#e7e7e7`），行高亮改为 `#ededed` 以免与底色重叠
+- 语法配色保留 MATLAB 骨架但整体降饱和、降亮度：关键字 `#0000FF` → `#1b4b8f`，字符串 `#A020F0` → `#7a1fa2`，注释 `#228B22` → `#1a7f37`，预处理指令 `#B28C00` → `#8a6100`，藏蓝 `#000080` → `#123c63`，转义 `#7F007F` → `#5c1880`。纯蓝/纯紫在视网膜前方成像（纵向色差），长时间阅读会持续触发调节抖动，散光人群尤其明显，故一并压掉
+- 原因是只改背景会**降低**可读性：注释绿在纯白底为 4.39:1，换到 `#F5F5F5` 后跌至 4.03:1，预处理金由 3.16:1 跌至 2.90:1，均低于 WCAG AA。重校后注释 4.66:1、预处理金 5.08:1、关键字 7.86:1、字符串 7.57:1
+- 状态色与终端 ANSI 换用低饱和暖色系：红 `#b31d28`、绿 `#1a7f37`、黄 `#976404`、品红 `#7a1fa2`、青 `#0e6e7a`、蓝 `#1b4f8f`；终端底色与编辑区一致为 `#F5F5F5`
+- 同步重生成 Zed（Simple Light / Simple Light Hazy）、OpenCode、Codex CLI 的 Simple Light，并同步 Claude Code 与 Pi 的浅色主题配置；暗色主题未改动
+
+## [1.2.0]
 - 暗色主题整体重做：配色与界面样式移植自 Tsoding Emacs Gruber Minimal（`#181818` 炭黑底、`#ffdd33` 关键字/强调色、`#79bf46` 字符串、`#c18132` 注释、`#ff6200` 数字、`#949bb0` 函数、`#94b0a6` 类型/常量、`#504945` 选区），移除此前混入的藏蓝状态栏、灰蓝选中色与霓虹绿；补全 semanticTokenColors、终端 ANSI、Chat/Peek/Diff/Git 装饰等新版 UI 配色
 - 藏蓝"go.dev"配色改为只保留在顶部标题栏：暗色状态栏改用 `#141414`，浅色状态栏改用 `#f3f3f3`；VSCode 与 Zed 主题同步调整
 - Zed 暗色主题（Simple Dark / Simple Dark Hazy）整套换成新的 Gruber 调色板，OpenCode、Codex、Claude Code 主题由新调色板重新生成
