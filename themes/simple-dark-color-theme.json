@@ -10,7 +10,7 @@
   //   fg        #c6c6c6   正文（10.4:1；原 #d4d4d4 为 12:1）
   //   yellow    #d8bd55   关键字 / 强调色（峰值亮度 0.52，原 #ffdd33 为 0.73）
   //   green     #7fb757   字符串
-  //   comment   #c18132   注释
+  //   comment   #858585   注释（JetBrains Darcula 灰，弱化处理）
   //   orange    #dc7a45   数字（饱和度 68%，原 #ff6200 为 100%）
   //   niagara   #949bb0   函数 / 类名
   //   quartz    #94b0a6   类型 / 常量
@@ -21,16 +21,17 @@
   // ============================================================
   "colors": {
     "foreground": "#b1a69f",
-    "focusBorder": "#504945",
+    "focusBorder": "#d8bd55",
     "selection.background": "#504945",
     "widget.shadow": "#000000a0",
-    "icon.foreground": "#504945",
+    // 焦点/图标色：Gruber 灰 #504945 在 #181818 上只有 2.01:1，图标不可见
+    "icon.foreground": "#a6a6a6",
     "contrastBorder": "#444444",
 
     // ---- 活动栏 ----
     "activityBar.foreground": "#d8bd55",
     "activityBar.background": "#181818",
-    "activityBar.inactiveForeground": "#504945",
+    "activityBar.inactiveForeground": "#8c8c8c",
     "activityBar.border": "#181818",
     "activityBar.activeBackground": "#181818",
     "activityBar.activeBorder": "#d8bd55",
@@ -67,7 +68,7 @@
     "statusBar.background": "#141414",
     "statusBar.foreground": "#e8e8e8",
     "statusBar.border": "#181818",
-    "statusBar.focusBorder": "#303030",
+    "statusBar.focusBorder": "#d8bd55",
     "statusBar.noFolderBackground": "#141414",
     "statusBar.noFolderForeground": "#e8e8e8",
     "statusBar.debuggingBackground": "#881111",
@@ -125,9 +126,9 @@
     "checkbox.foreground": "#bfbfbf",
     "checkbox.border": "#00000000",
     "textLink.foreground": "#95a2c9",
-    "pickerGroup.foreground": "#504945",
+    "pickerGroup.foreground": "#8c8c8c",
     "pickerGroup.border": "#3f3f46",
-    "progressBar.background": "#504945",
+    "progressBar.background": "#d8bd55",
     "badge.background": "#4d4d4d",
     "badge.foreground": "#ffffff",
 
@@ -184,13 +185,13 @@
     // ---- Git / 变更 ----
     "editorGutter.addedBackground": "#7fb757",
     "editorGutter.modifiedBackground": "#d99f57",
-    "editorGutter.deletedBackground": "#94151b",
+    "editorGutter.deletedBackground": "#c74e39",
     "minimapGutter.addedBackground": "#7fb757",
     "minimapGutter.modifiedBackground": "#d99f57",
-    "minimapGutter.deletedBackground": "#94151b",
+    "minimapGutter.deletedBackground": "#c74e39",
     "editorOverviewRuler.addedForeground": "#7fb757",
     "editorOverviewRuler.modifiedForeground": "#d99f57",
-    "editorOverviewRuler.deletedForeground": "#94151b",
+    "editorOverviewRuler.deletedForeground": "#c74e39",
     "gitDecoration.addedResourceForeground": "#81b88b",
     "gitDecoration.modifiedResourceForeground": "#d6b98d",
     "gitDecoration.deletedResourceForeground": "#c74e39",
@@ -355,7 +356,7 @@
   // 与下面的 tokenColors 保持同一套配色
   // ============================================================
   "semanticTokenColors": {
-    "comment": "#c18132",
+    "comment": "#858585",
     "keyword": "#d8bd55",
     "modifier": "#d8bd55",
     "string": "#7fb757",
@@ -386,19 +387,19 @@
 
   // ============================================================
   // tokenColors：Gruber Darker 语义
-  //   关键字 #d8bd55 / 字符串 #7fb757 / 注释 #c18132
+  //   关键字 #d8bd55 / 字符串 #7fb757 / 注释 #858585
   //   数字 #dc7a45 / 函数 #949bb0 / 类型·常量 #94b0a6
   // ============================================================
   "tokenColors": [
     {
       "name": "Comment",
       "scope": ["comment", "punctuation.definition.comment"],
-      "settings": { "foreground": "#c18132" }
+      "settings": { "foreground": "#858585" }
     },
     {
       "name": "Comment Documentation",
       "scope": ["comment.block.documentation", "comment.line.documentation"],
-      "settings": { "foreground": "#7fb757" }
+      "settings": { "foreground": "#858585" }
     },
     {
       "name": "Keyword",

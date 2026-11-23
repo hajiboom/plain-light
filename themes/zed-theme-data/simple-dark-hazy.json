@@ -204,9 +204,9 @@
         // 语法高亮：simple-dark tokenColors 平移（Gruber Darker 低亮版）
         // ============================================================
         "syntax": {
-          "comment": { "color": "#c18132" },
-          "comment.doc": { "color": "#7fb757" },
-          "comment.documentation": { "color": "#7fb757" },
+          "comment": { "color": "#858585" },
+          "comment.doc": { "color": "#858585" },
+          "comment.documentation": { "color": "#858585" },
           "comment.todo": { "color": "#d8bd55", "font_style": "italic" },
           "comment.error": { "color": "#e35d64", "font_style": "italic" },
           "keyword": { "color": "#d8bd55" },

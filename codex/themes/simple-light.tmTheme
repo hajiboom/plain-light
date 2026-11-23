@@ -19,26 +19,26 @@
   <dict>
     <key>scope</key><string>comment, punctuation.definition.comment</string>
     <key>settings</key><dict>
-      <key>foreground</key><string>#1a7f37</string>
+      <key>foreground</key><string>#4b6577</string>
       <key>fontStyle</key><string>italic</string>
     </dict>
   </dict>
   <dict>
     <key>scope</key><string>string, punctuation.definition.string</string>
     <key>settings</key><dict>
-      <key>foreground</key><string>#7a1fa2</string>
+      <key>foreground</key><string>#a3212b</string>
     </dict>
   </dict>
   <dict>
     <key>scope</key><string>keyword, storage, keyword.control, keyword.declaration</string>
     <key>settings</key><dict>
-      <key>foreground</key><string>#1b4b8f</string>
+      <key>foreground</key><string>#7a5c00</string>
     </dict>
   </dict>
   <dict>
     <key>scope</key><string>support.type, support.class, support.variable, entity.name.type</string>
     <key>settings</key><dict>
-      <key>foreground</key><string>#1b4b8f</string>
+      <key>foreground</key><string>#1a7f37</string>
     </dict>
   </dict>
   <dict>
@@ -50,7 +50,7 @@
   <dict>
     <key>scope</key><string>entity.name.function, support.function, variable.function</string>
     <key>settings</key><dict>
-      <key>foreground</key><string>#6b6252</string>
+      <key>foreground</key><string>#0b6a78</string>
     </dict>
   </dict>
   <dict>
@@ -74,7 +74,7 @@
   <dict>
     <key>scope</key><string>markup.heading, entity.name.section.markdown</string>
     <key>settings</key><dict>
-      <key>foreground</key><string>#123c63</string>
+      <key>foreground</key><string>#7a5c00</string>
       <key>fontStyle</key><string>bold</string>
     </dict>
   </dict>
@@ -88,40 +88,40 @@
   <dict>
     <key>scope</key><string>markup.italic</string>
     <key>settings</key><dict>
-      <key>foreground</key><string>#1a7f37</string>
+      <key>foreground</key><string>#4b6577</string>
       <key>fontStyle</key><string>italic</string>
     </dict>
   </dict>
   <dict>
     <key>scope</key><string>markup.quote</string>
     <key>settings</key><dict>
-      <key>foreground</key><string>#1a7f37</string>
+      <key>foreground</key><string>#4b6577</string>
       <key>fontStyle</key><string>italic</string>
     </dict>
   </dict>
   <dict>
     <key>scope</key><string>markup.inline.raw, markup.fenced_code.block</string>
     <key>settings</key><dict>
-      <key>foreground</key><string>#7a1fa2</string>
+      <key>foreground</key><string>#a3212b</string>
     </dict>
   </dict>
   <dict>
     <key>scope</key><string>markup.link.url, markup.underline.link</string>
     <key>settings</key><dict>
-      <key>foreground</key><string>#007894</string>
+      <key>foreground</key><string>#0b6a78</string>
       <key>fontStyle</key><string>underline</string>
     </dict>
   </dict>
   <dict>
     <key>scope</key><string>string.other.link.title.markdown</string>
     <key>settings</key><dict>
-      <key>foreground</key><string>#123c63</string>
+      <key>foreground</key><string>#0b6a78</string>
     </dict>
   </dict>
   <dict>
     <key>scope</key><string>punctuation.definition.list.markdown</string>
     <key>settings</key><dict>
-      <key>foreground</key><string>#123c63</string>
+      <key>foreground</key><string>#7a5c00</string>
     </dict>
   </dict>
   <dict>

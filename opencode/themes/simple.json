@@ -135,7 +135,7 @@
       }
     },
     "syntax": {
-      "comment": "#c18132",
+      "comment": "#858585",
       "keyword": "#d8bd55",
       "function": "#949bb0",
       "variable": "#c6c6c6",
@@ -342,30 +342,30 @@
       }
     },
     "syntax": {
-      "comment": "#1a7f37",
-      "keyword": "#1b4b8f",
-      "function": "#6b6252",
+      "comment": "#4b6577",
+      "keyword": "#7a5c00",
+      "function": "#0b6a78",
       "variable": "#1a1a1a",
-      "string": "#7a1fa2",
+      "string": "#a3212b",
       "number": "#1a1a1a",
-      "type": "#1b4b8f",
+      "type": "#1a7f37",
       "operator": "#1a1a1a",
       "punctuation": "#1a1a1a"
     },
     "markdown": {
       "text": "#1a1a1a",
-      "heading": "#123c63",
-      "link": "#007894",
-      "linkText": "#123c63",
-      "code": "#7a1fa2",
-      "blockQuote": "#1a7f37",
-      "emphasis": "#1a7f37",
+      "heading": "#7a5c00",
+      "link": "#0b6a78",
+      "linkText": "#0b6a78",
+      "code": "#a3212b",
+      "blockQuote": "#4b6577",
+      "emphasis": "#4b6577",
       "strong": "#1a1a1a",
       "horizontalRule": "#9e9e9e",
-      "listItem": "#123c63",
-      "listEnumeration": "#123c63",
-      "image": "#007894",
-      "imageText": "#123c63",
+      "listItem": "#7a5c00",
+      "listEnumeration": "#7a5c00",
+      "image": "#0b6a78",
+      "imageText": "#0b6a78",
       "codeBlock": "#1a1a1a"
     },
     "@dialog": {
@@ -549,7 +549,7 @@
       }
     },
     "syntax": {
-      "comment": "#c18132",
+      "comment": "#858585",
       "keyword": "#d8bd55",
       "function": "#949bb0",
       "variable": "#c6c6c6",

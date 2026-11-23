@@ -58,7 +58,7 @@
     // ---- 活动栏 ----
     "activityBar.background": "#e7e7e7",
     "activityBar.foreground": "#1a1a1a",
-    "activityBar.inactiveForeground": "#9e9e9e",
+    "activityBar.inactiveForeground": "#6e6e6e",
     "activityBar.border": "#dcdcdc",
     "activityBar.activeBorder": "#007894",
     "activityBar.activeBackground": "#ededed",
@@ -73,7 +73,7 @@
     // ---- 命令中心（新版 VSCode 编辑器顶部） ----
     "commandCenter.foreground": "#1a1a1a",
     "commandCenter.activeForeground": "#007894",
-    "commandCenter.inactiveForeground": "#9e9e9e",
+    "commandCenter.inactiveForeground": "#6e6e6e",
     "commandCenter.background": "#ededed",
     "commandCenter.activeBackground": "#e6e6e6",
     "commandCenter.border": "#dcdcdc",
@@ -209,22 +209,28 @@
   },
 
   // ============================================================
-  // 代码高亮：MATLAB 经典配色 —
-  // 蓝色关键字、紫色字符串、森林绿注释、金色预处理指令，
-  // 数字 / 布尔 / 常量与函数、变量等自定义标识符保持纯黑原色
+  // 代码高亮：Linux vim 默认配色的暖白特调版
+  //   vim 的语义映射原样保留 ——
+  //     注释蓝 / 关键字橄榄 / 字符串红 / 类型绿 / 函数青 / 预处理洋红
+  //   每个色都按暖白底 #f5f5f5 重新定亮度与饱和度：无纯饱和色，
+  //   无紫色字符串，全部 ≥4.5:1（WCAG AA）。
+  //   两处有意偏离 vim 默认：
+  //     · 预处理 / 转义由洋红改为铁锈红 —— 不再引入紫色；
+  //     · 数字 / 布尔 / 常量 / 变量 / 运算符保持正文深灰 ——
+  //       vim 会把字面量染红，整屏见红反而增加视觉压力。
   // ============================================================
   "tokenColors": [
-    // ---------- 注释：森林绿斜体 ----------
+    // ---------- 注释：vim 蓝的降饱和版（板岩蓝灰） ----------
     {
       "name": "Comment",
       "scope": ["comment", "punctuation.definition.comment"],
       "settings": {
         "fontStyle": "italic",
-        "foreground": "#1a7f37"
+        "foreground": "#4b6577"
       }
     },
 
-    // ---------- 关键字：MATLAB 经典蓝（含内置类型 / 修饰符） ----------
+    // ---------- 关键字：vim 的黄，暖底上收成橄榄 ----------
     {
       "name": "Keywords",
       "scope": [
@@ -243,24 +249,24 @@
         "keyword.interface.go", "keyword.map.go", "keyword.chan.go",
         "storage.type", "storage.modifier"
       ],
-      "settings": { "foreground": "#1b4b8f" }
+      "settings": { "foreground": "#7a5c00" }
     },
 
-    // ---------- 预处理 / 系统指令：金色 ----------
+    // ---------- 预处理 / 系统指令：铁锈红（替掉 vim 的洋红） ----------
     {
       "name": "Preprocessor",
-      "scope": "meta.preprocessor",
-      "settings": { "foreground": "#8a6100" }
+      "scope": ["meta.preprocessor", "keyword.directive", "entity.name.tag.doctype"],
+      "settings": { "foreground": "#8c3a1e" }
     },
 
-    // ---------- HTML/JSX 标签名：藏蓝 ----------
+    // ---------- HTML/JSX 标签名：与关键字同族 ----------
     {
       "name": "Tags",
       "scope": ["entity.name.tag", "support.class.component"],
-      "settings": { "foreground": "#123c63" }
+      "settings": { "foreground": "#7a5c00" }
     },
 
-    // ---------- 属性名 / JSON key / YAML key：藏蓝 ----------
+    // ---------- 属性名 / JSON key / YAML key：vim 青 ----------
     {
       "name": "Attributes & Keys",
       "scope": [
@@ -268,26 +274,50 @@
         "support.type.property-name.json",
         "entity.name.tag.yaml"
       ],
-      "settings": { "foreground": "#123c63" }
+      "settings": { "foreground": "#0b6a78" }
     },
 
-    // ---------- 字符串：MATLAB 经典紫 ----------
+    // ---------- 字符串：vim 红（深砖红，非纯饱和） ----------
     {
       "name": "Strings",
-      "scope": "string",
-      "settings": { "foreground": "#7a1fa2" }
+      "scope": ["string", "punctuation.definition.string"],
+      "settings": { "foreground": "#a3212b" }
     },
 
-    // ---------- 函数名：暖灰，与普通文本黑色区分 ----------
+    // ---------- 转义 / 正则：铁锈红 ----------
+    {
+      "name": "Escape & Regexp",
+      "scope": ["constant.character.escape", "string.regexp", "string.template"],
+      "settings": { "foreground": "#8c3a1e" }
+    },
+
+    // ---------- 路径 / URL 等特殊字符串：vim 青 ----------
+    {
+      "name": "String Special",
+      "scope": ["string.special", "string.other.link"],
+      "settings": { "foreground": "#0b6a78" }
+    },
+
+    // ---------- 函数名：vim 青（Identifier 族） ----------
     {
       "name": "Function",
       "scope": [
         "entity.name.function", "support.function", "variable.function"
       ],
-      "settings": { "foreground": "#6b6252" }
+      "settings": { "foreground": "#0b6a78" }
     },
 
-    // ---------- 数字 / 布尔 / 常量：黑色原色（MATLAB 同款不着色） ----------
+    // ---------- 类型 / 类名：vim 绿 ----------
+    {
+      "name": "Type",
+      "scope": [
+        "entity.name.type", "entity.name.class", "entity.name.type.class",
+        "support.type", "support.class", "entity.name.namespace"
+      ],
+      "settings": { "foreground": "#1a7f37" }
+    },
+
+    // ---------- 数字 / 布尔 / 常量：正文深灰（有意不着色） ----------
     {
       "name": "Constants",
       "scope": [
@@ -295,13 +325,6 @@
         "variable.other.enummember"
       ],
       "settings": { "foreground": "#1a1a1a" }
-    },
-
-    // ---------- 转义序列：深紫 ----------
-    {
-      "name": "Escape",
-      "scope": "constant.character.escape",
-      "settings": { "foreground": "#5c1880" }
     },
 
     // ---------- this / self / super：仅斜体，不换色 ----------
@@ -322,7 +345,7 @@
     {
       "name": "Markdown Heading",
       "scope": ["markup.heading", "entity.name.section.markdown"],
-      "settings": { "foreground": "#123c63", "fontStyle": "bold" }
+      "settings": { "foreground": "#7a5c00", "fontStyle": "bold" }
     },
     {
       "name": "Markdown Bold",
@@ -337,17 +360,22 @@
     {
       "name": "Markdown Quote",
       "scope": "markup.quote",
-      "settings": { "foreground": "#1a7f37", "fontStyle": "italic" }
+      "settings": { "foreground": "#4b6577", "fontStyle": "italic" }
     },
     {
       "name": "Markdown Code",
       "scope": ["markup.inline.raw", "markup.fenced_code.block"],
-      "settings": { "foreground": "#7a1fa2" }
+      "settings": { "foreground": "#a3212b" }
+    },
+    {
+      "name": "Markdown List Marker",
+      "scope": ["markup.list", "punctuation.definition.list.begin.markdown"],
+      "settings": { "foreground": "#7a5c00" }
     },
     {
       "name": "Markdown Link",
       "scope": ["markup.link.url", "markup.underline.link"],
-      "settings": { "foreground": "#007894", "fontStyle": "underline" }
+      "settings": { "foreground": "#0b6a78", "fontStyle": "underline" }
     }
   ]
 }

@@ -4,7 +4,7 @@
   "publisher": "hajiboom",
   "icon": "images/icon.png",
   "description": "A minimal light theme, no fancy highlights, eye-friendly",
-  "version": "1.2.2",
+  "version": "1.2.5",
   "scripts": {
     "build:zed": "node scripts/build-zed-theme.js",
     "build:opencode": "node scripts/build-opencode-theme.js",
