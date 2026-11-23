@@ -19,13 +19,13 @@
   <dict>
     <key>scope</key><string>comment, punctuation.definition.comment</string>
     <key>settings</key><dict>
-      <key>foreground</key><string>#858585</string>
+      <key>foreground</key><string>#7893a5</string>
     </dict>
   </dict>
   <dict>
     <key>scope</key><string>string, punctuation.definition.string</string>
     <key>settings</key><dict>
-      <key>foreground</key><string>#7fb757</string>
+      <key>foreground</key><string>#d47784</string>
     </dict>
   </dict>
   <dict>
@@ -37,19 +37,19 @@
   <dict>
     <key>scope</key><string>support.type, support.class, support.variable, entity.name.type</string>
     <key>settings</key><dict>
-      <key>foreground</key><string>#94b0a6</string>
+      <key>foreground</key><string>#7fb757</string>
     </dict>
   </dict>
   <dict>
     <key>scope</key><string>constant, constant.numeric, constant.language, constant.boolean</string>
     <key>settings</key><dict>
-      <key>foreground</key><string>#dc7a45</string>
+      <key>foreground</key><string>#c6c6c6</string>
     </dict>
   </dict>
   <dict>
     <key>scope</key><string>entity.name.function, support.function, variable.function</string>
     <key>settings</key><dict>
-      <key>foreground</key><string>#949bb0</string>
+      <key>foreground</key><string>#5cb0bc</string>
     </dict>
   </dict>
   <dict>
@@ -87,34 +87,34 @@
   <dict>
     <key>scope</key><string>markup.italic</string>
     <key>settings</key><dict>
-      <key>foreground</key><string>#d8bd55</string>
+      <key>foreground</key><string>#7893a5</string>
       <key>fontStyle</key><string>italic</string>
     </dict>
   </dict>
   <dict>
     <key>scope</key><string>markup.quote</string>
     <key>settings</key><dict>
-      <key>foreground</key><string>#d8bd55</string>
+      <key>foreground</key><string>#7893a5</string>
       <key>fontStyle</key><string>italic</string>
     </dict>
   </dict>
   <dict>
     <key>scope</key><string>markup.inline.raw, markup.fenced_code.block</string>
     <key>settings</key><dict>
-      <key>foreground</key><string>#7fb757</string>
+      <key>foreground</key><string>#d47784</string>
     </dict>
   </dict>
   <dict>
     <key>scope</key><string>markup.link.url, markup.underline.link</string>
     <key>settings</key><dict>
-      <key>foreground</key><string>#95a2c9</string>
+      <key>foreground</key><string>#5cb0bc</string>
       <key>fontStyle</key><string>underline</string>
     </dict>
   </dict>
   <dict>
     <key>scope</key><string>string.other.link.title.markdown</string>
     <key>settings</key><dict>
-      <key>foreground</key><string>#d8bd55</string>
+      <key>foreground</key><string>#5cb0bc</string>
     </dict>
   </dict>
   <dict>

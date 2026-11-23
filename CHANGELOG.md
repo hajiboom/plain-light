@@ -4,6 +4,19 @@ All notable changes to the "julia" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [1.2.6] - 2026-11-16
+### 暗色代码配色：同步为 vim 语义映射
+- 浅色换成 vim 语义后，暗色仍走 Gruber 的字符串绿 / 数字橙 / 函数蓝灰，两套主题的语义对不上。本轮把暗色的语义也换成 vim，同时保留 Gruber 的炭黑底与藏蓝标题栏
+- 注释 `#858585` → `#7893a5`（vim 蓝的暗底版，钢青，5.51:1，补上斜体与浅色对齐）
+- 字符串 `#7fb757` → `#d47784`（vim 红，砖玫瑰，5.73:1）；改由字符串承载红色，不再与 error 撞色：字符串更亮更淡（S 52 / relL 0.29），error 更深更艳（S 71 / relL 0.25）
+- 类型/类名沿用 `#7fb757`（vim 绿，7.45:1，与 success / git added 同色）；函数/属性/键名/链接 `#949bb0`/`#95a2c9` → `#5cb0bc`（vim 青，7.10:1）
+- 预处理/转义/正则 `#94b0a6`/`#d8bd55` → `#cc8566`（铁锈红，6.02:1）
+- 数字/布尔/常量/变量/运算符：`#dc7a45`/`#94b0a6` → 正文色 `#c6c6c6`（vim 会染红，不用）
+- Markdown 强调与引用 `#d8bd55`/`#d99f57` → 注释钢青；标题/列表标记 → 关键字哑金
+- 峰值亮度：关键字 0.52 最高，其余 ≤0.40，全部 ≥4.5:1；同时清理 tokenColors 里残留的 niagara/quartz/attr 三色
+- 同步重新生成 Zed（Simple Dark / Hazy）、OpenCode、Codex CLI、Claude Code 与 Pi 的暗色主题；浅色主题本轮未改动
+- bump: package.json 1.2.6、zed-extension 0.2.6
+
 ## [1.2.5] - 2026-11-16
 ### 浅色代码配色：从 MATLAB 换成 Linux vim 默认语义
 - 去掉紫色字符串：MATLAB 的紫字符串与关键字蓝在 VS Code / Zed 里显得格格不入，且纯蓝 `#0000FF`、纯紫 `#A020F0` 因纵向色差会持续触发调节抖动。改用 Linux vim 默认的语义映射，再按暖白底重新定色

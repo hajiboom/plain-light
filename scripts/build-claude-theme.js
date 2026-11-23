@@ -96,7 +96,7 @@ function overrides(p) {
     rate_limit_fill: accent,
     rate_limit_empty: rateEmpty,
     briefLabelYou: accent,
-    briefLabelClaude: dark ? '#95a2c9' : '#0b6a78',
+    briefLabelClaude: dark ? '#5cb0bc' : '#0b6a78',
 
     // Mascot
     clawd_body: dark ? '#c18132' : '#8a6100',
